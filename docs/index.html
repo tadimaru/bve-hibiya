@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BVE5 東京メトロ日比谷線 | たでぃまる</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      line-height: 1.7;
+    }
+    header {
+      background: #1a1a2e;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 8px; }
+    header p { font-size: 1rem; color: #aaa; }
+
+    .banner {
+      background: linear-gradient(135deg, #e8850a, #c96d00);
+      color: #fff;
+      text-align: center;
+      padding: 24px 20px;
+    }
+    .banner p { font-size: 0.95rem; margin-bottom: 12px; }
+    .banner a.btn-steam {
+      display: inline-block;
+      background: #fff;
+      color: #c96d00;
+      font-weight: bold;
+      padding: 10px 28px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    .banner a.btn-steam:hover { background: #ffe0b2; }
+
+    .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+
+    section { margin-bottom: 48px; }
+    h2 {
+      font-size: 1.3rem;
+      border-left: 4px solid #1a1a2e;
+      padding-left: 12px;
+      margin-bottom: 16px;
+    }
+
+    .release-box {
+      background: #fff;
+      border: 2px solid #1a1a2e;
+      border-radius: 8px;
+      padding: 24px;
+      text-align: center;
+    }
+    .release-box .section-label {
+      font-size: 0.85rem;
+      color: #888;
+      margin-bottom: 4px;
+    }
+    .release-box .route { font-size: 1.2rem; font-weight: bold; margin-bottom: 4px; }
+    .release-box .date { color: #888; font-size: 0.9rem; margin-bottom: 20px; }
+    .btn-download {
+      display: inline-block;
+      background: #1a1a2e;
+      color: #fff;
+      padding: 12px 36px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    .btn-download:hover { background: #2d2d50; }
+    .btn-download.disabled {
+      background: #ccc;
+      color: #888;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+
+    table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; overflow: hidden; }
+    th, td { padding: 12px 16px; border-bottom: 1px solid #eee; text-align: left; }
+    th { background: #f0f0f0; font-weight: bold; width: 160px; }
+
+    .schedule-list { list-style: none; }
+    .schedule-list li {
+      background: #fff;
+      border-left: 4px solid #ccc;
+      padding: 12px 16px;
+      margin-bottom: 8px;
+      border-radius: 0 4px 4px 0;
+    }
+    .schedule-list li.current { border-left-color: #e8850a; font-weight: bold; }
+    .schedule-list li.upcoming { border-left-color: #ccc; color: #888; }
+    .schedule-list .date-label { font-size: 0.85rem; color: #888; }
+
+    .install-steps { list-style: none; counter-reset: step; }
+    .install-steps li {
+      counter-increment: step;
+      background: #fff;
+      padding: 14px 16px 14px 56px;
+      margin-bottom: 8px;
+      border-radius: 4px;
+      position: relative;
+    }
+    .install-steps li::before {
+      content: counter(step);
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #1a1a2e;
+      color: #fff;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+    code {
+      background: #eee;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: monospace;
+      font-size: 0.9em;
+    }
+
+    footer {
+      background: #1a1a2e;
+      color: #aaa;
+      text-align: center;
+      padding: 32px 20px;
+      font-size: 0.9rem;
+    }
+    footer a { color: #ccc; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>BVE5 東京メトロ日比谷線</h1>
+  <p>制作: たでぃまる</p>
+</header>
+
+<div class="banner">
+  <p>同じ作者が、鉄道の<strong>運行管理シミュレーター</strong>もひとりで開発しています。</p>
+  <a class="btn-steam" href="https://store.steampowered.com/app/4282480/?utm_source=bve" target="_blank">
+    Steam でウィッシュリストに追加する →
+  </a>
+</div>
+
+<div class="container">
+
+  <section id="download">
+    <h2>ダウンロード</h2>
+    <div class="release-box">
+      <div class="section-label">部分開業リリース</div>
+      <div class="route">中目黒 〜 六本木（6駅）</div>
+      <div class="date">2026年4月12日 公開予定</div>
+      <a class="btn-download disabled" href="#">準備中</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>路線について</h2>
+    <table>
+      <tr><th>対象路線</th><td>東京メトロ日比谷線</td></tr>
+      <tr><th>対応ソフト</th><td>BVE Trainsim 5</td></tr>
+      <tr><th>制作区間</th><td>中目黒 〜 北千住（全21駅・約21.3km）</td></tr>
+      <tr><th>初回リリース</th><td>中目黒 〜 六本木（2026年4月12日）</td></tr>
+      <tr><th>制作者</th><td>たでぃまる</td></tr>
+    </table>
+  </section>
+
+  <section id="schedule">
+    <h2>公開スケジュール</h2>
+    <ul class="schedule-list">
+      <li class="current">
+        <div class="date-label">2026年4月12日</div>
+        中目黒 〜 六本木（部分開業）
+      </li>
+      <li class="upcoming">
+        <div class="date-label">2026年4月30日 予定</div>
+        〜 日比谷 延伸
+      </li>
+      <li class="upcoming">
+        <div class="date-label">以降 順次延伸</div>
+        〜 北千住（全線）
+      </li>
+    </ul>
+  </section>
+
+  <section id="install">
+    <h2>インストール方法</h2>
+    <ol class="install-steps">
+      <li><a href="https://bvets.net/" target="_blank">BVE Trainsim 5</a> をインストールしてください。</li>
+      <li>上のダウンロードボタンからZIPファイルをダウンロードします。</li>
+      <li>ZIPを解凍し、中のフォルダを BVE の <code>Scenarios</code> フォルダに配置します。</li>
+      <li>BVE を起動し、シナリオ一覧から「東京メトロ日比谷線」を選択してください。</li>
+    </ol>
+  </section>
+
+  <section id="env">
+    <h2>動作環境</h2>
+    <table>
+      <tr><th>対応OS</th><td>Windows 10 / 11</td></tr>
+      <tr><th>必要ソフト</th><td>BVE Trainsim 5（無料）</td></tr>
+    </table>
+  </section>
+
+  <section id="author">
+    <h2>作者について</h2>
+    <p>たでぃまる / 合同会社たでぃまる<br>
+    BVE路線データの制作と、鉄道運行管理ゲームの開発をひとりでやっています。</p>
+    <p style="margin-top:12px;">
+      <a href="https://x.com/tadimaru" target="_blank">X（旧Twitter）@tadimaru</a>
+    </p>
+  </section>
+
+</div>
+
+<footer>
+  <p>&copy; 2026 たでぃまる / 合同会社たでぃまる</p>
+  <p style="margin-top:8px;">
+    <a href="https://store.steampowered.com/app/4282480/?utm_source=bve" target="_blank">鉄道運行管理シミュレーター（Steam）</a>
+    &nbsp;|&nbsp;
+    <a href="https://x.com/tadimaru" target="_blank">X @tadimaru</a>
+  </p>
+</footer>
+
+</body>
+</html>
