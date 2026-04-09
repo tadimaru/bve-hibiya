@@ -163,8 +163,8 @@
     <div class="release-box">
       <div class="section-label">部分開業リリース</div>
       <div class="route">中目黒 〜 六本木</div>
-      <div class="date">2026年4月12日 公開予定</div>
-      <a class="btn-download disabled" href="#">4月12日 公開予定</a>
+      <div class="date" id="release-date">2026年4月12日 公開予定</div>
+      <a class="btn-download disabled" id="download-btn" href="#">4月12日 公開予定</a>
     </div>
   </section>
 
@@ -273,5 +273,18 @@
   </p>
 </footer>
 
+<script>
+  (function () {
+    var releaseDate = new Date('2026-04-12T00:00:00+09:00');
+    var now = new Date();
+    if (now >= releaseDate) {
+      var btn = document.getElementById('download-btn');
+      btn.classList.remove('disabled');
+      btn.href = 'https://github.com/tadimaru/bve-hibiya/releases/download/v0.1.0/bve-hibiya-v0.1.0.zip';
+      btn.textContent = 'ダウンロード（ZIP）';
+      document.getElementById('release-date').textContent = '2026年4月12日 公開';
+    }
+  })();
+</script>
 </body>
 </html>
