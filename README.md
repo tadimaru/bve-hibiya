@@ -48,7 +48,7 @@ BVE Trainsim 5 向け、東京メトロ日比谷線の路線データです。
 ## リンク
 
 - [配布ページ](https://tadimaru.github.io/bve-hibiya/)
-- [X @tadimaru](https://x.com/tadimaru)
+- [X @tadimaru](https://x.com/tadi_maru)
 - [鉄道運行管理シミュレーター（Steam）](https://store.steampowered.com/app/4282480/)
 
 ---
