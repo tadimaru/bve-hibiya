@@ -3,8 +3,8 @@ BveTs Scenario 2.00:utf-8
 Title = 東京メトロ日比谷線
 Route = Tadimaru\東京メトロ日比谷線\Map.txt
 RouteTitle = 東京メトロ日比谷線
-Vehicle = vertah\trta08\Vehicle.txt
-VehicleTitle = 13000系
-Author = Tadimaru
+Vehicle = 
+VehicleTitle = 指定車両はありません
+Author = たでぃまる
 Image = Tadimaru\東京メトロ日比谷線\Thumb.jpg
-Comment = 中目黒から北千住方面へ向かう運転シナリオです。
+Comment = 中目黒から北千住方面へ向かう運転シナリオです。中目黒～六本木の短い区間ですが、お楽しみいただけますと幸いです。
