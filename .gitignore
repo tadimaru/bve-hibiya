@@ -6,6 +6,9 @@
 Thumbs.db
 Desktop.ini
 
+# 音声作業ファイル
+Scenarios/Tadimaru/東京メトロ日比谷線/Sounds/temp/
+
 # その他
 *.bak
 *.tmp

@@ -298,8 +298,6 @@ Structure['kokoku_white'].Put('1',5,2.3,0,0,180,0,0,0);
 1980;
 Structure['info_big'].Put(0,-6.5,2.8,0,0,0,0,0,0);
 Structure['info_big'].Put('1',5,2.8,0,0,180,0,0,0);
-Structure['eakon'].Put(0,-6.5,3.2,0,0,0,0,0,0);
-Structure['eakon'].Put('1',5,3.2,0,0,180,0,0,0);
 
 1992;
 Structure['kokoku_white'].Put(0,-6.5,2.3,0,0,0,0,0,0);
@@ -393,8 +391,6 @@ Structure['hassyahyo'].Put('1',3.7,3.4,0,0,180,0,0,0);
 3413;
 Structure['kokoku_white'].Put(0,-5,2.3,0,0,0,0,0,0);
 Structure['kokoku_white'].Put('1',6,2.3,0,0,180,0,0,0);
-Structure['info_big'].Put(0,-5,2.8,0,0,0,0,0,0);
-Structure['info_big'].Put('1',6,2.8,0,0,180,0,0,0);
 
 3420;
 Structure['ikisaki'].Put(0,-3.3,3.5,0,0,0,0,0,0);
@@ -407,8 +403,6 @@ Structure['ikisaki'].Put('1',3.3,3.5,0,0,180,0,0,0);
 3448;
 Structure['kokoku_zasshi'].Put(0,-5,2.3,0,0,0,0,0,0);
 Structure['kokoku_zasshi'].Put('1',6,2.3,0,0,180,0,0,0);
-Structure['eakon'].Put(0,-5,3.2,0,0,0,0,0,0);
-Structure['eakon'].Put('1',6,3.2,0,0,180,0,0,0);
 
 3460;
 Structure['hassyahyo'].Put(0,-3.7,3.4,0,0,0,0,0,0);
@@ -425,14 +419,10 @@ Structure['ikisaki'].Put('1',3.3,3.5,0,0,180,0,0,0);
 3488;
 Structure['kokoku_white'].Put(0,-5,2.3,0,0,0,0,0,0);
 Structure['kokoku_white'].Put('1',6,2.3,0,0,180,0,0,0);
-Structure['info_big'].Put(0,-5,2.8,0,0,0,0,0,0);
-Structure['info_big'].Put('1',6,2.8,0,0,180,0,0,0);
 
 3496;
 Structure['kokoku_zasshi'].Put(0,-5,2.3,0,0,0,0,0,0);
 Structure['kokoku_zasshi'].Put('1',6,2.3,0,0,180,0,0,0);
-Structure['eakon'].Put(0,-5,3.2,0,0,0,0,0,0);
-Structure['eakon'].Put('1',6,3.2,0,0,180,0,0,0);
 
 3500;
 Repeater['HomeDoor_L'].End();
@@ -561,8 +551,6 @@ Structure['kokoku_white'].Put('1',7,2.3,0,0,180,0,0,0);
 5082;
 Structure['info_big'].Put(0,-7,2.8,0,0,0,0,0,0);
 Structure['info_big'].Put('1',7,2.8,0,0,180,0,0,0);
-Structure['eakon'].Put(0,-7,3.2,0,0,0,0,0,0);
-Structure['eakon'].Put('1',7,3.2,0,0,180,0,0,0);
 
 5092;
 Structure['kokoku_white'].Put(0,-7,2.3,0,0,0,0,0,0);
@@ -589,8 +577,6 @@ Structure['kokoku_zasshi'].Put('1',7,2.3,0,0,180,0,0,0);
 5138;
 Structure['info_big'].Put(0,-7,2.8,0,0,0,0,0,0);
 Structure['info_big'].Put('1',7,2.8,0,0,180,0,0,0);
-Structure['eakon'].Put(0,-7,3.2,0,0,0,0,0,0);
-Structure['eakon'].Put('1',7,3.2,0,0,180,0,0,0);
 
 5145;
 Structure['ikisaki'].Put(0,-3.3,3.5,0,0,0,0,0,0);
