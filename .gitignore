@@ -1,0 +1,11 @@
+# Metasequoia作業ファイル
+*.mqoz
+*.mqo
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# その他
+*.bak
+*.tmp

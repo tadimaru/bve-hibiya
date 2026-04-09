@@ -1,0 +1,24 @@
+BveTs Station List 2.00:shift_jis,,,,,,,,,,,,
+#stationKey,stationText,arrivalTime,depertureTime,stoppageTime,defaultTime,signalFlag,alightingTime,passengers,arrivalSoundKey,depertureSoundKey,doorReopen,stuckInDoor
+Nakameguro,’†–Ú•,,11:07:00,70,11:05:40,0,0,1,nakameguro_arr,nakameguro_dep,0.1,0
+Ebisu,Œb”äõ,,,25,11:09:00,0,,1,arriving,ebisu_dep,0.1,0
+Hiroo,L”ö,,,25,11:12:00,0,,1,arriving,hiroo_dep,0.1,0
+Roppongi,˜Z–{–Ø,,11:16:00,25,11:15:30,0,,1,roppongi_arr,roppongi_dep,0.1,0
+#Kamiyacho,_’J’¬,,,25,11:19:00,0,,1,arriving,kamiyacho_dep,0.1,0
+#Toranomon,ŒÕƒm–åƒqƒ‹ƒY,,,25,11:20:00,0,,1,arriving,toranomon_dep,0.1,0
+#Kasumigaseki,‰àƒ–ŠÖ,,,25,11:22:00,0,,0.8,arriving,kasumigaseki_dep,0.1,0
+#Hibiya,“ú”ä’J,,11:25:00,25,11:24:30,0,,0.8,hibiya_arr,hibiya_dep,0.1,0
+#Ginza,‹âÀ,,,25,11:26:00,0,,0.8,arriving,ginza_dep,0.1,0
+#Higashiginza,“Œ‹âÀ,,,25,11:28:00,0,,0.8,arriving,higashiginza_dep,0.1,0
+#Tsukiji,’z’n,,,25,11:30:00,0,,0.8,arriving,tsukiji_dep,0.1,0
+#Hatchobori,”ª’š–x,,,25,11:32:00,0,,0.8,,hatchobori_dep,0.1,0
+#Kayabacho,Šê’¬,,11:34:00,25,11:33:30,0,,0.8,kayabacho_arr,kayabacho_dep,0.1,0
+#Ningyocho,lŒ`’¬,,,25,11:35:00,0,,0.8,arriving,ningyocho_dep,0.1,0
+#Kodemmacho,¬“`”n’¬,,,25,11:37:00,0,,0.8,arriving,kodemmacho_dep,0.1,0
+#Akihabara,H—tŒ´,,11:40:00,25,11:39:30,0,,0.8,akihabara_arr,akihabara_dep,0.1,0
+#Nakaokachi,’‡Œä“k’¬,,,25,11:41:00,0,,0.8,arriving,nakaokachi_dep,0.1,0
+#Ueno,ã–ì,,11:43:00,25,11:42:30,0,,0.8,ueno_arr,ueno_dep,0.1,0
+#Iriya,“ü’J,,,25,11:45:00,0,,0.8,arriving,iriya_dep,0.1,0
+#Minowa,Oƒm—Ö,,,25,11:47:00,0,,0.8,arriving,minowa_dep,0.1,0
+#Minamisenju,“ìçZ,,,25,11:49:00,0,,0.8,arriving,minamisenju_dep,0.1,0
+#Kitasenju,–kçZ,11:52:00,t,25,11:52:00,0,,0.8,kitasenju_arr,,0.1,0
