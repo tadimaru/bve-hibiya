@@ -1,0 +1,24 @@
+BveTs Station List 2.00:utf-8,,,,,,,,,,,,
+#stationKey,stationText,arrivalTime,depertureTime,stoppageTime,defaultTime,signalFlag,alightingTime,passengers,arrivalSoundKey,depertureSoundKey,doorReopen,stuckInDoor
+Nakameguro,中目黒,,11:17:00,70,11:15:40,0,0,1,nakameguro_arr,nakameguro_dep,0.1,0
+Ebisu,恵比寿,,,25,11:19:00,0,,1,arriving,ebisu_dep,0.1,0
+Hiroo,広尾,,,25,11:22:00,0,,1,arriving,hiroo_dep,0.1,0
+Roppongi,六本木,,11:26:00,25,11:25:00,0,,1,roppongi_arr,roppongi_dep,0.1,0
+Kamiyacho,神谷町,,,25,11:29:00,0,,1,arriving,kamiyacho_dep,0.1,0
+Toranomon,虎ノ門ヒルズ,,,25,11:30:00,0,,1,arriving,toranomon_dep,0.1,0
+Kasumigaseki,霞ヶ関,,,25,11:32:00,0,,0.8,arriving,kasumigaseki_dep,0.1,0
+Hibiya,日比谷,,11:35:00,25,11:34:00,0,,0.8,hibiya_arr,hibiya_dep,0.1,0
+Ginza,銀座,,,25,11:36:00,0,,0.8,arriving,ginza_dep,0.1,0
+Higashiginza,東銀座,,,25,11:38:00,0,,0.8,arriving,higashiginza_dep,0.1,0
+Tsukiji,築地,,,25,11:40:00,0,,0.8,arriving,tsukiji_dep,0.1,0
+Hatchobori,八丁堀,,,25,11:42:00,0,,0.8,,hatchobori_dep,0.1,0
+Kayabacho,茅場町,,11:44:00,25,11:43:00,0,,0.8,kayabacho_arr,kayabacho_dep,0.1,0
+Ningyocho,人形町,,,25,11:46:00,0,,0.8,arriving,ningyocho_dep,0.1,0
+Kodemmacho,小伝馬町,,,25,11:47:00,0,,0.8,arriving,kodemmacho_dep,0.1,0
+Akihabara,秋葉原,,11:50:00,25,11:49:00,0,,0.8,akihabara_arr,akihabara_dep,0.1,0
+Nakaokachi,仲御徒町,,,25,11:51:00,0,,0.8,arriving,nakaokachi_dep,0.1,0
+Ueno,上野,,11:53:00,25,11:53:00,0,,0.8,ueno_arr,ueno_dep,0.1,0
+Iriya,入谷,,,25,11:55:00,0,,0.8,arriving,iriya_dep,0.1,0
+Minowa,三ノ輪,,,25,11:57:00,0,,0.8,arriving,minowa_dep,0.1,0
+Minamisenju,南千住,,,25,11:59:00,0,,0.8,arriving,minamisenju_dep,0.1,0
+Kitasenju,北千住,,t,25,12:02:00,0,,0.8,kitasenju_arr,,0.1,0

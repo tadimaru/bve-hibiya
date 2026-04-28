@@ -1,0 +1,48 @@
+BveTs Train 1.01:utf-8
+
+# 13000系 7両編成 対向列車（明・駅停車シーン用）
+# 1両 20m、車両間 0.2m 隙間 → 編成全長 = 20*7 + 0.2*6 = 141.2m
+# Span = 14（ボギー間距離） / Z = 7（中央原点モデル）
+# 7号車（D=121.2）は反転して後尾Cab向き
+
+[Structure]
+Key = Train_13000_Cab
+Distance = 0
+Span = 14
+Z = 7
+
+[Structure]
+Key = Train_13000_Mid
+Distance = 20.2
+Span = 14
+Z = 7
+
+[Structure]
+Key = Train_13000_Mid
+Distance = 40.4
+Span = 14
+Z = 7
+
+[Structure]
+Key = Train_13000_Mid
+Distance = 60.6
+Span = 14
+Z = 7
+
+[Structure]
+Key = Train_13000_Mid
+Distance = 80.8
+Span = 14
+Z = 7
+
+[Structure]
+Key = Train_13000_Mid
+Distance = 101.0
+Span = 14
+Z = 7
+
+[Structure]
+Key = Train_13000_Cab_Rear
+Distance = 121.2
+Span = 14
+Z = 7

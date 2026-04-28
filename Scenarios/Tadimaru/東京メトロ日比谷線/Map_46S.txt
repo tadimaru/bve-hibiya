@@ -1,0 +1,197 @@
+BveTs Map 2.02:utf-8
+
+# 46S 昼間ダイヤ（メトロ車） 中目黒 11:17発 北千住行
+
+Sound.Load('List_Sounds.csv');
+Structure.Load('List_Structures.csv');
+Station.Load('List_Stations_46S.csv');
+Signal.Load('List_Signal.txt');
+
+include 'Map_Body.txt';
+
+# ============================================
+# 駅ホーム待ち客 — 46S 昼間ダイヤ
+# ============================================
+# 5m間隔・8種類循環。多い駅は 1人〜3人、少ない駅は半分が空席（EmptySpot）。
+
+## 恵比寿駅 (1860〜2000m / 対向式・左ドア / 多い)
+1860;
+Repeater['Crowd_Ebisu'].Begin(0, -2.2, 0.7, 0, 0, 0, 0, 0, 0, 5,
+    'Crowd_1_01', 'Crowd_2_01', 'EmptySpot', 'Crowd_1_02',
+    'Crowd_3_01', 'EmptySpot', 'Crowd_2_02', 'Crowd_1_03');
+2000;
+Repeater['Crowd_Ebisu'].End();
+
+## 恵比寿駅 対向線 (Track[1] / 多い)
+1860;
+Repeater['Crowd_Ebisu_R'].Begin('1', 2.2, 0.7, 0, 0, 180, 0, 0, 0, 5,
+    'Crowd_1_01', 'Crowd_2_01', 'EmptySpot', 'Crowd_1_02',
+    'Crowd_3_01', 'EmptySpot', 'Crowd_2_02', 'Crowd_1_03');
+2000;
+Repeater['Crowd_Ebisu_R'].End();
+
+## 広尾駅 (3360〜3500m / 対向式・左ドア / 少ない)
+3360;
+Repeater['Crowd_Hiroo'].Begin(0, -2.2, 0.7, 0, 0, 0, 0, 0, 0, 5,
+    'EmptySpot', 'Crowd_1_01', 'EmptySpot', 'Crowd_2_01',
+    'EmptySpot', 'Crowd_1_02', 'EmptySpot', 'Crowd_2_02');
+3500;
+Repeater['Crowd_Hiroo'].End();
+
+## 広尾駅 対向線 (Track[1] / 少ない)
+3360;
+Repeater['Crowd_Hiroo_R'].Begin('1', 2.2, 0.7, 0, 0, 180, 0, 0, 0, 5,
+    'EmptySpot', 'Crowd_1_01', 'EmptySpot', 'Crowd_2_01',
+    'EmptySpot', 'Crowd_1_02', 'EmptySpot', 'Crowd_2_02');
+3500;
+Repeater['Crowd_Hiroo_R'].End();
+
+## 六本木駅 (5060〜5200m / 対向式・左ドア / 多い)
+5060;
+Repeater['Crowd_Roppongi'].Begin(0, -2.2, 0.7, 0, 0, 0, 0, 0, 0, 5,
+    'Crowd_1_01', 'Crowd_2_01', 'EmptySpot', 'Crowd_1_02',
+    'Crowd_3_01', 'EmptySpot', 'Crowd_2_02', 'Crowd_1_03');
+5200;
+Repeater['Crowd_Roppongi'].End();
+
+## 六本木駅 対向線 (Track[1] / 多い)
+5060;
+Repeater['Crowd_Roppongi_R'].Begin('1', 2.2, 0.7, 0, 0, 180, 0, 0, 0, 5,
+    'Crowd_1_01', 'Crowd_2_01', 'EmptySpot', 'Crowd_1_02',
+    'Crowd_3_01', 'EmptySpot', 'Crowd_2_02', 'Crowd_1_03');
+5200;
+Repeater['Crowd_Roppongi_R'].End();
+
+## 神谷町駅 (6360〜6500m / 対向式・左ドア / 少ない)
+6360;
+Repeater['Crowd_Kamiyacho'].Begin(0, -2.2, 0.7, 0, 0, 0, 0, 0, 0, 5,
+    'EmptySpot', 'Crowd_1_01', 'EmptySpot', 'Crowd_2_01',
+    'EmptySpot', 'Crowd_1_02', 'EmptySpot', 'Crowd_2_02');
+6500;
+Repeater['Crowd_Kamiyacho'].End();
+
+## 神谷町駅 対向線 (Track[1] / 少ない)
+6360;
+Repeater['Crowd_Kamiyacho_R'].Begin('1', 2.2, 0.7, 0, 0, 180, 0, 0, 0, 5,
+    'EmptySpot', 'Crowd_1_01', 'EmptySpot', 'Crowd_2_01',
+    'EmptySpot', 'Crowd_1_02', 'EmptySpot', 'Crowd_2_02');
+6500;
+Repeater['Crowd_Kamiyacho_R'].End();
+
+## 虎ノ門ヒルズ駅 (7160〜7300m / 対向式・左ドア / 少ない)
+7160;
+Repeater['Crowd_Toranomon'].Begin(0, -2.2, 0.7, 0, 0, 0, 0, 0, 0, 5,
+    'EmptySpot', 'Crowd_1_01', 'EmptySpot', 'Crowd_2_01',
+    'EmptySpot', 'Crowd_1_02', 'EmptySpot', 'Crowd_2_02');
+7300;
+Repeater['Crowd_Toranomon'].End();
+
+## 虎ノ門ヒルズ駅 対向線 (Track[1] / 少ない)
+7160;
+Repeater['Crowd_Toranomon_R'].Begin('1', 2.2, 0.7, 0, 0, 180, 0, 0, 0, 5,
+    'EmptySpot', 'Crowd_1_01', 'EmptySpot', 'Crowd_2_01',
+    'EmptySpot', 'Crowd_1_02', 'EmptySpot', 'Crowd_2_02');
+7300;
+Repeater['Crowd_Toranomon_R'].End();
+
+## 霞ヶ関駅 (7960〜8100m / 島式・右ドア / 多い)
+7960;
+Repeater['Crowd_Kasumigaseki'].Begin(0, 2.2, 0.7, 0, 0, 180, 0, 0, 0, 5,
+    'Crowd_1_01', 'Crowd_2_01', 'EmptySpot', 'Crowd_1_02',
+    'Crowd_3_01', 'EmptySpot', 'Crowd_2_02', 'Crowd_1_03');
+8100;
+Repeater['Crowd_Kasumigaseki'].End();
+
+## 霞ヶ関駅 対向線 (Track[1] / 島ホーム左側 / 多い)
+7960;
+Repeater['Crowd_Kasumigaseki_R'].Begin('1', -2.2, 0.7, 0, 0, 0, 0, 0, 0, 5,
+    'Crowd_1_01', 'Crowd_2_01', 'EmptySpot', 'Crowd_1_02',
+    'Crowd_3_01', 'EmptySpot', 'Crowd_2_02', 'Crowd_1_03');
+8100;
+Repeater['Crowd_Kasumigaseki_R'].End();
+
+## 日比谷駅 (9160〜9300m / 対向式・左ドア / 多い)
+9160;
+Repeater['Crowd_Hibiya'].Begin(0, -2.2, 0.7, 0, 0, 0, 0, 0, 0, 5,
+    'Crowd_1_01', 'Crowd_2_01', 'EmptySpot', 'Crowd_1_02',
+    'Crowd_3_01', 'EmptySpot', 'Crowd_2_02', 'Crowd_1_03');
+9300;
+Repeater['Crowd_Hibiya'].End();
+
+## 日比谷駅 対向線 (Track[1] / 多い)
+9160;
+Repeater['Crowd_Hibiya_R'].Begin('1', 2.2, 0.7, 0, 0, 180, 0, 0, 0, 5,
+    'Crowd_1_01', 'Crowd_2_01', 'EmptySpot', 'Crowd_1_02',
+    'Crowd_3_01', 'EmptySpot', 'Crowd_2_02', 'Crowd_1_03');
+9300;
+Repeater['Crowd_Hibiya_R'].End();
+
+# ============================================
+# 対向列車 — 46S 昼間スケジュール（距離程ベース発火）
+# ============================================
+# 設計方針:
+#   - Enable は時刻 '00:00:00' で常時OK化、距離程のみで発火
+#   - パターンA (入線): 停車駅 -200m で Enable、停車位置+500m で40km/h減速、停車位置で90秒停車
+#   - パターンB (既停車): 停車駅 -300m で Enable、停車位置で60秒長停車
+#   - パターンC (すれ違い): 駅間中点 -100m で Enable、中点+100m で1秒停車後45km/h発車
+#
+# 配置(46S 7本):
+#   Op_Light_01 A 中目黒（地上駅、Light例外）
+#   Op_Dark_01  A 恵比寿入線
+#   Op_Dark_02  C 広尾〜六本木 中点すれ違い (4350m)
+#   Op_Dark_03  C 六本木〜神谷町 中点すれ違い (5850m)
+#   Op_Dark_04  A 虎ノ門入線
+#   Op_Light_03 B 日比谷既停車（→発車する絵）
+
+# --- A 中目黒入線（Light・地上駅例外） ---
+0;
+Train['Op_Light_01'].Enable('00:00:00');
+1357; Train['Op_Light_01'].Stop(2.5, 3, 2.5, 40);
+857;  Train['Op_Light_01'].Stop(2.5, 90, 2.5, 60);
+
+# --- A 恵比寿入線（Dark） ---
+1800;
+Train['Op_Dark_01'].Enable('00:00:00');
+2357; Train['Op_Dark_01'].Stop(2.5, 3, 2.5, 40);
+1857; Train['Op_Dark_01'].Stop(2.5, 90, 2.5, 60);
+857;  Train['Op_Dark_01'].Stop(2.5, 25, 2.5, 60);
+
+# --- C 広尾〜六本木 中点すれ違い (4350m / Dark) ---
+4250;
+Train['Op_Dark_02'].Enable('00:00:00');
+4430; Train['Op_Dark_02'].Stop(2.5, 1, 2.5, 45);
+3357; Train['Op_Dark_02'].Stop(2.5, 25, 2.5, 60);
+1857; Train['Op_Dark_02'].Stop(2.5, 25, 2.5, 60);
+857;  Train['Op_Dark_02'].Stop(2.5, 25, 2.5, 60);
+
+# --- C 六本木〜神谷町 中点すれ違い (5850m / Dark) ---
+5750;
+Train['Op_Dark_03'].Enable('00:00:00');
+5930; Train['Op_Dark_03'].Stop(2.5, 1, 2.5, 45);
+5057; Train['Op_Dark_03'].Stop(2.5, 25, 2.5, 60);
+3357; Train['Op_Dark_03'].Stop(2.5, 25, 2.5, 60);
+1857; Train['Op_Dark_03'].Stop(2.5, 25, 2.5, 60);
+857;  Train['Op_Dark_03'].Stop(2.5, 25, 2.5, 60);
+
+# --- A 虎ノ門入線（Dark） ---
+7100;
+Train['Op_Dark_04'].Enable('00:00:00');
+7657; Train['Op_Dark_04'].Stop(2.5, 3, 2.5, 40);
+7157; Train['Op_Dark_04'].Stop(2.5, 90, 2.5, 60);
+6357; Train['Op_Dark_04'].Stop(2.5, 25, 2.5, 60);
+5057; Train['Op_Dark_04'].Stop(2.5, 25, 2.5, 60);
+3357; Train['Op_Dark_04'].Stop(2.5, 25, 2.5, 60);
+1857; Train['Op_Dark_04'].Stop(2.5, 25, 2.5, 60);
+857;  Train['Op_Dark_04'].Stop(2.5, 25, 2.5, 60);
+
+# --- B 日比谷既停車（Light） ---
+9000;
+Train['Op_Light_03'].Enable('00:00:00');
+9157; Train['Op_Light_03'].Stop(2.5, 60, 2.5, 60);
+7957; Train['Op_Light_03'].Stop(2.5, 25, 2.5, 60);
+7157; Train['Op_Light_03'].Stop(2.5, 25, 2.5, 60);
+6357; Train['Op_Light_03'].Stop(2.5, 25, 2.5, 60);
+5057; Train['Op_Light_03'].Stop(2.5, 25, 2.5, 60);
+3357; Train['Op_Light_03'].Stop(2.5, 25, 2.5, 60);
+1857; Train['Op_Light_03'].Stop(2.5, 25, 2.5, 60);
+857;  Train['Op_Light_03'].Stop(2.5, 25, 2.5, 60);

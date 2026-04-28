@@ -169,10 +169,10 @@
   <section id="download">
     <h2>ダウンロード</h2>
     <div class="release-box">
-      <div class="section-label">部分開業リリース</div>
-      <div class="route">中目黒 〜 六本木</div>
-      <div class="date" id="release-date">2026年4月12日 公開予定</div>
-      <a class="btn-download disabled" id="download-btn" href="#">4月12日 公開予定</a>
+      <div class="section-label">最新リリース v0.2.0</div>
+      <div class="route">中目黒 〜 日比谷</div>
+      <div class="date" id="release-date">2026年4月30日 公開予定</div>
+      <a class="btn-download disabled" id="download-btn" href="#">4月30日 公開予定</a>
     </div>
   </section>
 
@@ -181,8 +181,9 @@
     <table>
       <tr><th>対象路線</th><td>東京メトロ日比谷線</td></tr>
       <tr><th>対応ソフト</th><td>BVE Trainsim 5</td></tr>
-      <tr><th>制作区間</th><td>中目黒 〜 北千住（全21駅・約21.3km）</td></tr>
-      <tr><th>初回リリース</th><td>中目黒 〜 六本木（2026年4月12日）</td></tr>
+      <tr><th>制作区間（最終目標）</th><td>中目黒 〜 北千住（全21駅・約21.3km）</td></tr>
+      <tr><th>最新リリース</th><td>v0.2.0 中目黒 〜 日比谷（2026年4月30日）</td></tr>
+      <tr><th>同梱シナリオ</th><td>38S（朝ラッシュ・8:36発）／ 46S（昼間・11:17発）</td></tr>
       <tr><th>制作者</th><td>たでぃまる</td></tr>
     </table>
   </section>
@@ -190,13 +191,13 @@
   <section id="schedule">
     <h2>公開スケジュール</h2>
     <ul class="schedule-list">
-      <li class="current">
-        <div class="date-label">2026年4月12日</div>
-        中目黒 〜 六本木（部分開業）
+      <li class="upcoming" style="opacity:0.7;">
+        <div class="date-label">2026年4月12日 公開済</div>
+        v0.1.0 中目黒 〜 六本木（部分開業）
       </li>
-      <li class="upcoming">
-        <div class="date-label">2026年4月30日 予定</div>
-        〜 日比谷 延伸
+      <li class="current">
+        <div class="date-label">2026年4月30日 公開予定</div>
+        v0.2.0 中目黒 〜 日比谷（朝ラッシュ・対向列車追加）
       </li>
       <li class="upcoming">
         <div class="date-label">以降 順次延伸</div>
@@ -210,7 +211,8 @@
     <ol class="install-steps">
       <li><a href="https://bvets.net/" target="_blank">BVE Trainsim 5</a> をインストールしてください。</li>
       <li>上のダウンロードボタンからZIPファイルをダウンロードします。</li>
-      <li>ZIPを解凍し、<code>Scenarios</code> フォルダの中身（<code>東京メトロ日比谷線.txt</code> と <code>Tadimaru</code> フォルダ）を BVE の <code>Scenarios</code> フォルダにコピーします。</li>
+      <li>ZIPを解凍し、<code>Scenarios</code> フォルダの中身（<code>東京メトロ日比谷線-38S_北千住行.txt</code>・<code>東京メトロ日比谷線-46S_北千住行.txt</code> と <code>Tadimaru</code> フォルダ）を BVE の <code>Scenarios</code> フォルダにコピーします。</li>
+      <li>下記「使用車両について」を参考に、シナリオファイル内の <code>Vehicle =</code> 行を書き換えます。</li>
       <li>BVE を起動し、シナリオ一覧から「東京メトロ日比谷線」を選択してください。</li>
     </ol>
   </section>
@@ -218,7 +220,7 @@
   <section id="vehicle">
     <h2>使用車両について</h2>
     <p>この路線はATC（自動列車制御装置）を実装しています。動作には<strong>メトロ総合プラグイン対応の車両</strong>が必要です。</p>
-    <p style="margin-top:10px;">指定車両は設けていません。<code>Scenarios/東京メトロ日比谷線.txt</code> 内の <code>Vehicle =</code> の部分に、お好きな車両のパスを指定してください。</p>
+    <p style="margin-top:10px;">指定車両は設けていません。<code>Scenarios/</code> 内の各シナリオファイル（<code>〜-38S_北千住行.txt</code>・<code>〜-46S_北千住行.txt</code>）にある <code>Vehicle = ここにお好きな車両を指定してください</code> の行を、お手持ちの車両ファイルのパスに書き換えてください。</p>
   </section>
 
   <section id="policy">
@@ -226,7 +228,7 @@
     <table>
       <tr>
         <th>そのまま転載・再配布</th>
-        <td>❌ NG — 改変の有無にかかわらず、データをそのまま別サイト等へアップロードすることは禁止します。</td>
+        <td>❌ NG — 本データを「BVE5 東京メトロ日比谷線」の路線データとして別サイトや配布所等にアップロードすることは禁止します（改変の有無を問わず）。</td>
       </tr>
       <tr>
         <th>ストラクチャーの転用</th>
@@ -234,7 +236,17 @@
       </tr>
       <tr>
         <th>動画配信・実況</th>
-        <td>✅ OK — YouTube 等の動画サイトでの配信・実況は自由に行っていただけます。ただし、本データと他者様のデータを組み合わせた際のトラブルについては、当方は一切責任を負いません。</td>
+        <td>
+          ✅ OK — YouTube 等の動画サイトでの配信・実況は自由に行っていただけます。<br>
+          <span style="color:#666; font-size:0.95em;">
+            ※ できればで構いませんが、概要欄等に
+            <a href="https://tadimaru.github.io/bve-hibiya/" target="_blank">配布ページのリンク</a>
+            や
+            <a href="https://x.com/tadi_maru" target="_blank">X（@tadi_maru）</a>
+            を記載していただけると嬉しいです（任意）。
+          </span><br>
+          <small style="color:#888;">本データと他者様のデータを組み合わせた際のトラブルについては、当方は一切責任を負いません。</small>
+        </td>
       </tr>
     </table>
     <p style="margin-top:14px; color:#666; font-size:0.9rem;">本データの使用によって生じたいかなる損害・トラブルについても、制作者は責任を負いかねます。自己責任にてご利用ください。</p>
@@ -283,14 +295,14 @@
 
 <script>
   (function () {
-    var releaseDate = new Date('2026-04-12T00:00:00+09:00');
+    var releaseDate = new Date('2026-04-30T00:00:00+09:00');
     var now = new Date();
     if (now >= releaseDate) {
       var btn = document.getElementById('download-btn');
       btn.classList.remove('disabled');
-      btn.href = 'https://github.com/tadimaru/bve-hibiya/releases/download/v0.1.0/bve-hibiya-v0.1.0.zip';
+      btn.href = 'https://github.com/tadimaru/bve-hibiya/releases/download/v0.2.0/bve-hibiya-v0.2.0.zip';
       btn.textContent = 'ダウンロード（ZIP）';
-      document.getElementById('release-date').textContent = '2026年4月12日 公開';
+      document.getElementById('release-date').textContent = '2026年4月30日 公開';
     }
   })();
 </script>

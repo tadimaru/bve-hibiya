@@ -1,0 +1,10 @@
+BveTs Scenario 2.00 : UTF-8
+
+Title = 838S 北千住行 (8:36発・朝ラッシュ)
+Route = Tadimaru\東京メトロ日比谷線\Map_38S.txt
+RouteTitle = 東京メトロ日比谷線
+Vehicle = ここにお好きな車両を指定してください
+VehicleTitle = お好きな車両（メトロ総合プラグイン対応）をご用意ください
+Author = Tadimaru
+Image = Tadimaru\東京メトロ日比谷線\Thumb.jpg
+Comment = 朝ラッシュダイヤ 38S（メトロ車）中目黒 8:36発 北千住行の運転シナリオです。恵比寿駅と六本木駅の手前で先行列車の遅れにより影響を受けることがあります。

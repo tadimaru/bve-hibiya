@@ -1,10 +1,7 @@
 BveTs Map 2.02:utf-8
 
-Sound.Load('List_Sounds.csv');
-Structure.Load('List_Structures.csv');
-Station.Load('List_Stations.csv');
-Signal.Load('List_Signal.txt');
-
+# このファイルはシナリオ共通の路線形状・構造定義。
+# Load 宣言（Sound/Structure/Station/Signal）は各エントリマップ（Map_46S.txt / Map_38S.txt）側で行う。
 
 # 初期設定
 
@@ -23,6 +20,10 @@ Repeater['Rail'].Begin0(0,3,5,5,'Rail_01');
 Repeater['Kasen'].Begin0(0,1,5,5,'kasen');
 background.Change('BG');
 
+Repeater['Wall_L'].End();
+Repeater['Wall_R_1'].End();
+Repeater['Light_L'].End();
+Repeater['Light_R_1'].End();
 Repeater['PF_L'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L');
 Repeater['PF_L_S'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L_S');
 Repeater['PF_R_1'].Begin(1,1.5,-0.4,5,0,180,0,1,5,5,'PF_L');
@@ -166,7 +167,7 @@ Repeater['PoleHead_Main_L'].End();
 Repeater['Pole_1_R'].End();
 Repeater['PoleHead_1_R'].End();
 Repeater['Wall_L'].Begin0(0,1,5,5,'Wall_L_01');
-Repeater['Wall_R'].Begin0(0,1,3,3,'Wall_R_02');
+Repeater['Wall_R'].Begin(0,-0.2,0,0,0,0,0,1,3,3,'Wall_R_02');
 Repeater['Rail'].Begin0(0,3,5,5,'Rail_03');
 Repeater['Rail_1'].Begin0(1,3,5,5,'Rail_03');
 Repeater['Rail_Side_L'].End();
@@ -197,6 +198,8 @@ Repeater['Wall_ToyokoD'].End();
 Repeater['Wall_ToyokoU'].End();
 Repeater['Wall_ToyokoU_Top'].End();
 Repeater['Wall_ToyokoD_Top'].End();
+Repeater['Wall_ToyokoU_Top_L'].End();
+Repeater['Wall_ToyokoD_Top_R'].End();
 
 ## 恵比寿 (1.0km) - 対向式:左ドア
 1855;
@@ -216,7 +219,7 @@ Repeater['Top_1'].Begin0(1,1,5,5,'Top');
 Repeater['Sta_Wall_L'].Begin(0,-7,-0.4,0,0,0,0,1,5,5,'Sta_Wall_L');
 Repeater['Sta_Wall_R_1'].Begin(1,5,-0.4,5,0,180,0,1,5,5,'Sta_Wall_L_01');
 Repeater['Sta_Wall_L'].Begin(0,-5,-0.4,0,0,0,0,1,5,5,'Sta_Wall_L_01');
-Repeater['Wall_R'].Begin0(0,1,8,8,'Wall_R_03');
+Repeater['Wall_R'].Begin(0,-0.2,0,0,0,0,0,1,8,8,'Wall_R_03');
 Repeater['Rail'].Begin0(0,3,5,5,'Rail_04');
 Repeater['Rail_1'].Begin0(1,3,5,5,'Rail_04');
 
@@ -267,7 +270,7 @@ Repeater['Ekimei_Ebisu_R'].End();
 Repeater['Sta_Wall_L'].Begin(0,-6.5,-0.4,0,0,0,0,1,5,5,'Sta_Wall_L_01');
 
 1910;
-Repeater['Sta_Pole_L'].Begin(0,-2.5,0,0,0,0,0,0,5,5,'Pole_01');
+Repeater['Sta_Pole_L'].Begin(0,-3.2,-0.4,0,0,0,0,0,5,5,'Pole_01');
 
 1918;
 Structure['kimasu'].Put(0,-2,3.5,0,0,0,0,0,0);
@@ -342,14 +345,14 @@ Repeater['Sta_Wall_R_1'].End();
 Repeater['Ekimei_Ebisu_L'].End();
 Repeater['Ekimei_Ebisu_R'].End();
 Structure['Sta_Wall_F_01'].Put(0,-1.5,-0.4,0,0,0,0,0,0);
-Structure['Sta_Wall_F_01'].Put('1',1.5,-0.4,5,0,180,0,0,0);
+Structure['Sta_Wall_F_01'].Put('1',1.5,-0.4,0,0,180,0,0,0);
 Repeater['Sta_Wall_L'].End();
 Repeater['PF_R_1'].End();
 Repeater['PF_R_S_1'].End();
 
 Repeater['Wall_L'].Begin0(0,1,5,5,'Wall_L_01');
 Repeater['Light_L'].Begin(0,-1.95,0,0,0,0,0,1,5,25,'light');
-Repeater['Wall_R'].Begin0(0,1,3,3,'Wall_R_02');
+Repeater['Wall_R'].Begin(0,-0.2,0,0,0,0,0,1,3,3,'Wall_R_02');
 Repeater['Wall_R_1'].Begin0(1,1,5,5,'Wall_R_01');
 Repeater['Top_1'].Begin0(1,1,5,5,'Top');
 Repeater['Rail'].Begin0(0,3,5,5,'Rail_03');
@@ -362,7 +365,7 @@ Sound['hiroo_next'].Play();
 3355;
 Repeater['Wall_L'].End();
 Repeater['Light_L'].End();
-Repeater['Wall_R'].Begin0(0,1,8,8,'Wall_R_03');
+Repeater['Wall_R'].Begin(0,-0.2,0,0,0,0,0,1,8,8,'Wall_R_03');
 Repeater['Wall_R_1'].End();
 Repeater['Top_1'].End();
 Repeater['Rail'].Begin0(0,3,5,5,'Rail_04');
@@ -484,7 +487,7 @@ Repeater['PF_R_1'].End();
 Repeater['PF_R_S_1'].End();
 Repeater['Wall_L'].Begin0(0,1,5,5,'Wall_L_01');
 Repeater['Light_L'].Begin(0,-1.95,0,0,0,0,0,1,5,25,'light');
-Repeater['Wall_R'].Begin0(0,1,3,3,'Wall_R_02');
+Repeater['Wall_R'].Begin(0,-0.2,0,0,0,0,0,1,3,3,'Wall_R_02');
 Repeater['Wall_R_1'].Begin0(1,1,5,5,'Wall_R_01');
 Repeater['Top_1'].Begin0(1,1,5,5,'Top');
 Repeater['Rail'].Begin0(0,3,5,5,'Rail_03');
@@ -510,7 +513,7 @@ Track['XoverH'].X.Interpolate(1.75, -180);
 Track['XoverH'].X.Interpolate(3.5, 0);
 Repeater['Rail_XoverH'].End();
 Repeater['Kasen_XoverH'].End();
-Repeater['Wall_R'].Begin0(0,1,3,3,'Wall_R_02');
+Repeater['Wall_R'].Begin(0,-0.2,0,0,0,0,0,1,3,3,'Wall_R_02');
 Repeater['Wall_R_1'].End();
 Repeater['Rail_Siding'].Begin0('Siding',3,5,5,'Rail_03');
 Repeater['Wall_R_Siding'].Begin0('Siding',1,5,5,'Wall_R_01');
@@ -548,7 +551,7 @@ Repeater['Kasen_Siding'].End();
 5055;
 Repeater['Wall_L'].End();
 Repeater['Light_L'].End();
-Repeater['Wall_R'].Begin0(0,1,8,8,'Wall_R_03');
+Repeater['Wall_R'].Begin(0,-0.2,0,0,0,0,0,1,8,8,'Wall_R_03');
 Repeater['Wall_R_1'].End();
 Repeater['Top_1'].End();
 Repeater['Rail'].Begin0(0,3,5,5,'Rail_04');
@@ -639,7 +642,7 @@ Structure['kokoku_zasshi'].Put('1',7,2.3,0,0,180,0,0,0);
 5177;
 Structure['eakon'].Put(0,-7,3.2,0,0,0,0,0,0);
 Structure['eakon'].Put('1',7,3.2,0,0,180,0,0,0);
-Structure['exsit_norikae'].Put(0,0,4,0,0,0,0,0,0);
+Structure['exsit_norikae'].Put(0,-3.3,3.3,0,0,0,0,0,0);
 
 5190;
 Structure['hassyahyo'].Put(0,-3.7,3.4,0,0,0,0,0,0);
@@ -654,8 +657,6 @@ Station['Roppongi'].Put(-1, -2, 2);
 Structure['mokuhyo'].Put0('0',3,0);
 
 5205;
-Repeater['Kasen'].End();
-Repeater['Kasen_1'].End();
 Repeater['Stripe_Roppongi_L'].End();
 Repeater['Stripe_Roppongi_R'].End();
 Repeater['Ekimei_Roppongi_L'].End();
@@ -675,7 +676,7 @@ Repeater['PF_R_1'].End();
 Repeater['PF_R_S_1'].End();
 Repeater['Wall_L'].Begin0(0,1,5,5,'Wall_L_01');
 Repeater['Light_L'].Begin(0,-1.95,0,0,0,0,0,1,5,25,'light');
-Repeater['Wall_R'].Begin0(0,1,3,3,'Wall_R_02');
+Repeater['Wall_R'].Begin(0,-0.2,0,0,0,0,0,1,3,3,'Wall_R_02');
 Repeater['Wall_R_1'].Begin0(1,1,5,5,'Wall_R_01');
 Repeater['Top_1'].Begin0(1,1,5,5,'Top');
 Repeater['Rail'].Begin0(0,3,5,5,'Rail_03');
@@ -686,123 +687,709 @@ Sound['kamiyacho_next'].Play();
 
 ## 神谷町 (5.5km) - 左
 6355;
-Repeater['PF_L'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L');
-Repeater['PF_L_S'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L_S');
-Repeater['Sta_Top_L'].Begin(0,-1.5,0,0,0,0,0,1,5,5,'Sta_Top_L');
-Repeater['Sta_Top_R'].Begin(1,1.5,0,0,0,0,0,1,5,5,'Sta_Top_R');
-Repeater['Top_1'].Begin0(1,1,5,5,'Top');
-Repeater['Sta_Wall_L'].Begin(0,-7,-0.4,0,0,0,0,1,5,5,'Sta_Wall_L');
-Repeater['Sta_Wall_R_1'].Begin(1,7,-0.4,0,0,0,0,1,5,5,'Sta_Wall_R');
+Repeater['Wall_L'].End();
+Repeater['Wall_R'].End();
+Repeater['Wall_R_1'].End();
+Repeater['Light_L'].End();
+Repeater['Light_R_1'].End();
+Repeater['Rail'].Begin0(0,3,5,5,'Rail_04');
+Repeater['Rail_1'].Begin0(1,3,5,5,'Rail_04');
+Repeater['Wall_R'].Begin(0,-0.2,0,0,0,0,0,1,8,8,'Wall_R_03');
+Structure['HomeDoor_ST'].Put(0,-1.7,0.7,0,0,0,0,1,0);
+Structure['HomeDoor_END'].Put(1,1.7,0.7,5,0,180,0,1,0);
+Repeater['PF_L'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L_01');
+Repeater['PF_L_S'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L_S_01');
+Repeater['PF_R_1'].Begin('1',1.5,-0.4,5,0,180,0,1,5,5,'PF_L_01');
+Repeater['PF_R_S_1'].Begin('1',1.5,-0.4,5,0,180,0,1,5,5,'PF_L_S_01');
+Repeater['Sta_Top_L'].Begin(0,-1.5,0,0,0,0,0,1,5,5,'Sta_Top_L_01');
+Repeater['Sta_Top_R'].Begin('1',1.5,0,5,0,180,0,1,5,5,'Sta_Top_L_01');
+Repeater['Sta_Wall_L'].Begin(0,-5,-0.4,0,0,0,0,1,5,5,'Sta_Wall_L_07');
+Repeater['Sta_Wall_R_1'].Begin(1,7,-0.4,5,0,180,0,1,5,5,'Sta_Wall_L_04');
+Repeater['Line_color_L'].Begin(0,-5,0.3,0,0,0,0,1,5,5,'Line_color_L');
+Repeater['Line_color_R_1'].Begin(1,7,0.3,5,0,180,0,1,5,5,'Line_color_L');
+
+6360;
+Repeater['HomeDoor_L'].Begin(0,-1.7,0.7,0,0,0,0,1,5,5,'HomeDoor');
+Repeater['HomeDoor_R_1'].Begin(1,1.7,0.7,0,0,0,0,1,5,5,'HomeDoor_R');
+Structure['monita'].Put(0,-2.2,3.4,0,0,0,0,0,0);
+
+# 神谷町駅名表示 (ラインカラー高さ Y=2.8、壁段差に追従)
+Repeater['Ekimei_Kamiya_L1'].Begin(0,-5,3.1,0,0,0,0,1,15,15,'ekimei_small');
+Repeater['Ekimei_Kamiya_R'].Begin('1',7,3.1,5,0,180,0,1,15,15,'ekimei_small');
+
+# 神谷町サイン (壁X=-5区間: 6365-6386m)
+6365;
+Structure['eakon'].Put(0,-5,3.2,0,0,0,0,0,0);
+Structure['eakon'].Put('1',7,3.2,0,0,180,0,0,0);
+
+6370;
+Structure['ikisaki'].Put(0,-3.3,3.5,0,0,0,0,0,0);
+Structure['ikisaki'].Put('1',3.3,3.5,0,0,180,0,0,0);
+
+6371;
+Structure['kokoku_zasshi'].Put(0,-5,2.3,0,0,0,0,0,0);
+Structure['kokoku_zasshi'].Put('1',7,2.3,0,0,180,0,0,0);
+
+6378;
+Structure['info_big'].Put(0,-5,2.8,0,0,0,0,0,0);
+Structure['info_big'].Put('1',7,2.8,0,0,180,0,0,0);
+
+6385;
+Structure['hassyahyo'].Put(0,-3.7,3.4,0,0,0,0,0,0);
+Structure['hassyahyo'].Put('1',3.7,3.4,0,0,180,0,0,0);
+
+6386;
+Structure['kokoku_white'].Put(0,-5,2.3,0,0,0,0,0,0);
+Structure['kokoku_white'].Put('1',7,2.3,0,0,180,0,0,0);
+
+6390;
+Structure['kimasu'].Put(0,-2.5,3.5,0,0,0,0,0,0);
+Structure['kimasu'].Put('1',2.5,3.5,0,0,180,0,0,0);
+
+# 神谷町ホーム壁 段差: 6395m で X=-5 → -8 に拡張（2両分先で広がる）
+6395;
+Repeater['Sta_Wall_L'].End();
+Repeater['Sta_Wall_L'].Begin(0,-8,-0.4,0,0,0,0,1,5,5,'Sta_Wall_L_07');
+Repeater['Line_color_L'].End();
+Repeater['Line_color_L'].Begin(0,-8,0.3,0,0,0,0,1,5,5,'Line_color_L');
+Repeater['Sta_Top_L'].End();
+Repeater['Sta_Top_L'].Begin(0,-1.5,0,0,0,0,0,1,5,5,'Sta_Top_L_03');
+Repeater['Ekimei_Kamiya_L1'].End();
+Repeater['Ekimei_Kamiya_L2'].Begin(0,-8,3.1,0,0,0,0,1,15,15,'ekimei_small');
+
+# 神谷町ホーム柱: 6400〜6450m まで5m間隔で配置（X=-4）
+6400;
+Repeater['Pole_Kamiyacho'].Begin(0,-4,0,0,0,0,0,1,5,5,'Pole_05');
+
+# 神谷町サイン (壁X=-8区間: 6402-6443m)
+6402;
+Structure['eakon'].Put(0,-8,3.2,0,0,0,0,0,0);
+Structure['eakon'].Put('1',7,3.2,0,0,180,0,0,0);
+
+6411;
+Structure['info_big'].Put(0,-8,2.8,0,0,0,0,0,0);
+Structure['info_big'].Put('1',7,2.8,0,0,180,0,0,0);
+
+6412.5;
+Structure['ikisaki'].Put(0,-3.3,3.5,0,0,0,0,0,0);
+Structure['ikisaki'].Put('1',3.3,3.5,0,0,180,0,0,0);
+
+6415;
+Structure['kimasu'].Put(0,-2.5,3.5,0,0,0,0,0,0);
+Structure['kimasu'].Put('1',2.5,3.5,0,0,180,0,0,0);
+
+6422;
+Structure['kokoku_white'].Put(0,-8,2.3,0,0,0,0,0,0);
+Structure['kokoku_white'].Put('1',7,2.3,0,0,180,0,0,0);
+
+6427.5;
+Structure['hassyahyo'].Put(0,-3.7,3.4,0,0,0,0,0,0);
+Structure['hassyahyo'].Put('1',3.7,3.4,0,0,180,0,0,0);
+
+6432;
+Structure['kokoku_zasshi'].Put(0,-8,2.3,0,0,0,0,0,0);
+Structure['kokoku_zasshi'].Put('1',7,2.3,0,0,180,0,0,0);
+
+6443;
+Structure['eakon'].Put(0,-8,3.2,0,0,0,0,0,0);
+Structure['eakon'].Put('1',7,3.2,0,0,180,0,0,0);
+
+6450;
+Repeater['Pole_Kamiyacho'].End();
+
+# 神谷町ホーム壁 段差: 6455m で X=-8 → -4.5 に縮小（最後の2.5両分は狭い）
+6455;
+Structure['hassyahyo'].Put(0,-3.7,3.4,0,0,0,0,0,0);
+Structure['hassyahyo'].Put('1',3.7,3.4,0,0,180,0,0,0);
+Structure['Sta_Wall_F_04_2'].Put(0,-4.5,-0.4,0,0,0,0,0,0);
+Repeater['Sta_Wall_L'].End();
+Repeater['Sta_Wall_L'].Begin(0,-4.5,-0.4,0,0,0,0,1,5,5,'Sta_Wall_L_04');
+Repeater['Line_color_L'].End();
+Repeater['Line_color_L'].Begin(0,-4.5,0.3,0,0,0,0,1,5,5,'Line_color_L');
+Repeater['Sta_Top_L'].End();
+Repeater['Sta_Top_L'].Begin(0,-1.5,0,0,0,0,0,1,5,5,'Sta_Top_L_01');
+Repeater['Ekimei_Kamiya_L2'].End();
+
+# 駅名表示 L3 開始: 壁段差(6455m)の少し先から
+6460;
+Repeater['Ekimei_Kamiya_L3'].Begin(0,-4.5,3.1,0,0,0,0,1,15,15,'ekimei_small');
+
+# 神谷町サイン (壁X=-4.5区間: 6462-6488m)
+6462;
+Structure['info_big'].Put(0,-4.5,2.8,0,0,0,0,0,0);
+Structure['info_big'].Put('1',7,2.8,0,0,180,0,0,0);
+
+6465;
+Structure['ikisaki'].Put(0,-3.3,3.5,0,0,0,0,0,0);
+Structure['ikisaki'].Put('1',3.3,3.5,0,0,180,0,0,0);
+
+6475;
+Structure['kokoku_zasshi'].Put(0,-4.5,2.3,0,0,0,0,0,0);
+Structure['kokoku_zasshi'].Put('1',7,2.3,0,0,180,0,0,0);
+
+6488;
+Structure['kokoku_white'].Put(0,-4.5,2.3,0,0,0,0,0,0);
+Structure['kokoku_white'].Put('1',7,2.3,0,0,180,0,0,0);
 
 6500;
-#Station['Kamiyacho'].Put(-1, -2, 2);
+Repeater['Ekimei_Kamiya_L3'].End();
+Repeater['Ekimei_Kamiya_R'].End();
+Station['Kamiyacho'].Put(-1, -2, 2);
 Structure['mokuhyo'].Put0('0',3,0);
+Repeater['HomeDoor_L'].End();
+Repeater['HomeDoor_R_1'].End();
+Structure['HomeDoor_END'].Put(0,-1.7,0.7,0,0,0,0,1,0);
+Structure['HomeDoor_ST'].Put(1,1.7,0.7,5,0,180,0,1,0);
 
 6505;
 Repeater['PF_L'].End();
 Repeater['PF_L_S'].End();
+Repeater['PF_R_1'].End();
+Repeater['PF_R_S_1'].End();
 Repeater['Sta_Top_L'].End();
 Repeater['Sta_Top_R'].End();
-Repeater['Top_1'].End();
 Repeater['Sta_Wall_L'].End();
 Repeater['Sta_Wall_R_1'].End();
-Structure['Sta_Wall_F'].Put(0,-1.5,-0.4,0,0,0,0,0,0);
-Structure['Sta_Wall_F'].Put('1',1.5,-0.4,0,0,180,0,0,0);
+Repeater['Line_color_L'].End();
+Repeater['Line_color_R_1'].End();
+Structure['Sta_Wall_F_04'].Put(0,-1.5,-0.4,0,0,0,0,0,0);
+Structure['Sta_Wall_F_04'].Put('1',1.5,-0.4,0,0,180,0,0,0);
+Repeater['Wall_L'].Begin0(0,1,5,5,'Wall_L_01');
+Repeater['Wall_R'].End();
+Repeater['Wall_R'].Begin(0,-0.2,0,0,0,0,0,1,3,3,'Wall_R_02');
+Repeater['Wall_R_1'].Begin('1',0,0,5,0,180,0,1,5,5,'Wall_L_01');
+Repeater['Light_L'].Begin(0,-1.95,0,0,0,0,0,1,5,25,'light');
+Repeater['Light_R_1'].Begin('1',1.95,0,5,0,180,0,1,5,25,'light');
+Repeater['Rail'].Begin0(0,3,5,5,'Rail_03');
+Repeater['Rail_1'].Begin0(1,3,5,5,'Rail_03');
 
 6550;
 Sound['toranomon_next'].Play();
 
 ## 虎ノ門ヒルズ (6.3km) - 左
 7155;
-Repeater['PF_L'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L');
-Repeater['PF_L_S'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L_S');
-Repeater['Sta_Top_L'].Begin(0,-1.5,0,0,0,0,0,1,5,5,'Sta_Top_L');
-Repeater['Sta_Top_R'].Begin(1,1.5,0,0,0,0,0,1,5,5,'Sta_Top_R');
-Repeater['Top_1'].Begin0(1,1,5,5,'Top');
-Repeater['Sta_Wall_L'].Begin(0,-7,-0.4,0,0,0,0,1,5,5,'Sta_Wall_L');
-Repeater['Sta_Wall_R_1'].Begin(1,7,-0.4,0,0,0,0,1,5,5,'Sta_Wall_R');
+Repeater['Wall_L'].End();
+Repeater['Wall_R'].End();
+Repeater['Wall_R_1'].End();
+Repeater['Light_L'].End();
+Repeater['Light_R_1'].End();
+Repeater['Rail'].Begin0(0,3,5,5,'Rail_04');
+Repeater['Rail_1'].Begin0(1,3,5,5,'Rail_04');
+Repeater['Wall_R'].Begin(0,-0.2,0,0,0,0,0,1,8,8,'Wall_R_03');
+Structure['HomeDoor_ST'].Put(0,-1.7,0.7,0,0,0,0,1,0);
+Structure['HomeDoor_END'].Put(1,1.7,0.7,5,0,180,0,1,0);
+Repeater['PF_L'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L_06');
+Repeater['PF_L_S'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L_S_05');
+Repeater['PF_R_1'].Begin('1',1.5,-0.4,5,0,180,0,1,5,5,'PF_L_06');
+Repeater['PF_R_S_1'].Begin('1',1.5,-0.4,5,0,180,0,1,5,5,'PF_L_S_05');
+Repeater['Sta_Top_L'].Begin(0,-1.5,0,0,0,0,0,1,5,5,'Sta_Top_L_04');
+Repeater['Sta_Top_R'].Begin('1',1.5,0,5,0,180,0,1,5,5,'Sta_Top_L_04');
+Repeater['Sta_Wall_L'].Begin(0,-8,-0.4,0,0,0,0,1,5,5,'Sta_Wall_L_05');
+Repeater['Sta_Wall_R_1'].Begin(1,7,-0.4,5,0,180,0,1,5,5,'Sta_Wall_L_05');
+
+7160;
+Repeater['HomeDoor_L'].Begin(0,-1.7,0.7,0,0,0,0,1,5,5,'HomeDoor');
+Repeater['HomeDoor_R_1'].Begin(1,1.7,0.7,0,0,0,0,1,5,5,'HomeDoor_R');
+Structure['monita'].Put(0,-2.2,3.4,0,0,0,0,0,0);
+
+# 虎ノ門ヒルズ駅名表示 (大・恵比寿駅と同形式 / 壁段差に追従)
+Repeater['Ekimei_Toranomon_L1'].Begin(0,-8,2.5,0,0,0,0,1,5,25,'ekimei_big');
+Repeater['Ekimei_Toranomon_R'].Begin('1',7,2.5,5,0,180,0,1,5,25,'ekimei_big');
+
+# 虎ノ門ヒルズホーム柱: 7160〜7225m まで7m間隔・X=-3.5 / X=-7 の2列で配置
+Repeater['Pole_Toranomon_A'].Begin(0,-3.5,0,0,0,0,0,1,7,7,'Pole_06');
+Repeater['Pole_Toranomon_B'].Begin(0,-7,0,0,0,0,0,1,7,7,'Pole_06');
+
+# 虎ノ門ヒルズサイン (壁X=-8区間: 7165-7224m)
+7165;
+Structure['eakon'].Put(0,-8,3.2,0,0,0,0,0,0);
+Structure['eakon'].Put('1',7,3.2,0,0,180,0,0,0);
+
+7172;
+Structure['kokoku_white'].Put(0,-8,2.3,0,0,0,0,0,0);
+Structure['kokoku_white'].Put('1',7,2.3,0,0,180,0,0,0);
+
+7180;
+Structure['info_big'].Put(0,-8,2.8,0,0,0,0,0,0);
+Structure['info_big'].Put('1',7,2.8,0,0,180,0,0,0);
+
+7188;
+Structure['ikisaki'].Put(0,-3.3,3.5,0,0,0,0,0,0);
+Structure['ikisaki'].Put('1',3.3,3.5,0,0,180,0,0,0);
+
+7191;
+Structure['kokoku_zasshi'].Put(0,-8,2.3,0,0,0,0,0,0);
+Structure['kokoku_zasshi'].Put('1',7,2.3,0,0,180,0,0,0);
+
+7203;
+Structure['eakon'].Put(0,-8,3.2,0,0,0,0,0,0);
+Structure['eakon'].Put('1',7,3.2,0,0,180,0,0,0);
+
+7213;
+Structure['hassyahyo'].Put(0,-3.2,3.4,0,0,0,0,0,0);
+Structure['hassyahyo'].Put('1',3.2,3.4,0,0,180,0,0,0);
+
+7214;
+Structure['info_big'].Put(0,-8,2.8,0,0,0,0,0,0);
+Structure['info_big'].Put('1',7,2.8,0,0,180,0,0,0);
+
+7224;
+Structure['kokoku_white'].Put(0,-8,2.3,0,0,0,0,0,0);
+Structure['kokoku_white'].Put('1',7,2.3,0,0,180,0,0,0);
+
+7225;
+Repeater['Pole_Toranomon_A'].End();
+Repeater['Pole_Toranomon_B'].End();
+
+7228;
+Structure['ikisaki'].Put(0,-3.3,3.5,0,0,0,0,0,0);
+Structure['ikisaki'].Put('1',3.3,3.5,0,0,180,0,0,0);
+
+# 虎ノ門ヒルズホーム壁 段差: 7230m で X=-8 → -5 に縮小（中間以降は狭い）
+7230;
+Structure['Sta_Wall_F_05'].Put(0,-5,-0.4,0,0,0,0,0,0);
+Repeater['Sta_Wall_L'].End();
+Repeater['Sta_Wall_L'].Begin(0,-5,-0.4,0,0,0,0,1,5,5,'Sta_Wall_L_05');
+Repeater['Sta_Top_L'].End();
+Repeater['Sta_Top_L'].Begin(0,-1.5,0,0,0,0,0,1,5,5,'Sta_Top_L_04');
+Repeater['Ekimei_Toranomon_L1'].End();
+
+# 駅名表示 L2 開始: 壁段差(7230m)の少し先から
+7235;
+Repeater['Ekimei_Toranomon_L2'].Begin(0,-5,2.5,0,0,0,0,1,5,25,'ekimei_big');
+
+# 虎ノ門ヒルズサイン (壁X=-5区間: 7240-7287m)
+7240;
+Structure['kokoku_zasshi'].Put(0,-5,2.3,0,0,0,0,0,0);
+Structure['kokoku_zasshi'].Put('1',7,2.3,0,0,180,0,0,0);
+
+7253;
+Structure['hassyahyo'].Put(0,-3.2,3.4,0,0,0,0,0,0);
+Structure['hassyahyo'].Put('1',3.2,3.4,0,0,180,0,0,0);
+
+7252;
+Structure['eakon'].Put(0,-5,3.2,0,0,0,0,0,0);
+Structure['eakon'].Put('1',7,3.2,0,0,180,0,0,0);
+
+7263;
+Structure['info_big'].Put(0,-5,2.8,0,0,0,0,0,0);
+Structure['info_big'].Put('1',7,2.8,0,0,180,0,0,0);
+
+7268;
+Structure['ikisaki'].Put(0,-3.3,3.5,0,0,0,0,0,0);
+Structure['ikisaki'].Put('1',3.3,3.5,0,0,180,0,0,0);
+
+7275;
+Structure['kokoku_white'].Put(0,-5,2.3,0,0,0,0,0,0);
+Structure['kokoku_white'].Put('1',7,2.3,0,0,180,0,0,0);
+
+7287;
+Structure['kokoku_zasshi'].Put(0,-5,2.3,0,0,0,0,0,0);
+Structure['kokoku_zasshi'].Put('1',7,2.3,0,0,180,0,0,0);
 
 7300;
-#Station['Toranomon'].Put(-1, -2, 2);
+Repeater['Ekimei_Toranomon_L2'].End();
+Repeater['Ekimei_Toranomon_R'].End();
+Station['Toranomon'].Put(-1, -2, 2);
 Structure['mokuhyo'].Put0('0',3,0);
+Repeater['HomeDoor_L'].End();
+Repeater['HomeDoor_R_1'].End();
+Structure['HomeDoor_END'].Put(0,-1.7,0.7,0,0,0,0,1,0);
+Structure['HomeDoor_ST'].Put(1,1.7,0.7,5,0,180,0,1,0);
 
 7305;
 Repeater['PF_L'].End();
 Repeater['PF_L_S'].End();
+Repeater['PF_R_1'].End();
+Repeater['PF_R_S_1'].End();
 Repeater['Sta_Top_L'].End();
 Repeater['Sta_Top_R'].End();
-Repeater['Top_1'].End();
 Repeater['Sta_Wall_L'].End();
 Repeater['Sta_Wall_R_1'].End();
-Structure['Sta_Wall_F'].Put(0,-1.5,-0.4,0,0,0,0,0,0);
-Structure['Sta_Wall_F'].Put('1',1.5,-0.4,0,0,180,0,0,0);
+Structure['Sta_Wall_F_05'].Put(0,-1.5,-0.4,0,0,0,0,0,0);
+Structure['Sta_Wall_F_05'].Put('1',1.5,-0.4,0,0,180,0,0,0);
+Repeater['Wall_L'].Begin0(0,1,5,5,'Wall_L_01');
+Repeater['Wall_R'].End();
+Repeater['Wall_R'].Begin(0,-0.2,0,0,0,0,0,1,3,3,'Wall_R_02');
+Repeater['Wall_R_1'].Begin('1',0,0,5,0,180,0,1,5,5,'Wall_L_01');
+Repeater['Light_L'].Begin(0,-1.95,0,0,0,0,0,1,5,25,'light');
+Repeater['Light_R_1'].Begin('1',1.95,0,5,0,180,0,1,5,25,'light');
+Repeater['Rail'].Begin0(0,3,5,5,'Rail_03');
+Repeater['Rail_1'].Begin0(1,3,5,5,'Rail_03');
 
 7350;
 Sound['kasumigaseki_next'].Play();
 
 ## 霞ヶ関 (7.1km) - 島式:右
+
+# 対向線分離手前 100m から線路間柱(Wall_R_01) を設置
+7590;
+Repeater['Wall_R'].End();
+Repeater['Wall_R'].Begin0(0,1,5,5,'Wall_R_01');
+
+# 引き上げ線配線
+7690;
+Repeater['Rail_Side_02'].Begin0(0,1,5,5,'Rail_Side_02');
+Repeater['Rail_Side_02_1'].Begin0(1,1,5,5,'Rail_Side_02');
+Repeater['Top_Side_01'].Begin0(0,1,5,5,'Top_Side_01');
+Repeater['Top_Side_01_1'].Begin0(1,1,5,5,'Top_Side_01');
+Track['1'].X.Interpolate(3.5, 137);
+
+7717;
+Track['1'].X.Interpolate(6.25, -137);
+
+7745;
+Track['1'].X.Interpolate(9, 0);
+Track['2'].X.Interpolate(4.5);
+Track['2'].Y.Interpolate(0);
+Repeater['Rail_2'].Begin0('2',3,5,5,'Rail_03');
+Repeater['Kasen_2'].Begin0('2',1,5,5,'kasen');
+Repeater['Top_2'].Begin0('2',1,5,5,'Top');
+Repeater['Rail_Side_02_2'].Begin0('2',1,5,5,'Rail_Side_02');
+Repeater['Top_Side_01_2'].Begin0('2',1,5,5,'Top_Side_01');
+Repeater['Wall_R'].End();
+Repeater['Wall_R'].Begin(0,-0.2,0,0,0,0,0,1,3,3,'Wall_R_02');
+Repeater['Wall_R_2'].Begin0('2',1,3,3,'Wall_R_02');
+
+7895;
+Track['2'].X.Interpolate(4.5, -200);
+Track['3'].X.Interpolate(4.5, 200);
+Track['3'].Y.Interpolate(0);
+Repeater['Rail_3'].Begin0('3',3,5,5,'Rail_03');
+Repeater['Kasen_3'].Begin0('3',1,5,5,'kasen');
+Repeater['Top_3'].Begin0('3',1,5,5,'Top');
+Repeater['Rail_Side_02_3'].Begin0('3',1,5,5,'Rail_Side_02');
+Repeater['Top_Side_01_3'].Begin0('3',1,5,5,'Top_Side_01');
+Repeater['Wall_R'].End();
+Repeater['Wall_R_2'].End();
+
+7925;
+Track['2'].X.Interpolate(2.25, 200);
+Track['3'].X.Interpolate(6.75, -200);
+
 7955;
-Repeater['PF_L'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L');
-Repeater['PF_L_S'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L_S');
-Repeater['Sta_Top_L'].Begin(0,-1.5,0,0,0,0,0,1,5,5,'Sta_Top_L');
-Repeater['Sta_Top_R'].Begin(1,1.5,0,0,0,0,0,1,5,5,'Sta_Top_R');
-Repeater['Top_1'].Begin0(1,1,5,5,'Top');
-Repeater['Sta_Wall_L'].Begin(0,-7,-0.4,0,0,0,0,1,5,5,'Sta_Wall_L');
-Repeater['Sta_Wall_R_1'].Begin(1,7,-0.4,0,0,0,0,1,5,5,'Sta_Wall_R');
+Track['2'].X.Interpolate(0, 0);
+Track['3'].X.Interpolate(9, 0);
+Repeater['Rail_2'].End();
+Repeater['Rail_3'].End();
+Repeater['Kasen_2'].End();
+Repeater['Kasen_3'].End();
+Repeater['Top_2'].End();
+Repeater['Top_3'].End();
+Repeater['Rail_Side_02'].End();
+Repeater['Rail_Side_02_1'].End();
+Repeater['Rail_Side_02_2'].End();
+Repeater['Rail_Side_02_3'].End();
+Repeater['Top_Side_01'].End();
+Repeater['Top_Side_01_1'].End();
+Repeater['Top_Side_01_2'].End();
+Repeater['Top_Side_01_3'].End();
+
+# 霞ケ関ホーム
+Repeater['Light_L'].End();
+Repeater['Light_R_1'].End();
+Repeater['Rail'].Begin0(0,3,5,5,'Rail_04');
+Repeater['Rail_1'].Begin0(1,3,5,5,'Rail_04');
+Structure['HomeDoor_ST'].Put(0,1.7,0.7,5,0,180,0,1,0);
+Structure['HomeDoor_END'].Put('1',-1.7,0.7,5,0,180,0,1,0);
+Structure['Sta_Wall_F_06_2'].Put(0,1.5,-0.4,0,0,0,0,0,0);
+Repeater['Wall_L'].Begin0(0,1,5,5,'Wall_L_kasumi');
+Repeater['Wall_R_1'].Begin('1',0,0,5,0,180,0,1,5,5,'Wall_L_kasumi');
+Repeater['Line_color_L'].Begin(0,-2,0,0,0,0,0,1,5,5,'Line_color_L');
+Repeater['Line_color_R_1'].Begin('1',2,0,5,0,180,0,1,5,5,'Line_color_L');
+Repeater['PF_R'].Begin(0,1.5,-0.4,5,0,180,0,1,5,5,'PF_L_02');
+Repeater['PF_R_S'].Begin(0,1.5,-0.4,5,0,180,0,1,5,5,'PF_L_S_03');
+Repeater['PF_R_1'].Begin('1',-1.5,-0.4,0,0,0,0,1,5,5,'PF_L_02');
+Repeater['PF_R_S_1'].Begin('1',-1.5,-0.4,0,0,0,0,1,5,5,'PF_L_S_03');
+Repeater['Sta_Top_R'].Begin(0,1.5,0,5,0,180,0,1,5,5,'Sta_Top_L_01');
+Repeater['Sta_Top_L_1'].Begin('1',-1.5,0,0,0,0,0,1,5,5,'Sta_Top_L_01');
+
+7960;
+Repeater['HomeDoor_L'].Begin(0,1.7,0.7,0,0,0,0,1,5,5,'HomeDoor_R');
+Repeater['HomeDoor_R_1'].Begin('1',-1.7,0.7,5,0,180,0,1,5,5,'HomeDoor');
+
+# 霞ヶ関駅名表示 (ラインカラー高さ Y=0、5m手前から終了前5mまで)
+Repeater['Ekimei_Kasumi_L'].Begin(0,-2,2.8,0,0,0,0,1,15,15,'ekimei_small');
+Repeater['Ekimei_Kasumi_R'].Begin('1',2,2.8,5,0,180,0,1,15,15,'ekimei_small');
+Repeater['Stlipe_Kasumi_L'].Begin(0,-2,0,0,0,0,0,1,15,15,'kasumi_stlipe');
+Repeater['Stlipe_Kasumi_R'].Begin('1',2,0,5,0,180,0,1,15,15,'kasumi_stlipe');
+
+# 霞ヶ関ホーム柱: ホーム手前5-15m 自線寄り(X=+2.8) Pole_07 を5m間隔
+Repeater['Pole_Kasumi_A1'].Begin(0,2.8,0,0,0,0,0,1,5,5,'Pole_07');
+Repeater['Pole_Kasumi_A1_R'].Begin('1',-2.8,0,0,0,0,0,1,5,5,'Pole_07');
+
+# 霞ヶ関ホーム出口 (11m地点 = 7966m, X=+3.5)
+7966;
+Structure['Kasumi_Exsit'].Put(0,4.0,0,0,0,0,0,0,0);
+
+7971;
+Repeater['Pole_Kasumi_A1'].End();
+Repeater['Pole_Kasumi_A1_R'].End();
+
+# 霞ヶ関ホーム柱: 中央 20-95m (Pole_03) を5m間隔・X=+3.5（島ホーム中央）
+7975;
+Repeater['Pole_Kasumi_B'].Begin(0,4.0,0,0,0,0,0,1,5,5,'Pole_03');
+
+# 霞ヶ関サイン
+7995;
+Structure['ikisaki'].Put(0,3.5,3.5,5,0,180,0,0,0);
+Structure['ikisaki'].Put('1',-3.5,3.5,0,0,0,0,0,0);
+
+8005;
+Structure['hassyahyo'].Put(0,2.9,3.4,5,0,180,0,0,0);
+Structure['hassyahyo'].Put('1',-2.9,3.4,0,0,0,0,0,0);
+
+8015;
+Structure['ikisaki'].Put(0,3.5,3.5,5,0,180,0,0,0);
+Structure['ikisaki'].Put('1',-3.5,3.5,0,0,0,0,0,0);
+
+8025;
+Structure['kimasu'].Put(0,2,3.5,5,0,180,0,0,0);
+Structure['kimasu'].Put('1',-2,3.5,0,0,0,0,0,0);
+
+# 霞ヶ関ホーム上スタンド (72.5m地点 = 8027.5m, X=+3.5)
+8027.5;
+Structure['Kasumi_Stand'].Put(0,4.0,0,0,0,0,0,0,0);
+
+8035;
+Structure['hassyahyo'].Put(0,2.9,3.4,5,0,180,0,0,0);
+Structure['hassyahyo'].Put('1',-2.9,3.4,0,0,0,0,0,0);
+
+8045;
+Structure['ikisaki'].Put(0,3.5,3.5,5,0,180,0,0,0);
+Structure['ikisaki'].Put('1',-3.5,3.5,0,0,0,0,0,0);
+
+8050;
+Repeater['Pole_Kasumi_B'].End();
+
+# 霞ヶ関ホーム柱: 終端5m手前まで 100-145m 自線寄り(X=+2.8) Pole_07 を5m間隔
+8055;
+Repeater['Pole_Kasumi_A2'].Begin(0,2.8,0,0,0,0,0,1,5,5,'Pole_07');
+Repeater['Pole_Kasumi_A2_R'].Begin('1',-2.8,0,0,0,0,0,1,5,5,'Pole_07');
+
+# 霞ヶ関ホーム出口 (106m地点 = 8061m, X=+3.5)
+8061;
+Structure['Kasumi_Exsit'].Put(0,4.0,0,0,0,0,0,0,0);
+
+# 霞ヶ関ホーム出口 (126m地点 = 8081m, X=+3.5)
+8081;
+Structure['Kasumi_Exsit'].Put(0,4.0,0,0,0,0,0,0,0);
+
+# 出口・乗り換えサイン (140m地点 = 8095m)
+8095;
+Structure['exsit_norikae'].Put(0,4,3.5,5,0,180,0,0,0);
+Structure['exsit_norikae'].Put('1',-4,3.5,0,0,0,0,0,0);
 
 8100;
-#Station['Kasumigaseki'].Put(1, -2, 2);
+Repeater['Pole_Kasumi_A2'].End();
+Repeater['Pole_Kasumi_A2_R'].End();
+Repeater['Ekimei_Kasumi_L'].End();
+Repeater['Ekimei_Kasumi_R'].End();
+Repeater['Stlipe_Kasumi_L'].End();
+Repeater['Stlipe_Kasumi_R'].End();
+
+Station['Kasumigaseki'].Put(1, -2, 2);
 Structure['mokuhyo'].Put0('0',3,0);
+Repeater['HomeDoor_L'].End();
+Repeater['HomeDoor_R_1'].End();
+Structure['HomeDoor_END'].Put(0,1.7,0.7,5,0,180,0,1,0);
+Structure['HomeDoor_ST'].Put('1',-1.7,0.7,5,0,180,0,1,0);
 
 8105;
-Repeater['PF_L'].End();
-Repeater['PF_L_S'].End();
-Repeater['Sta_Top_L'].End();
+Repeater['PF_R'].End();
+Repeater['PF_R_S'].End();
+Repeater['PF_R_1'].End();
+Repeater['PF_R_S_1'].End();
 Repeater['Sta_Top_R'].End();
-Repeater['Top_1'].End();
-Repeater['Sta_Wall_L'].End();
-Repeater['Sta_Wall_R_1'].End();
-Structure['Sta_Wall_F'].Put(0,-1.5,-0.4,0,0,0,0,0,0);
-Structure['Sta_Wall_F'].Put('1',1.5,-0.4,0,0,180,0,0,0);
+Repeater['Sta_Top_L_1'].End();
+Repeater['Wall_L'].End();
+Repeater['Wall_R_1'].End();
+Repeater['Line_color_L'].End();
+Repeater['Line_color_R_1'].End();
+Structure['Sta_Wall_F_06'].Put(0,1.5,-0.4,0,0,0,0,0,0);
+Repeater['Wall_L'].Begin0(0,1,5,5,'Wall_L_01');
+Repeater['Wall_R_1'].Begin('1',0,0,5,0,180,0,1,5,5,'Wall_L_01');
+Repeater['Light_L'].Begin(0,-1.95,0,0,0,0,0,1,5,25,'light');
+Repeater['Light_R_1'].Begin('1',1.95,0,5,0,180,0,1,5,25,'light');
+Repeater['Rail'].Begin0(0,3,5,5,'Rail_03');
+Repeater['Rail_1'].Begin0(1,3,5,5,'Rail_03');
+Repeater['Rail_Side_02'].Begin0(0,1,5,5,'Rail_Side_02');
+Repeater['Rail_Side_02_1'].Begin0(1,1,5,5,'Rail_Side_02');
+Repeater['Top_Side_01'].Begin0(0,1,5,5,'Top_Side_01');
+Repeater['Top_Side_01_1'].Begin0(1,1,5,5,'Top_Side_01');
+Repeater['Wall_R'].Begin0(0,1,5,5,'Wall_R_01');
+Track['1'].X.Interpolate(9, -114);
+
+8130;
+Track['1'].X.Interpolate(6.25, 114);
 
 8150;
 Sound['hibiya_next'].Play();
 
-## 日比谷 (8.3km) - 島式:右
+8155;
+Track['1'].X.Interpolate(3.5, 0);
+Repeater['Rail_Side_02'].End();
+Repeater['Rail_Side_02_1'].End();
+Repeater['Top_Side_01'].End();
+Repeater['Top_Side_01_1'].End();
+Repeater['Wall_R'].End();
+Repeater['Wall_R'].Begin(0,-0.2,0,0,0,0,0,1,3,3,'Wall_R_02');
+
+## 日比谷 (8.3km) - 左
 9155;
-Repeater['PF_L'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L');
-Repeater['PF_L_S'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L_S');
-Repeater['Sta_Top_L'].Begin(0,-1.5,0,0,0,0,0,1,5,5,'Sta_Top_L');
-Repeater['Sta_Top_R'].Begin(1,1.5,0,0,0,0,0,1,5,5,'Sta_Top_R');
-Repeater['Top_1'].Begin0(1,1,5,5,'Top');
-Repeater['Sta_Wall_L'].Begin(0,-7,-0.4,0,0,0,0,1,5,5,'Sta_Wall_L');
-Repeater['Sta_Wall_R_1'].Begin(1,7,-0.4,0,0,0,0,1,5,5,'Sta_Wall_R');
+Repeater['Wall_L'].End();
+Repeater['Wall_R'].End();
+Repeater['Wall_R_1'].End();
+Repeater['Light_L'].End();
+Repeater['Light_R_1'].End();
+Repeater['Rail'].Begin0(0,3,5,5,'Rail_04');
+Repeater['Rail_1'].Begin0(1,3,5,5,'Rail_04');
+Repeater['Wall_R'].Begin(0,-0.2,0,0,0,0,0,1,8,8,'Wall_R_03');
+Structure['HomeDoor_ST'].Put(0,-1.7,0.7,0,0,0,0,1,0);
+Structure['HomeDoor_END'].Put(1,1.7,0.7,5,0,180,0,1,0);
+Repeater['PF_L'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L_05');
+Repeater['PF_L_S'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L_S_04');
+Repeater['PF_R_1'].Begin('1',1.5,-0.4,5,0,180,0,1,5,5,'PF_L_05');
+Repeater['PF_R_S_1'].Begin('1',1.5,-0.4,5,0,180,0,1,5,5,'PF_L_S_04');
+Repeater['Sta_Top_L'].Begin(0,-1.5,0,0,0,0,0,1,5,5,'Sta_Top_L_03');
+Repeater['Sta_Top_R'].Begin('1',1.5,0,5,0,180,0,1,5,5,'Sta_Top_L_01');
+Repeater['Sta_Wall_L'].Begin(0,-6,-0.4,0,0,0,0,1,5,5,'Sta_Wall_L_07');
+Repeater['Sta_Wall_R_1'].Begin(1,6,-0.4,5,0,180,0,1,5,5,'Sta_Wall_L_07');
+Repeater['Line_color_L'].Begin(0,-6,0,0,0,0,0,1,5,5,'Line_color_L');
+Repeater['Line_color_R_1'].Begin(1,6,0,5,0,180,0,1,5,5,'Line_color_L');
+
+9160;
+Repeater['HomeDoor_L'].Begin(0,-1.7,0.7,0,0,0,0,1,5,5,'HomeDoor');
+Repeater['HomeDoor_R_1'].Begin(1,1.7,0.7,0,0,0,0,1,5,5,'HomeDoor_R');
+Structure['monita'].Put(0,-2.2,3.4,0,0,0,0,0,0);
+
+# 日比谷駅名表示 (ラインカラー高さ Y=2.8、5m手前から終了前5mまで)
+Repeater['Ekimei_Hibiya_L'].Begin(0,-6,2.8,0,0,0,0,1,15,15,'ekimei_small');
+Repeater['Ekimei_Hibiya_R'].Begin('1',6,2.8,5,0,180,0,1,15,15,'ekimei_small');
+
+9162;
+# 日比谷ホーム柱: 開始3m先(9158m)から終端(9305m)まで5m間隔・X=+2.0
+Repeater['Pole_Hibiya'].Begin(0,1.8,0,0,0,0,0,1,8,8,'Pole_08');
+
+# 日比谷サイン (壁X=-7区間: 9165-9292m)
+9165;
+Structure['eakon'].Put(0,-6,3.2,0,0,0,0,0,0);
+Structure['eakon'].Put('1',6,3.2,0,0,180,0,0,0);
+
+9173;
+Structure['kokoku_white'].Put(0,-6,2.3,0,0,0,0,0,0);
+Structure['kokoku_white'].Put('1',6,2.3,0,0,180,0,0,0);
+
+9175;
+Structure['exsit_norikae'].Put(0,-3.3,3.5,0,0,0,0,0,0);
+Structure['exsit_norikae'].Put('1',3.3,3.5,0,0,180,0,0,0);
+
+9182;
+Structure['info_big'].Put(0,-6,2.8,0,0,0,0,0,0);
+Structure['info_big'].Put('1',6,2.8,0,0,180,0,0,0);
+
+9192;
+Structure['kokoku_zasshi'].Put(0,-6,2.3,0,0,0,0,0,0);
+Structure['kokoku_zasshi'].Put('1',6,2.3,0,0,180,0,0,0);
+
+9195;
+Structure['ikisaki'].Put(0,-3.3,3.5,0,0,0,0,0,0);
+Structure['ikisaki'].Put('1',3.3,3.5,0,0,180,0,0,0);
+
+9205;
+Structure['eakon'].Put(0,-6,3.2,0,0,0,0,0,0);
+Structure['eakon'].Put('1',6,3.2,0,0,180,0,0,0);
+
+9218;
+Structure['info_big'].Put(0,-6,2.8,0,0,0,0,0,0);
+Structure['info_big'].Put('1',6,2.8,0,0,180,0,0,0);
+
+9220;
+Structure['ikisaki'].Put(0,-3.3,3.5,0,0,0,0,0,0);
+Structure['ikisaki'].Put('1',3.3,3.5,0,0,180,0,0,0);
+
+9230;
+Structure['kokoku_white'].Put(0,-6,2.3,0,0,0,0,0,0);
+Structure['kokoku_white'].Put('1',6,2.3,0,0,180,0,0,0);
+
+9243;
+Structure['kokoku_zasshi'].Put(0,-6,2.3,0,0,0,0,0,0);
+Structure['kokoku_zasshi'].Put('1',6,2.3,0,0,180,0,0,0);
+
+9255;
+Structure['ikisaki'].Put(0,-3.3,3.5,0,0,0,0,0,0);
+Structure['ikisaki'].Put('1',3.3,3.5,0,0,180,0,0,0);
+
+9256;
+Structure['eakon'].Put(0,-6,3.2,0,0,0,0,0,0);
+Structure['eakon'].Put('1',6,3.2,0,0,180,0,0,0);
+
+9268;
+Structure['info_big'].Put(0,-6,2.8,0,0,0,0,0,0);
+Structure['info_big'].Put('1',6,2.8,0,0,180,0,0,0);
+
+9275;
+Structure['ikisaki'].Put(0,-3.3,3.5,0,0,0,0,0,0);
+Structure['ikisaki'].Put('1',3.3,3.5,0,0,180,0,0,0);
+
+9280;
+Structure['kokoku_white'].Put(0,-6,2.3,0,0,0,0,0,0);
+Structure['kokoku_white'].Put('1',6,2.3,0,0,180,0,0,0);
+
+9292;
+Structure['kokoku_zasshi'].Put(0,-6,2.3,0,0,0,0,0,0);
+Structure['kokoku_zasshi'].Put('1',6,2.3,0,0,180,0,0,0);
+
+9295;
+Structure['exsit_norikae'].Put(0,-3.3,3.5,0,0,0,0,0,0);
+Structure['exsit_norikae'].Put('1',3.3,3.5,0,0,180,0,0,0);
 
 9300;
-#Station['Hibiya'].Put(1, -2, 2);
+Station['Hibiya'].Put(-1, -2, 2);
 Structure['mokuhyo'].Put0('0',3,0);
+Repeater['HomeDoor_L'].End();
+Repeater['HomeDoor_R_1'].End();
+Structure['HomeDoor_END'].Put(0,-1.7,0.7,0,0,0,0,1,0);
+Structure['HomeDoor_ST'].Put(1,1.7,0.7,5,0,180,0,1,0);
 
 9305;
+Repeater['Pole_Hibiya'].End();
+Repeater['Ekimei_Hibiya_L'].End();
+Repeater['Ekimei_Hibiya_R'].End();
 Repeater['PF_L'].End();
 Repeater['PF_L_S'].End();
+Repeater['PF_R_1'].End();
+Repeater['PF_R_S_1'].End();
 Repeater['Sta_Top_L'].End();
 Repeater['Sta_Top_R'].End();
-Repeater['Top_1'].End();
 Repeater['Sta_Wall_L'].End();
 Repeater['Sta_Wall_R_1'].End();
-Structure['Sta_Wall_F'].Put(0,-1.5,-0.4,0,0,0,0,0,0);
-Structure['Sta_Wall_F'].Put('1',1.5,-0.4,0,0,180,0,0,0);
+Repeater['Line_color_L'].End();
+Repeater['Line_color_R_1'].End();
+Structure['Sta_Wall_F_07'].Put(0,-1.5,-0.4,0,0,0,0,0,0);
+Structure['Sta_Wall_F_07'].Put('1',1.5,-0.4,0,0,180,0,0,0);
+Repeater['Wall_L'].Begin0(0,1,5,5,'Wall_L_01');
+Repeater['Wall_R'].End();
+Repeater['Wall_R'].Begin(0,-0.2,0,0,0,0,0,1,3,3,'Wall_R_02');
+Repeater['Wall_R_1'].Begin('1',0,0,5,0,180,0,1,5,5,'Wall_L_01');
+Repeater['Light_L'].Begin(0,-1.95,0,0,0,0,0,1,5,25,'light');
+Repeater['Light_R_1'].Begin('1',1.95,0,5,0,180,0,1,5,25,'light');
+Repeater['Rail'].Begin0(0,3,5,5,'Rail_03');
+Repeater['Rail_1'].Begin0(1,3,5,5,'Rail_03');
 
 9350;
 Sound['ginza_next'].Play();
 
 ## 銀座 (8.7km) - 島式:右
 9555;
+Repeater['Wall_L'].End();
+Repeater['Wall_R_1'].End();
+Repeater['Light_L'].End();
+Repeater['Light_R_1'].End();
 Repeater['PF_L'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L');
 Repeater['PF_L_S'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L_S');
 Repeater['Sta_Top_L'].Begin(0,-1.5,0,0,0,0,0,1,5,5,'Sta_Top_L');
 Repeater['Sta_Top_R'].Begin(1,1.5,0,0,0,0,0,1,5,5,'Sta_Top_R');
-Repeater['Top_1'].Begin0(1,1,5,5,'Top');
 Repeater['Sta_Wall_L'].Begin(0,-7,-0.4,0,0,0,0,1,5,5,'Sta_Wall_L');
 Repeater['Sta_Wall_R_1'].Begin(1,7,-0.4,0,0,0,0,1,5,5,'Sta_Wall_R');
 
@@ -815,22 +1402,28 @@ Repeater['PF_L'].End();
 Repeater['PF_L_S'].End();
 Repeater['Sta_Top_L'].End();
 Repeater['Sta_Top_R'].End();
-Repeater['Top_1'].End();
 Repeater['Sta_Wall_L'].End();
 Repeater['Sta_Wall_R_1'].End();
 Structure['Sta_Wall_F'].Put(0,-1.5,-0.4,0,0,0,0,0,0);
 Structure['Sta_Wall_F'].Put('1',1.5,-0.4,0,0,180,0,0,0);
+Repeater['Wall_L'].Begin0(0,1,5,5,'Wall_L_01');
+Repeater['Wall_R_1'].Begin('1',0,0,5,0,180,0,1,5,5,'Wall_L_01');
+Repeater['Light_L'].Begin(0,-1.95,0,0,0,0,0,1,5,25,'light');
+Repeater['Light_R_1'].Begin('1',1.95,0,5,0,180,0,1,5,25,'light');
 
 9750;
 Sound['higashiginza_next'].Play();
 
 ## 東銀座 (9.1km) - 左
 9955;
+Repeater['Wall_L'].End();
+Repeater['Wall_R_1'].End();
+Repeater['Light_L'].End();
+Repeater['Light_R_1'].End();
 Repeater['PF_L'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L');
 Repeater['PF_L_S'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L_S');
 Repeater['Sta_Top_L'].Begin(0,-1.5,0,0,0,0,0,1,5,5,'Sta_Top_L');
 Repeater['Sta_Top_R'].Begin(1,1.5,0,0,0,0,0,1,5,5,'Sta_Top_R');
-Repeater['Top_1'].Begin0(1,1,5,5,'Top');
 Repeater['Sta_Wall_L'].Begin(0,-7,-0.4,0,0,0,0,1,5,5,'Sta_Wall_L');
 Repeater['Sta_Wall_R_1'].Begin(1,7,-0.4,0,0,0,0,1,5,5,'Sta_Wall_R');
 
@@ -843,22 +1436,28 @@ Repeater['PF_L'].End();
 Repeater['PF_L_S'].End();
 Repeater['Sta_Top_L'].End();
 Repeater['Sta_Top_R'].End();
-Repeater['Top_1'].End();
 Repeater['Sta_Wall_L'].End();
 Repeater['Sta_Wall_R_1'].End();
 Structure['Sta_Wall_F'].Put(0,-1.5,-0.4,0,0,0,0,0,0);
 Structure['Sta_Wall_F'].Put('1',1.5,-0.4,0,0,180,0,0,0);
+Repeater['Wall_L'].Begin0(0,1,5,5,'Wall_L_01');
+Repeater['Wall_R_1'].Begin('1',0,0,5,0,180,0,1,5,5,'Wall_L_01');
+Repeater['Light_L'].Begin(0,-1.95,0,0,0,0,0,1,5,25,'light');
+Repeater['Light_R_1'].Begin('1',1.95,0,5,0,180,0,1,5,25,'light');
 
 10150;
 Sound['tsukiji_next'].Play();
 
 ## 築地 (9.7km) - 左
 10555;
+Repeater['Wall_L'].End();
+Repeater['Wall_R_1'].End();
+Repeater['Light_L'].End();
+Repeater['Light_R_1'].End();
 Repeater['PF_L'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L');
 Repeater['PF_L_S'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L_S');
 Repeater['Sta_Top_L'].Begin(0,-1.5,0,0,0,0,0,1,5,5,'Sta_Top_L');
 Repeater['Sta_Top_R'].Begin(1,1.5,0,0,0,0,0,1,5,5,'Sta_Top_R');
-Repeater['Top_1'].Begin0(1,1,5,5,'Top');
 Repeater['Sta_Wall_L'].Begin(0,-7,-0.4,0,0,0,0,1,5,5,'Sta_Wall_L');
 Repeater['Sta_Wall_R_1'].Begin(1,7,-0.4,0,0,0,0,1,5,5,'Sta_Wall_R');
 
@@ -871,22 +1470,28 @@ Repeater['PF_L'].End();
 Repeater['PF_L_S'].End();
 Repeater['Sta_Top_L'].End();
 Repeater['Sta_Top_R'].End();
-Repeater['Top_1'].End();
 Repeater['Sta_Wall_L'].End();
 Repeater['Sta_Wall_R_1'].End();
 Structure['Sta_Wall_F'].Put(0,-1.5,-0.4,0,0,0,0,0,0);
 Structure['Sta_Wall_F'].Put('1',1.5,-0.4,0,0,180,0,0,0);
+Repeater['Wall_L'].Begin0(0,1,5,5,'Wall_L_01');
+Repeater['Wall_R_1'].Begin('1',0,0,5,0,180,0,1,5,5,'Wall_L_01');
+Repeater['Light_L'].Begin(0,-1.95,0,0,0,0,0,1,5,25,'light');
+Repeater['Light_R_1'].Begin('1',1.95,0,5,0,180,0,1,5,25,'light');
 
 10750;
 Sound['hatchobori_next'].Play();
 
 ## 八丁堀 (10.7km) - 島式:右
 11555;
+Repeater['Wall_L'].End();
+Repeater['Wall_R_1'].End();
+Repeater['Light_L'].End();
+Repeater['Light_R_1'].End();
 Repeater['PF_L'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L');
 Repeater['PF_L_S'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L_S');
 Repeater['Sta_Top_L'].Begin(0,-1.5,0,0,0,0,0,1,5,5,'Sta_Top_L');
 Repeater['Sta_Top_R'].Begin(1,1.5,0,0,0,0,0,1,5,5,'Sta_Top_R');
-Repeater['Top_1'].Begin0(1,1,5,5,'Top');
 Repeater['Sta_Wall_L'].Begin(0,-7,-0.4,0,0,0,0,1,5,5,'Sta_Wall_L');
 Repeater['Sta_Wall_R_1'].Begin(1,7,-0.4,0,0,0,0,1,5,5,'Sta_Wall_R');
 
@@ -899,22 +1504,28 @@ Repeater['PF_L'].End();
 Repeater['PF_L_S'].End();
 Repeater['Sta_Top_L'].End();
 Repeater['Sta_Top_R'].End();
-Repeater['Top_1'].End();
 Repeater['Sta_Wall_L'].End();
 Repeater['Sta_Wall_R_1'].End();
 Structure['Sta_Wall_F'].Put(0,-1.5,-0.4,0,0,0,0,0,0);
 Structure['Sta_Wall_F'].Put('1',1.5,-0.4,0,0,180,0,0,0);
+Repeater['Wall_L'].Begin0(0,1,5,5,'Wall_L_01');
+Repeater['Wall_R_1'].Begin('1',0,0,5,0,180,0,1,5,5,'Wall_L_01');
+Repeater['Light_L'].Begin(0,-1.95,0,0,0,0,0,1,5,25,'light');
+Repeater['Light_R_1'].Begin('1',1.95,0,5,0,180,0,1,5,25,'light');
 
 11750;
 Sound['kayabacho_next'].Play();
 
 ## 茅場町 (11.2km) - 島式:右
 12055;
+Repeater['Wall_L'].End();
+Repeater['Wall_R_1'].End();
+Repeater['Light_L'].End();
+Repeater['Light_R_1'].End();
 Repeater['PF_L'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L');
 Repeater['PF_L_S'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L_S');
 Repeater['Sta_Top_L'].Begin(0,-1.5,0,0,0,0,0,1,5,5,'Sta_Top_L');
 Repeater['Sta_Top_R'].Begin(1,1.5,0,0,0,0,0,1,5,5,'Sta_Top_R');
-Repeater['Top_1'].Begin0(1,1,5,5,'Top');
 Repeater['Sta_Wall_L'].Begin(0,-7,-0.4,0,0,0,0,1,5,5,'Sta_Wall_L');
 Repeater['Sta_Wall_R_1'].Begin(1,7,-0.4,0,0,0,0,1,5,5,'Sta_Wall_R');
 
@@ -927,22 +1538,28 @@ Repeater['PF_L'].End();
 Repeater['PF_L_S'].End();
 Repeater['Sta_Top_L'].End();
 Repeater['Sta_Top_R'].End();
-Repeater['Top_1'].End();
 Repeater['Sta_Wall_L'].End();
 Repeater['Sta_Wall_R_1'].End();
 Structure['Sta_Wall_F'].Put(0,-1.5,-0.4,0,0,0,0,0,0);
 Structure['Sta_Wall_F'].Put('1',1.5,-0.4,0,0,180,0,0,0);
+Repeater['Wall_L'].Begin0(0,1,5,5,'Wall_L_01');
+Repeater['Wall_R_1'].Begin('1',0,0,5,0,180,0,1,5,5,'Wall_L_01');
+Repeater['Light_L'].Begin(0,-1.95,0,0,0,0,0,1,5,25,'light');
+Repeater['Light_R_1'].Begin('1',1.95,0,5,0,180,0,1,5,25,'light');
 
 12250;
 Sound['ningyocho_next'].Play();
 
 ## 人形町 (12.1km) - 島式:右
 12955;
+Repeater['Wall_L'].End();
+Repeater['Wall_R_1'].End();
+Repeater['Light_L'].End();
+Repeater['Light_R_1'].End();
 Repeater['PF_L'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L');
 Repeater['PF_L_S'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L_S');
 Repeater['Sta_Top_L'].Begin(0,-1.5,0,0,0,0,0,1,5,5,'Sta_Top_L');
 Repeater['Sta_Top_R'].Begin(1,1.5,0,0,0,0,0,1,5,5,'Sta_Top_R');
-Repeater['Top_1'].Begin0(1,1,5,5,'Top');
 Repeater['Sta_Wall_L'].Begin(0,-7,-0.4,0,0,0,0,1,5,5,'Sta_Wall_L');
 Repeater['Sta_Wall_R_1'].Begin(1,7,-0.4,0,0,0,0,1,5,5,'Sta_Wall_R');
 
@@ -955,22 +1572,28 @@ Repeater['PF_L'].End();
 Repeater['PF_L_S'].End();
 Repeater['Sta_Top_L'].End();
 Repeater['Sta_Top_R'].End();
-Repeater['Top_1'].End();
 Repeater['Sta_Wall_L'].End();
 Repeater['Sta_Wall_R_1'].End();
 Structure['Sta_Wall_F'].Put(0,-1.5,-0.4,0,0,0,0,0,0);
 Structure['Sta_Wall_F'].Put('1',1.5,-0.4,0,0,180,0,0,0);
+Repeater['Wall_L'].Begin0(0,1,5,5,'Wall_L_01');
+Repeater['Wall_R_1'].Begin('1',0,0,5,0,180,0,1,5,5,'Wall_L_01');
+Repeater['Light_L'].Begin(0,-1.95,0,0,0,0,0,1,5,25,'light');
+Repeater['Light_R_1'].Begin('1',1.95,0,5,0,180,0,1,5,25,'light');
 
 13150;
 Sound['kodemmacho_next'].Play();
 
 ## 小伝馬町 (12.7km) - 島式:右
 13555;
+Repeater['Wall_L'].End();
+Repeater['Wall_R_1'].End();
+Repeater['Light_L'].End();
+Repeater['Light_R_1'].End();
 Repeater['PF_L'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L');
 Repeater['PF_L_S'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L_S');
 Repeater['Sta_Top_L'].Begin(0,-1.5,0,0,0,0,0,1,5,5,'Sta_Top_L');
 Repeater['Sta_Top_R'].Begin(1,1.5,0,0,0,0,0,1,5,5,'Sta_Top_R');
-Repeater['Top_1'].Begin0(1,1,5,5,'Top');
 Repeater['Sta_Wall_L'].Begin(0,-7,-0.4,0,0,0,0,1,5,5,'Sta_Wall_L');
 Repeater['Sta_Wall_R_1'].Begin(1,7,-0.4,0,0,0,0,1,5,5,'Sta_Wall_R');
 
@@ -983,22 +1606,28 @@ Repeater['PF_L'].End();
 Repeater['PF_L_S'].End();
 Repeater['Sta_Top_L'].End();
 Repeater['Sta_Top_R'].End();
-Repeater['Top_1'].End();
 Repeater['Sta_Wall_L'].End();
 Repeater['Sta_Wall_R_1'].End();
 Structure['Sta_Wall_F'].Put(0,-1.5,-0.4,0,0,0,0,0,0);
 Structure['Sta_Wall_F'].Put('1',1.5,-0.4,0,0,180,0,0,0);
+Repeater['Wall_L'].Begin0(0,1,5,5,'Wall_L_01');
+Repeater['Wall_R_1'].Begin('1',0,0,5,0,180,0,1,5,5,'Wall_L_01');
+Repeater['Light_L'].Begin(0,-1.95,0,0,0,0,0,1,5,25,'light');
+Repeater['Light_R_1'].Begin('1',1.95,0,5,0,180,0,1,5,25,'light');
 
 13750;
 Sound['akihabara_next'].Play();
 
 ## 秋葉原 (13.6km) - 左
 14455;
+Repeater['Wall_L'].End();
+Repeater['Wall_R_1'].End();
+Repeater['Light_L'].End();
+Repeater['Light_R_1'].End();
 Repeater['PF_L'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L');
 Repeater['PF_L_S'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L_S');
 Repeater['Sta_Top_L'].Begin(0,-1.5,0,0,0,0,0,1,5,5,'Sta_Top_L');
 Repeater['Sta_Top_R'].Begin(1,1.5,0,0,0,0,0,1,5,5,'Sta_Top_R');
-Repeater['Top_1'].Begin0(1,1,5,5,'Top');
 Repeater['Sta_Wall_L'].Begin(0,-7,-0.4,0,0,0,0,1,5,5,'Sta_Wall_L');
 Repeater['Sta_Wall_R_1'].Begin(1,7,-0.4,0,0,0,0,1,5,5,'Sta_Wall_R');
 
@@ -1011,22 +1640,28 @@ Repeater['PF_L'].End();
 Repeater['PF_L_S'].End();
 Repeater['Sta_Top_L'].End();
 Repeater['Sta_Top_R'].End();
-Repeater['Top_1'].End();
 Repeater['Sta_Wall_L'].End();
 Repeater['Sta_Wall_R_1'].End();
 Structure['Sta_Wall_F'].Put(0,-1.5,-0.4,0,0,0,0,0,0);
 Structure['Sta_Wall_F'].Put('1',1.5,-0.4,0,0,180,0,0,0);
+Repeater['Wall_L'].Begin0(0,1,5,5,'Wall_L_01');
+Repeater['Wall_R_1'].Begin('1',0,0,5,0,180,0,1,5,5,'Wall_L_01');
+Repeater['Light_L'].Begin(0,-1.95,0,0,0,0,0,1,5,25,'light');
+Repeater['Light_R_1'].Begin('1',1.95,0,5,0,180,0,1,5,25,'light');
 
 14650;
 Sound['nakaokachi_next'].Play();
 
 ## 仲御徒町 (14.6km) - 島式:右
 15455;
+Repeater['Wall_L'].End();
+Repeater['Wall_R_1'].End();
+Repeater['Light_L'].End();
+Repeater['Light_R_1'].End();
 Repeater['PF_L'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L');
 Repeater['PF_L_S'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L_S');
 Repeater['Sta_Top_L'].Begin(0,-1.5,0,0,0,0,0,1,5,5,'Sta_Top_L');
 Repeater['Sta_Top_R'].Begin(1,1.5,0,0,0,0,0,1,5,5,'Sta_Top_R');
-Repeater['Top_1'].Begin0(1,1,5,5,'Top');
 Repeater['Sta_Wall_L'].Begin(0,-7,-0.4,0,0,0,0,1,5,5,'Sta_Wall_L');
 Repeater['Sta_Wall_R_1'].Begin(1,7,-0.4,0,0,0,0,1,5,5,'Sta_Wall_R');
 
@@ -1039,22 +1674,28 @@ Repeater['PF_L'].End();
 Repeater['PF_L_S'].End();
 Repeater['Sta_Top_L'].End();
 Repeater['Sta_Top_R'].End();
-Repeater['Top_1'].End();
 Repeater['Sta_Wall_L'].End();
 Repeater['Sta_Wall_R_1'].End();
 Structure['Sta_Wall_F'].Put(0,-1.5,-0.4,0,0,0,0,0,0);
 Structure['Sta_Wall_F'].Put('1',1.5,-0.4,0,0,180,0,0,0);
+Repeater['Wall_L'].Begin0(0,1,5,5,'Wall_L_01');
+Repeater['Wall_R_1'].Begin('1',0,0,5,0,180,0,1,5,5,'Wall_L_01');
+Repeater['Light_L'].Begin(0,-1.95,0,0,0,0,0,1,5,25,'light');
+Repeater['Light_R_1'].Begin('1',1.95,0,5,0,180,0,1,5,25,'light');
 
 15650;
 Sound['ueno_next'].Play();
 
 ## 上野 (15.1km) - 左
 15955;
+Repeater['Wall_L'].End();
+Repeater['Wall_R_1'].End();
+Repeater['Light_L'].End();
+Repeater['Light_R_1'].End();
 Repeater['PF_L'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L');
 Repeater['PF_L_S'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L_S');
 Repeater['Sta_Top_L'].Begin(0,-1.5,0,0,0,0,0,1,5,5,'Sta_Top_L');
 Repeater['Sta_Top_R'].Begin(1,1.5,0,0,0,0,0,1,5,5,'Sta_Top_R');
-Repeater['Top_1'].Begin0(1,1,5,5,'Top');
 Repeater['Sta_Wall_L'].Begin(0,-7,-0.4,0,0,0,0,1,5,5,'Sta_Wall_L');
 Repeater['Sta_Wall_R_1'].Begin(1,7,-0.4,0,0,0,0,1,5,5,'Sta_Wall_R');
 
@@ -1067,22 +1708,28 @@ Repeater['PF_L'].End();
 Repeater['PF_L_S'].End();
 Repeater['Sta_Top_L'].End();
 Repeater['Sta_Top_R'].End();
-Repeater['Top_1'].End();
 Repeater['Sta_Wall_L'].End();
 Repeater['Sta_Wall_R_1'].End();
 Structure['Sta_Wall_F'].Put(0,-1.5,-0.4,0,0,0,0,0,0);
 Structure['Sta_Wall_F'].Put('1',1.5,-0.4,0,0,180,0,0,0);
+Repeater['Wall_L'].Begin0(0,1,5,5,'Wall_L_01');
+Repeater['Wall_R_1'].Begin('1',0,0,5,0,180,0,1,5,5,'Wall_L_01');
+Repeater['Light_L'].Begin(0,-1.95,0,0,0,0,0,1,5,25,'light');
+Repeater['Light_R_1'].Begin('1',1.95,0,5,0,180,0,1,5,25,'light');
 
 16150;
 Sound['iriya_next'].Play();
 
 ## 入谷 (16.3km) - 左
 17155;
+Repeater['Wall_L'].End();
+Repeater['Wall_R_1'].End();
+Repeater['Light_L'].End();
+Repeater['Light_R_1'].End();
 Repeater['PF_L'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L');
 Repeater['PF_L_S'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L_S');
 Repeater['Sta_Top_L'].Begin(0,-1.5,0,0,0,0,0,1,5,5,'Sta_Top_L');
 Repeater['Sta_Top_R'].Begin(1,1.5,0,0,0,0,0,1,5,5,'Sta_Top_R');
-Repeater['Top_1'].Begin0(1,1,5,5,'Top');
 Repeater['Sta_Wall_L'].Begin(0,-7,-0.4,0,0,0,0,1,5,5,'Sta_Wall_L');
 Repeater['Sta_Wall_R_1'].Begin(1,7,-0.4,0,0,0,0,1,5,5,'Sta_Wall_R');
 
@@ -1095,22 +1742,28 @@ Repeater['PF_L'].End();
 Repeater['PF_L_S'].End();
 Repeater['Sta_Top_L'].End();
 Repeater['Sta_Top_R'].End();
-Repeater['Top_1'].End();
 Repeater['Sta_Wall_L'].End();
 Repeater['Sta_Wall_R_1'].End();
 Structure['Sta_Wall_F'].Put(0,-1.5,-0.4,0,0,0,0,0,0);
 Structure['Sta_Wall_F'].Put('1',1.5,-0.4,0,0,180,0,0,0);
+Repeater['Wall_L'].Begin0(0,1,5,5,'Wall_L_01');
+Repeater['Wall_R_1'].Begin('1',0,0,5,0,180,0,1,5,5,'Wall_L_01');
+Repeater['Light_L'].Begin(0,-1.95,0,0,0,0,0,1,5,25,'light');
+Repeater['Light_R_1'].Begin('1',1.95,0,5,0,180,0,1,5,25,'light');
 
 17350;
 Sound['minowa_next'].Play();
 
 ## 三ノ輪 (17.5km) - 左
 18355;
+Repeater['Wall_L'].End();
+Repeater['Wall_R_1'].End();
+Repeater['Light_L'].End();
+Repeater['Light_R_1'].End();
 Repeater['PF_L'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L');
 Repeater['PF_L_S'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L_S');
 Repeater['Sta_Top_L'].Begin(0,-1.5,0,0,0,0,0,1,5,5,'Sta_Top_L');
 Repeater['Sta_Top_R'].Begin(1,1.5,0,0,0,0,0,1,5,5,'Sta_Top_R');
-Repeater['Top_1'].Begin0(1,1,5,5,'Top');
 Repeater['Sta_Wall_L'].Begin(0,-7,-0.4,0,0,0,0,1,5,5,'Sta_Wall_L');
 Repeater['Sta_Wall_R_1'].Begin(1,7,-0.4,0,0,0,0,1,5,5,'Sta_Wall_R');
 
@@ -1123,22 +1776,28 @@ Repeater['PF_L'].End();
 Repeater['PF_L_S'].End();
 Repeater['Sta_Top_L'].End();
 Repeater['Sta_Top_R'].End();
-Repeater['Top_1'].End();
 Repeater['Sta_Wall_L'].End();
 Repeater['Sta_Wall_R_1'].End();
 Structure['Sta_Wall_F'].Put(0,-1.5,-0.4,0,0,0,0,0,0);
 Structure['Sta_Wall_F'].Put('1',1.5,-0.4,0,0,180,0,0,0);
+Repeater['Wall_L'].Begin0(0,1,5,5,'Wall_L_01');
+Repeater['Wall_R_1'].Begin('1',0,0,5,0,180,0,1,5,5,'Wall_L_01');
+Repeater['Light_L'].Begin(0,-1.95,0,0,0,0,0,1,5,25,'light');
+Repeater['Light_R_1'].Begin('1',1.95,0,5,0,180,0,1,5,25,'light');
 
 18550;
 Sound['minamisenju_next'].Play();
 
 ## 南千住 (18.3km) - 左
 19155;
+Repeater['Wall_L'].End();
+Repeater['Wall_R_1'].End();
+Repeater['Light_L'].End();
+Repeater['Light_R_1'].End();
 Repeater['PF_L'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L');
 Repeater['PF_L_S'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L_S');
 Repeater['Sta_Top_L'].Begin(0,-1.5,0,0,0,0,0,1,5,5,'Sta_Top_L');
 Repeater['Sta_Top_R'].Begin(1,1.5,0,0,0,0,0,1,5,5,'Sta_Top_R');
-Repeater['Top_1'].Begin0(1,1,5,5,'Top');
 Repeater['Sta_Wall_L'].Begin(0,-7,-0.4,0,0,0,0,1,5,5,'Sta_Wall_L');
 Repeater['Sta_Wall_R_1'].Begin(1,7,-0.4,0,0,0,0,1,5,5,'Sta_Wall_R');
 
@@ -1151,22 +1810,28 @@ Repeater['PF_L'].End();
 Repeater['PF_L_S'].End();
 Repeater['Sta_Top_L'].End();
 Repeater['Sta_Top_R'].End();
-Repeater['Top_1'].End();
 Repeater['Sta_Wall_L'].End();
 Repeater['Sta_Wall_R_1'].End();
 Structure['Sta_Wall_F'].Put(0,-1.5,-0.4,0,0,0,0,0,0);
 Structure['Sta_Wall_F'].Put('1',1.5,-0.4,0,0,180,0,0,0);
+Repeater['Wall_L'].Begin0(0,1,5,5,'Wall_L_01');
+Repeater['Wall_R_1'].Begin('1',0,0,5,0,180,0,1,5,5,'Wall_L_01');
+Repeater['Light_L'].Begin(0,-1.95,0,0,0,0,0,1,5,25,'light');
+Repeater['Light_R_1'].Begin('1',1.95,0,5,0,180,0,1,5,25,'light');
 
 19350;
 Sound['kitasenju_next'].Play();
 
 ## 北千住 (20.3km) - 島式:右
 21155;
+Repeater['Wall_L'].End();
+Repeater['Wall_R_1'].End();
+Repeater['Light_L'].End();
+Repeater['Light_R_1'].End();
 Repeater['PF_L'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L');
 Repeater['PF_L_S'].Begin(0,-1.5,-0.4,0,0,0,0,1,5,5,'PF_L_S');
 Repeater['Sta_Top_L'].Begin(0,-1.5,0,0,0,0,0,1,5,5,'Sta_Top_L');
 Repeater['Sta_Top_R'].Begin(1,1.5,0,0,0,0,0,1,5,5,'Sta_Top_R');
-Repeater['Top_1'].Begin0(1,1,5,5,'Top');
 Repeater['Sta_Wall_L'].Begin(0,-7,-0.4,0,0,0,0,1,5,5,'Sta_Wall_L');
 Repeater['Sta_Wall_R_1'].Begin(1,7,-0.4,0,0,0,0,1,5,5,'Sta_Wall_R');
 
@@ -1179,11 +1844,14 @@ Repeater['PF_L'].End();
 Repeater['PF_L_S'].End();
 Repeater['Sta_Top_L'].End();
 Repeater['Sta_Top_R'].End();
-Repeater['Top_1'].End();
 Repeater['Sta_Wall_L'].End();
 Repeater['Sta_Wall_R_1'].End();
 Structure['Sta_Wall_F'].Put(0,-1.5,-0.4,0,0,0,0,0,0);
 Structure['Sta_Wall_F'].Put('1',1.5,-0.4,0,0,180,0,0,0);
+Repeater['Wall_L'].Begin0(0,1,5,5,'Wall_L_01');
+Repeater['Wall_R_1'].Begin('1',0,0,5,0,180,0,1,5,5,'Wall_L_01');
+Repeater['Light_L'].Begin(0,-1.95,0,0,0,0,0,1,5,25,'light');
+Repeater['Light_R_1'].Begin('1',1.95,0,5,0,180,0,1,5,25,'light');
 
 # 大まかなカーブと制限速度
 
@@ -1266,7 +1934,7 @@ Repeater['Rail_Xover1'].End();
 Repeater['Rail_Xover2'].End();
 Repeater['Kasen_Xover1'].End();
 Repeater['Kasen_Xover2'].End();
-Repeater['Wall_R'].Begin0(0,1,3,3,'Wall_R_02');
+Repeater['Wall_R'].Begin(0,-0.2,0,0,0,0,0,1,3,3,'Wall_R_02');
 
 1710;
 Curve.BeginTransition();
@@ -2009,7 +2677,157 @@ Curve.End();
 4784; Gradient.Interpolate(-17);
 4804; Gradient.Interpolate(5);
 4921; Gradient.Interpolate(5);
-4941; Gradient.Interpolate(-6); # 〜六本木（5200m付近）
+4941; Gradient.Interpolate(-6);
+5201; Gradient.Interpolate(-6);
+5221; Gradient.Interpolate(-2);
+5451; Gradient.Interpolate(-2);
+5471; Gradient.Interpolate(-30);
+5721; Gradient.Interpolate(-30);
+5741; Gradient.Interpolate(19);
+6000; Gradient.Interpolate(19);
+6020; Gradient.Interpolate(-35);
+6335; Gradient.Interpolate(-35);
+6355; Gradient.Interpolate(-10);
+6670; Gradient.Interpolate(-10);
+6690; Gradient.Interpolate(-16);
+6810; Gradient.Interpolate(-16);
+6830; Gradient.Interpolate(20);
+6940; Gradient.Interpolate(20);
+6960; Gradient.Interpolate(2);
+7305; Gradient.Interpolate(2);
+7325; Gradient.Interpolate(-33);
+7450; Gradient.Interpolate(-33);
+7470; Gradient.Interpolate(23);
+7600; Gradient.Interpolate(23);
+7620; Gradient.Interpolate(-5);
+7780; Gradient.Interpolate(-5);
+7800; Gradient.Interpolate(-10);
+8080; Gradient.Interpolate(-10);
+8100; Gradient.Interpolate(10);
+8150; Gradient.Interpolate(10);
+8170; Gradient.Interpolate(19);
+8388; Gradient.Interpolate(19);
+8408; Gradient.Interpolate(-25);
+8595; Gradient.Interpolate(-25);
+8615; Gradient.Interpolate(-14);
+8775; Gradient.Interpolate(-14);
+8795; Gradient.Interpolate(-25);
+9027; Gradient.Interpolate(-25);
+9047; Gradient.Interpolate(10);
+9305; Gradient.Interpolate(10);
+9325; Gradient.Interpolate(13);
+9469; Gradient.Interpolate(13);
+9489; Gradient.Interpolate(10);
+9740; Gradient.Interpolate(10);
+9760; Gradient.Interpolate(-12);
+9912; Gradient.Interpolate(-12);
+9932; Gradient.Interpolate(-10);
+9949; Gradient.Interpolate(-10);
+9969; Gradient.Interpolate(-5);
+10004; Gradient.Interpolate(-5);
+10024; Gradient.Interpolate(10);
+10431; Gradient.Interpolate(10);
+10451; Gradient.Interpolate(2);
+10878; Gradient.Interpolate(2);
+10898; Gradient.Interpolate(-23);
+10993; Gradient.Interpolate(-23);
+11013; Gradient.Interpolate(17);
+11178; Gradient.Interpolate(17);
+11198; Gradient.Interpolate(-14);
+11368; Gradient.Interpolate(-14);
+11388; Gradient.Interpolate(-2);
+11787; Gradient.Interpolate(-2);
+11807; Gradient.Interpolate(15);
+12018; Gradient.Interpolate(15);
+12038; Gradient.Interpolate(-7);
+12206; Gradient.Interpolate(-7);
+12226; Gradient.Interpolate(-32);
+12326; Gradient.Interpolate(-32);
+12346; Gradient.Interpolate(-3);
+12406; Gradient.Interpolate(-3);
+12426; Gradient.Interpolate(13);
+12506; Gradient.Interpolate(13);
+12526; Gradient.Interpolate(-9);
+12652; Gradient.Interpolate(-9);
+12672; Gradient.Interpolate(4);
+12805; Gradient.Interpolate(4);
+12825; Gradient.Interpolate(10);
+13283; Gradient.Interpolate(10);
+13303; Gradient.Interpolate(2);
+13504; Gradient.Interpolate(2);
+13524; Gradient.Interpolate(6);
+13698; Gradient.Interpolate(6);
+13718; Gradient.Interpolate(-27);
+13819; Gradient.Interpolate(-27);
+13839; Gradient.Interpolate(27);
+13980; Gradient.Interpolate(27);
+14000; Gradient.Interpolate(-16);
+14324; Gradient.Interpolate(-16);
+14344; Gradient.Interpolate(2);
+14604; Gradient.Interpolate(2);
+14624; Gradient.Interpolate(32);
+14745; Gradient.Interpolate(32);
+14765; Gradient.Interpolate(-1);
+14903; Gradient.Interpolate(-1);
+14923; Gradient.Interpolate(-2);
+15121; Gradient.Interpolate(-2);
+15141; Gradient.Interpolate(-14);
+15262; Gradient.Interpolate(-14);
+15282; Gradient.Interpolate(2);
+15442; Gradient.Interpolate(2);
+15462; Gradient.Interpolate(6);
+15657; Gradient.Interpolate(6);
+15677; Gradient.Interpolate(-21);
+15827; Gradient.Interpolate(-21);
+15847; Gradient.Interpolate(-10);
+16130; Gradient.Interpolate(-10);
+16150; Gradient.Interpolate(33);
+16307; Gradient.Interpolate(33);
+16327; Gradient.Interpolate(2);
+16730; Gradient.Interpolate(2);
+16750; Gradient.Interpolate(-2);
+16950; Gradient.Interpolate(-2);
+16970; Gradient.Interpolate(-8);
+17050; Gradient.Interpolate(-8);
+17070; Gradient.Interpolate(-2);
+17370; Gradient.Interpolate(-2);
+17390; Gradient.Interpolate(5);
+17632; Gradient.Interpolate(5);
+17652; Gradient.Interpolate(-5);
+17734; Gradient.Interpolate(-5);
+17754; Gradient.Interpolate(3);
+17904; Gradient.Interpolate(3);
+17924; Gradient.Interpolate(-2);
+18505; Gradient.Interpolate(-2);
+18525; Gradient.Interpolate(39);
+18934; Gradient.Interpolate(39);
+18954; Gradient.Interpolate(0);
+19330; Gradient.Interpolate(0);
+19350; Gradient.Interpolate(0);
+19463; Gradient.Interpolate(0);
+19483; Gradient.Interpolate(-30);
+19561; Gradient.Interpolate(-30);
+19581; Gradient.Interpolate(0);
+19727; Gradient.Interpolate(0);
+19747; Gradient.Interpolate(9);
+19787; Gradient.Interpolate(9);
+19807; Gradient.Interpolate(0);
+19924; Gradient.Interpolate(0);
+19944; Gradient.Interpolate(-8);
+20115; Gradient.Interpolate(-8);
+20135; Gradient.Interpolate(-24);
+20273; Gradient.Interpolate(-24);
+20293; Gradient.Interpolate(14);
+20384; Gradient.Interpolate(14);
+20404; Gradient.Interpolate(-4);
+20616; Gradient.Interpolate(-4);
+20636; Gradient.Interpolate(33);
+20879; Gradient.Interpolate(33);
+20899; Gradient.Interpolate(-33);
+21109; Gradient.Interpolate(-33);
+21129; Gradient.Interpolate(3.5);
+21359; Gradient.Interpolate(3.5);
+21379; Gradient.Interpolate(3.5); # 〜北千住（21300m）
 
 # ==============================================
 # CS-ATC 閉塞区間定義
@@ -2018,187 +2836,375 @@ Curve.End();
 # 閉塞標識位置の5m手前に Section.Begin を配置（地上子反応タイムラグ対策）
 # ==============================================
 
-# Section.Begin(s0, s1, s2, s3, s4) 5パラメータ統一
-#   s0=同一閉塞内(停止10), s1=1閉塞先(25km/h:15), s2=2閉塞先, s3=3閉塞先, s4=クリア
-#   通常60km/h区間: Section.Begin(10, 15, 19, 22, 22)
-#   40km/h制限区間: Section.Begin(10, 15, 18, 18, 18)
-#   45km/h制限区間: Section.Begin(10, 15, 19, 19, 19)
+# Section.Begin(s0, s1, s2, s3, s4, s5) 6パラメータ統一
+#   s0=同一閉塞内(停止10), s1=1閉塞先(停止10), s2=2閉塞先(25km/h:15で停止前緩衝)
+#   s3=3閉塞先, s4=4閉塞先, s5=クリア
+#   通常60km/h区間: Section.Begin(10, 10, 15, 19, 22, 22)
+#   40km/h制限区間: Section.Begin(10, 10, 15, 18, 18, 18)
+#   45km/h制限区間: Section.Begin(10, 10, 15, 19, 19, 19)
 #   s4の切り替え基準:
 #     - 制限開始: 制限標識+5mの閉塞 OR その手前の閉塞（次閉塞より前に制限が始まる場合）
 #     - 制限解除: 制限解除標識+5m+145m（列車末尾）を超えた最初の閉塞
 
 # 初期セクション（通常80km/h）
 0;
-Section.Begin(10, 15, 19, 22, 22);
+Section.Begin(10, 10, 15, 19, 22, 22);
 
 1;
 Beacon.Put(31, 1, 0);
 
 # 中目黒 停車位置直前（40km/h開始1020m < 次閉塞1025m → この閉塞からs4=18）
 999;
-Section.Begin(10, 15, 18, 18, 18);
+Section.Begin(10, 10, 15, 18, 18, 18);
 
 # 40km/h制限区間 (1020m〜1925m+145m=2070m)
 1025; # 出発閉塞 (1020m)
-Section.Begin(10, 15, 18, 18, 18);
+Section.Begin(10, 10, 15, 18, 18, 18);
 
 1026;
 Beacon.Put(31, 1, 0);
 
 1255; # 第一場内 (1250m)
-Section.Begin(10, 15, 18, 18, 18);
+Section.Begin(10, 10, 15, 18, 18, 18);
 
 1256;
 Beacon.Put(31, 1, 0);
 
 1455; # 第二場内 (1450m)
-Section.Begin(10, 15, 18, 18, 18);
+Section.Begin(10, 10, 15, 18, 18, 18);
 
 1456;
 Beacon.Put(31, 1, 0);
 
 1655; # 第三場内 (1650m)
-Section.Begin(10, 15, 18, 18, 18);
+Section.Begin(10, 10, 15, 18, 18, 18);
 
 1656;
 Beacon.Put(31, 1, 0);
 
 1830; # 第四場内 (1825m)
-Section.Begin(10, 15, 18, 18, 18);
+Section.Begin(10, 10, 15, 18, 18, 18);
 
 1831;
 Beacon.Put(31, 1, 0);
 
 # 40km/h継続（2060m〜2190m: 次の40km/h区間、2070m解除と重複）
 2025; # 出発閉塞 (2020m) ← 2070m解除前かつ2060m区間手前
-Section.Begin(10, 15, 18, 18, 18);
+Section.Begin(10, 10, 15, 18, 18, 18);
 
 2026;
 Beacon.Put(31, 1, 0);
 
 # 40km/h区間内(2060m〜2190m) → s4=18のまま
 2145; # 第五閉塞 (2140m)
-Section.Begin(10, 15, 18, 18, 18);
+Section.Begin(10, 10, 15, 18, 18, 18);
 
 2146;
 Beacon.Put(31, 1, 0);
 
 2390; # 第四閉塞 (2385m) ← 45km/h区間内（解除2545mは次閉塞2575mより前）
-Section.Begin(10, 15, 19, 19, 19);
+Section.Begin(10, 10, 15, 19, 19, 19);
 
 2391;
 Beacon.Put(31, 1, 0);
 
 # 45km/h解除済み（2400m+145m=2545m < 2575m）
 2575; # 第三閉塞 (2570m)
-Section.Begin(10, 15, 19, 22, 22);
+Section.Begin(10, 10, 15, 19, 22, 22);
 
 2576;
 Beacon.Put(31, 1, 0);
 
 2855; # 第二閉塞 (2850m)
-Section.Begin(10, 15, 19, 22, 22);
+Section.Begin(10, 10, 15, 19, 22, 22);
 
 2856;
 Beacon.Put(31, 1, 0);
 
 # 40km/h開始3150m < 次閉塞3175m → 3055mからs4=18
 3055; # 第一閉塞 (3050m)
-Section.Begin(10, 15, 18, 18, 18);
+Section.Begin(10, 10, 15, 18, 18, 18);
 
 3056;
 Beacon.Put(31, 1, 0);
 
 # 40km/h制限区間 (3150m〜3360m+145m=3505m)
 3175; # 第一場内 (3170m)
-Section.Begin(10, 15, 18, 18, 18);
+Section.Begin(10, 10, 15, 18, 18, 18);
 
 3176;
 Beacon.Put(31, 1, 0);
 
 3345; # 第二場内 (3340m) ← 解除3505mは次閉塞3515mより前
-Section.Begin(10, 15, 18, 18, 18);
+Section.Begin(10, 10, 15, 18, 18, 18);
 
 3346;
 Beacon.Put(31, 1, 0);
 
 # 40km/h解除済み（3360m+145m=3505m < 3515m）
 3515; # 出発閉塞 (3510m)
-Section.Begin(10, 15, 19, 22, 22);
+Section.Begin(10, 10, 15, 19, 22, 22);
 
 3516;
 Beacon.Put(31, 1, 0);
 
 3675; # 第二出発 (3670m)
-Section.Begin(10, 15, 19, 22, 22);
+Section.Begin(10, 10, 15, 19, 22, 22);
 
 3676;
 Beacon.Put(31, 1, 0);
 
 # 45km/h開始3920m < 次閉塞3930m → 3865mからs4=19
 3865; # 第九閉塞 (3860m)
-Section.Begin(10, 15, 19, 19, 19);
+Section.Begin(10, 10, 15, 19, 19, 19);
 
 3866;
 Beacon.Put(31, 1, 0);
 
 3930; # 第八閉塞 (3925m) ← 45km/h区間内、40km/h開始4220m < 次閉塞4385m → s4=18
-Section.Begin(10, 15, 19, 19, 19);
+Section.Begin(10, 10, 15, 19, 19, 19);
 
 3931;
 Beacon.Put(31, 1, 0);
 
 # 40km/h制限区間 (4220m〜4460m+145m=4605m)
 4185; # 第七閉塞 (4180m) ← 40km/h開始4220m < 次閉塞4385m → s4=18
-Section.Begin(10, 15, 18, 18, 18);
+Section.Begin(10, 10, 15, 18, 18, 18);
 
 4186;
 Beacon.Put(31, 1, 0);
 
 4385; # 第六閉塞 (4380m)
-Section.Begin(10, 15, 18, 18, 18);
+Section.Begin(10, 10, 15, 18, 18, 18);
 
 4386;
 Beacon.Put(31, 1, 0);
 
 4565; # 第五閉塞 (4560m) ← 解除4605mは次閉塞4735mより前
-Section.Begin(10, 15, 19, 22, 22);
+Section.Begin(10, 10, 15, 19, 22, 22);
 
 4566;
 Beacon.Put(31, 1, 0);
 
 # 40km/h解除済み（4460m+145m=4605m < 4735m）
 4735; # 第四閉塞 (4730m)
-Section.Begin(10, 15, 19, 22, 22);
+Section.Begin(10, 10, 15, 19, 22, 22);
 
 4736;
 Beacon.Put(31, 1, 0);
 
 4885; # 第三閉塞 (4880m)
-Section.Begin(10, 15, 19, 19, 19);
+Section.Begin(10, 10, 15, 19, 19, 19);
 
 4886;
 Beacon.Put(31, 1, 0);
 
 # 40km/h開始5020m < 次閉塞5065m → 4985mからs4=18
 4985; # 第二閉塞 (4980m)
-Section.Begin(10, 15, 18, 18, 18);
+Section.Begin(10, 10, 15, 18, 18, 18);
 
 4986;
 Beacon.Put(31, 1, 0);
 
 # 40km/h制限区間 (5020m〜終点)
 5065; # 第一閉塞 (5060m)
-Section.Begin(10, 15, 18, 18, 18);
+Section.Begin(10, 10, 15, 18, 18, 18);
 
 5066;
 Beacon.Put(31, 1, 0);
 
-5235; # 第十一閉塞 (5230m)
-Section.Begin(10, 15, 18, 18, 18);
+5220; # 第十一閉塞 (5215m)
+Section.Begin(10, 10, 15, 17, 17, 17);
 
-5236;
+5221;
 Beacon.Put(31, 1, 0);
+
+# 六本木→神谷町
+5285; # 第十閉塞 (5280m) 35制限(5225-5465)
+Section.Begin(10, 10, 15, 17, 17, 17);
+
+5286;
+Beacon.Put(31, 1, 0);
+
+5355; # 第九閉塞 (5350m) 35制限
+Section.Begin(10, 10, 15, 17, 17, 17);
+
+5356;
+Beacon.Put(31, 1, 0);
+
+5485; # 第八閉塞 (5480m) 35制限(解除5465+145=5610で次閉塞5625より前)
+Section.Begin(10, 10, 15, 17, 17, 17);
+
+5486;
+Beacon.Put(31, 1, 0);
+
+5625; # 第七閉塞 (5620m) 40制限(5878-6180)開始
+Section.Begin(10, 10, 15, 19, 21, 21);
+
+5626;
+Beacon.Put(31, 1, 0);
+
+5785; # 第六閉塞 (5780m) 40制限(5878-6180)開始
+Section.Begin(10, 10, 15, 18, 18, 18);
+
+5786;
+Beacon.Put(31, 1, 0);
+
+5945; # 第五閉塞 (5940m) 40制限
+Section.Begin(10, 10, 15, 18, 18, 18);
+
+5946;
+Beacon.Put(31, 1, 0);
+
+6085; # 第四閉塞 (6080m) 40制限
+Section.Begin(10, 10, 15, 18, 18, 18);
+
+6086;
+Beacon.Put(31, 1, 0);
+
+6155; # 第三閉塞 (6150m) 40制限
+Section.Begin(10, 10, 15, 18, 18, 18);
+
+6156;
+Beacon.Put(31, 1, 0);
+
+6245; # 第二閉塞 (6240m) 40制限(6245<6180+145=6325)
+Section.Begin(10, 10, 15, 18, 18, 18);
+
+6246;
+Beacon.Put(31, 1, 0);
+
+6340; # 第一閉塞 (6335m) 40解除
+Section.Begin(10, 10, 15, 19, 22, 22);
+
+6341;
+Beacon.Put(31, 1, 0);
+
+# 神谷町→虎ノ門ヒルズ
+6525; # 第四閉塞 (6520m) 60km/h制限(6550-6880)
+Section.Begin(10, 10, 15, 19, 22, 22);
+
+6526;
+Beacon.Put(31, 1, 0);
+
+6725; # 第三閉塞 (6720m) 60km/h制限内
+Section.Begin(10, 10, 15, 19, 22, 22);
+
+6726;
+Beacon.Put(31, 1, 0);
+
+6955; # 第二閉塞 (6950m) 60km/h制限末尾未通過(6880+145=7025>6955)
+Section.Begin(10, 10, 15, 19, 22, 22);
+
+6956;
+Beacon.Put(31, 1, 0);
+
+7145; # 第一閉塞 (7140m)
+Section.Begin(10, 10, 15, 19, 22, 26);
+
+7146;
+Beacon.Put(31, 1, 0);
+
+# 虎ノ門ヒルズ→霞ケ関
+7320; # 第五閉塞 (7315m)
+Section.Begin(10, 10, 15, 19, 22, 26);
+
+7321;
+Beacon.Put(31, 1, 0);
+
+7420; # 第四閉塞 (7415m)
+Section.Begin(10, 10, 15, 19, 22, 26);
+
+7421;
+Beacon.Put(31, 1, 0);
+
+7565; # 第三閉塞 (7560m)
+Section.Begin(10, 10, 15, 19, 22, 26);
+
+7566;
+Beacon.Put(31, 1, 0);
+
+7685; # 第二閉塞 (7680m) 45制限手前で段階的減速 55km/h
+Section.Begin(10, 10, 15, 19, 21, 21);
+
+7686;
+Beacon.Put(31, 1, 0);
+
+7855; # 第一閉塞 (7850m) 霞ケ関手前45制限
+Section.Begin(10, 10, 15, 19, 19, 19);
+
+7856;
+Beacon.Put(31, 1, 0);
+
+7905; # 第1場内 (7900m) 45制限
+Section.Begin(10, 10, 15, 19, 19, 19);
+
+7906;
+Beacon.Put(31, 1, 0);
+
+7960; # 第2場内 (7955m) 45制限
+Section.Begin(10, 10, 15, 19, 19, 19);
+
+7961;
+Beacon.Put(31, 1, 0);
+
+# 霞ケ関→日比谷
+8115; # 出発 (8110m) 35制限手前で段階的減速 40km/h
+Section.Begin(10, 10, 15, 18, 18, 18);
+
+8116;
+Beacon.Put(31, 1, 0);
+
+8215; # 第七閉塞 (8210m)
+Section.Begin(10, 10, 15, 18, 18, 18);
+
+8216;
+Beacon.Put(31, 1, 0);
+
+8305; # 第六閉塞 (8300m) 35制限(8320-8540)開始
+Section.Begin(10, 10, 15, 17, 17, 17);
+
+8306;
+Beacon.Put(31, 1, 0);
+
+8425; # 第五閉塞 (8420m) 35制限維持
+Section.Begin(10, 10, 15, 17, 17, 17);
+
+8426;
+Beacon.Put(31, 1, 0);
+
+8605; # 第四閉塞 (8600m) 35制限(8605<8540+145=8685)
+Section.Begin(10, 10, 15, 17, 17, 17);
+
+8606;
+Beacon.Put(31, 1, 0);
+
+8775; # 第三閉塞 (8770m) 35解除
+Section.Begin(10, 10, 15, 19, 22, 26);
+
+8776;
+Beacon.Put(31, 1, 0);
+
+9005; # 第二閉塞 (9000m)
+Section.Begin(10, 10, 15, 19, 22, 26);
+
+9006;
+Beacon.Put(31, 1, 0);
+
+9150; # 第一閉塞 (9145m)
+Section.Begin(10, 10, 15, 19, 22, 26);
+
+9151;
+Beacon.Put(31, 1, 0);
+
+10000; # 終点用の仮置き
+Section.Begin(10, 10, 15, 19, 22, 26);
+
+10010; # 終点用の仮置き
+Section.Begin(10, 10, 15, 19, 22, 26);
+
+10020; # 終点用の仮置き
+Section.Begin(10, 10, 15, 19, 22, 26);
 
 # ==============================================
 # ストラクチャー単体配置
@@ -2210,44 +3216,44 @@ Structure['Sign_limit_40'].Put(0,-1.5,2,0,0,0,0,0,0);
 #Structure['Sign_dep'].Put(0,-1.6,2.2,0,0,0,0,0,0);
 
 1250;
-Structure['Sign_arv_1'].Put(0,-1.5,2,0,0,0,0,0,0);
+Structure['Sign_arv_1'].Put(0,-1.7,2,0,0,0,0,0,0);
 
 1450;
-Structure['Sign_arv_2'].Put(0,-1.5,2,0,0,0,0,0,0);
+Structure['Sign_arv_2'].Put(0,-1.7,2,0,0,0,0,0,0);
 
 1650;
-Structure['Sign_arv_3'].Put(0,-1.5,2,0,0,0,0,0,0);
+Structure['Sign_arv_3'].Put(0,-1.7,2,0,0,0,0,0,0);
 
 1825;
-Structure['Sign_arv_4'].Put(0,-1.5,2,0,0,0,0,0,0);
+Structure['Sign_arv_4'].Put(0,-1.7,2,0,0,0,0,0,0);
 
 # 恵比寿→広尾
 2020;
 Structure['Sign_dep'].Put(0,1.5,2,0,0,0,0,0,0);
 
 2060;
-Structure['Sign_limit_40'].Put(0,-1.5,2,0,0,0,0,0,0);
+Structure['Sign_limit_40'].Put(0,-1.7,2,0,0,0,0,0,0);
 
 2140;
-Structure['Sign_5'].Put(0,-1.5,2,0,0,0,0,0,0);
+Structure['Sign_5'].Put(0,-1.7,2,0,0,0,0,0,0);
 
 2190;
-Structure['Sign_limit_45'].Put(0,-1.5,2,0,0,0,0,0,0);
+Structure['Sign_limit_45'].Put(0,-1.7,2,0,0,0,0,0,0);
 
 2385;
-Structure['Sign_4'].Put(0,-1.5,2,0,0,0,0,0,0);
+Structure['Sign_4'].Put(0,-1.7,2,0,0,0,0,0,0);
 
 2570;
-Structure['Sign_3'].Put(0,-1.5,2,0,0,0,0,0,0);
+Structure['Sign_3'].Put(0,-1.7,2,0,0,0,0,0,0);
 
 2850;
-Structure['Sign_2'].Put(0,-1.5,2,0,0,0,0,0,0);
+Structure['Sign_2'].Put(0,-1.7,2,0,0,0,0,0,0);
 
 3050;
-Structure['Sign_1'].Put(0,-1.5,2,0,0,0,0,0,0);
+Structure['Sign_1'].Put(0,-1.7,2,0,0,0,0,0,0);
 
 3150;
-Structure['Sign_limit_40'].Put(0,-1.5,2,0,0,0,0,0,0);
+Structure['Sign_limit_40'].Put(0,-1.7,2,0,0,0,0,0,0);
 
 3170;
 Structure['Sign_arv_1'].Put(0,1.5,2,0,0,0,0,0,0);
@@ -2257,49 +3263,152 @@ Structure['Sign_arv_2'].Put(0,1.5,2,0,0,0,0,0,0);
 
 # 広尾→六本木
 3510;
-Structure['Sign_dep'].Put(0,-1.5,2,0,0,0,0,0,0);
+Structure['Sign_dep'].Put(0,-1.7,2,0,0,0,0,0,0);
 
 3670;
-Structure['Sign_dep'].Put(0,-1.5,2,0,0,0,0,0,0);
+Structure['Sign_dep'].Put(0,-1.7,2,0,0,0,0,0,0);
 
 3860;
-Structure['Sign_9'].Put(0,-1.5,2,0,0,0,0,0,0);
+Structure['Sign_9'].Put(0,-1.7,2,0,0,0,0,0,0);
 
 3920;
-Structure['Sign_limit_45'].Put(0,-1.5,2,0,0,0,0,0,0);
+Structure['Sign_limit_45'].Put(0,-1.7,2,0,0,0,0,0,0);
 
 3925;
-Structure['Sign_8'].Put(0,-1.5,2,0,0,0,0,0,0);
+Structure['Sign_8'].Put(0,-1.7,2,0,0,0,0,0,0);
 
 4180;
-Structure['Sign_7'].Put(0,-1.5,2,0,0,0,0,0,0);
+Structure['Sign_7'].Put(0,-1.7,2,0,0,0,0,0,0);
 
 4220;
-Structure['Sign_limit_40'].Put(0,-1.5,2,0,0,0,0,0,0);
+Structure['Sign_limit_40'].Put(0,-1.7,2,0,0,0,0,0,0);
 
 4380;
-Structure['Sign_6'].Put(0,-1.5,2,0,0,0,0,0,0);
+Structure['Sign_6'].Put(0,-1.7,2,0,0,0,0,0,0);
 
 4560;
-Structure['Sign_5'].Put(0,-1.5,2,0,0,0,0,0,0);
+Structure['Sign_5'].Put(0,-1.7,2,0,0,0,0,0,0);
 
 4730;
-Structure['Sign_4'].Put(0,-1.5,2,0,0,0,0,0,0);
+Structure['Sign_4'].Put(0,-1.7,2,0,0,0,0,0,0);
 
 4880;
-Structure['Sign_3'].Put(0,-1.5,2,0,0,0,0,0,0);
+Structure['Sign_3'].Put(0,-1.7,2,0,0,0,0,0,0);
 
 4980;
-Structure['Sign_2'].Put(0,-1.5,2,0,0,0,0,0,0);
+Structure['Sign_2'].Put(0,-1.7,2,0,0,0,0,0,0);
 
 5020;
-Structure['Sign_limit_40'].Put(0,-1.5,2,0,0,0,0,0,0);
+Structure['Sign_limit_40'].Put(0,-1.7,2,0,0,0,0,0,0);
 
 5060;
-Structure['Sign_1'].Put(0,-1.5,2,0,0,0,0,0,0);
+Structure['Sign_1'].Put(0,-1.7,2,0,0,0,0,0,0);
 
-5230;
-Structure['Sign_11'].Put(0,-1.5,2,0,0,0,0,0,0);
+5215;
+Structure['Sign_11'].Put(0,-1.7,2,0,0,0,0,0,0);
+
+# 六本木→神谷町
+5225;
+Structure['Sign_limit_35'].Put(0,-1.7,2,0,0,0,0,0,0);
+
+5280;
+Structure['Sign_10'].Put(0,-1.7,2,0,0,0,0,0,0);
+
+5350;
+Structure['Sign_9'].Put(0,-1.7,2,0,0,0,0,0,0);
+
+5480;
+Structure['Sign_8'].Put(0,-1.7,2,0,0,0,0,0,0);
+
+5620;
+Structure['Sign_7'].Put(0,-1.7,2,0,0,0,0,0,0);
+
+5780;
+Structure['Sign_6'].Put(0,-1.7,2,0,0,0,0,0,0);
+
+5878;
+Structure['Sign_limit_40'].Put(0,-1.7,2,0,0,0,0,0,0);
+
+5940;
+Structure['Sign_5'].Put(0,-1.7,2,0,0,0,0,0,0);
+
+6080;
+Structure['Sign_4'].Put(0,-1.7,2,0,0,0,0,0,0);
+
+6150;
+Structure['Sign_3'].Put(0,-1.7,2,0,0,0,0,0,0);
+
+6240;
+Structure['Sign_2'].Put(0,-1.7,2,0,0,0,0,0,0);
+
+6335;
+Structure['Sign_1'].Put(0,-1.7,2,0,0,0,0,0,0);
+
+# 神谷町→虎ノ門ヒルズ
+6520;
+Structure['Sign_4'].Put(0,-1.7,2,0,0,0,0,0,0);
+
+6550;
+Structure['Sign_limit_60'].Put(0,-1.7,2,0,0,0,0,0,0);
+
+6720;
+Structure['Sign_3'].Put(0,-1.7,2,0,0,0,0,0,0);
+
+6950;
+Structure['Sign_2'].Put(0,-1.7,2,0,0,0,0,0,0);
+
+7140;
+Structure['Sign_1'].Put(0,-1.7,2,0,0,0,0,0,0);
+
+# 虎ノ門ヒルズ→霞ケ関
+7315;
+Structure['Sign_5'].Put(0,-1.7,2,0,0,0,0,0,0);
+
+7415;
+Structure['Sign_4'].Put(0,-1.7,2,0,0,0,0,0,0);
+
+7560;
+Structure['Sign_3'].Put(0,-1.7,2,0,0,0,0,0,0);
+
+7680;
+Structure['Sign_2'].Put(0,-1.7,2,0,0,0,0,0,0);
+
+7850;
+Structure['Sign_1'].Put(0,-1.7,2,0,0,0,0,0,0);
+
+7900;
+Structure['Sign_arv_1'].Put(0,-1.7,2,0,0,0,0,0,0);
+
+7955;
+Structure['Sign_arv_2'].Put(0,-1.7,2,0,0,0,0,0,0);
+
+# 霞ケ関→日比谷
+8110;
+Structure['Sign_dep'].Put(0,-1.7,2,0,0,0,0,0,0);
+
+8210;
+Structure['Sign_7'].Put(0,-1.7,2,0,0,0,0,0,0);
+
+8300;
+Structure['Sign_6'].Put(0,-1.7,2,0,0,0,0,0,0);
+
+8320;
+Structure['Sign_limit_35'].Put(0,-1.7,2,0,0,0,0,0,0);
+
+8420;
+Structure['Sign_5'].Put(0,-1.7,2,0,0,0,0,0,0);
+
+8600;
+Structure['Sign_4'].Put(0,-1.7,2,0,0,0,0,0,0);
+
+8770;
+Structure['Sign_3'].Put(0,-1.7,2,0,0,0,0,0,0);
+
+9000;
+Structure['Sign_2'].Put(0,-1.7,2,0,0,0,0,0,0);
+
+9145;
+Structure['Sign_1'].Put(0,-1.7,2,0,0,0,0,0,0);
 
 # ==============================================
 # 速度制限
@@ -2342,6 +3451,33 @@ SpeedLimit.End();
 # 六本木手前
 5020;
 SpeedLimit.Begin(40);
+
+# 六本木→神谷町
+5225;
+SpeedLimit.Begin(35);
+
+5465;
+SpeedLimit.End();
+
+5878;
+SpeedLimit.Begin(40);
+
+6180;
+SpeedLimit.End();
+
+# 神谷町→虎ノ門ヒルズ
+6550;
+SpeedLimit.Begin(60);
+
+6880;
+SpeedLimit.End();
+
+# 霞ケ関→日比谷
+8320;
+SpeedLimit.Begin(35);
+
+8540;
+SpeedLimit.End();
 
 # ==============================================
 # 運転台明るさ (CabIlluminance)
@@ -2394,3 +3530,31 @@ CabIlluminance.Interpolate(1);
 CabIlluminance.Interpolate(1);
 5205;
 CabIlluminance.Interpolate(0);
+
+# ============================================
+# 駅ホーム待ち客（Passenger / Crowd ビルボード）
+# ============================================
+# 時間帯別の乗客密度はシナリオごとのマップファイル末尾に記述:
+#   - 昼間 46S → Map_46S.txt
+#   - 朝ラッシュ 38S → Map_38S.txt
+
+# ============================================
+# 対向列車 — Train.Add（共通定義）
+# ============================================
+# direction=-1 = 北千住→中目黒方向。Track['1'] 上を走らせる。
+# Light = 駅停車シーン用、Dark = トンネルすれ違いシーン用。
+# Enable / Stop はシナリオ別ファイル(Map_46S/Map_38S)に記述。
+0;
+Train.Add('Op_Light_01', 'Trains\Opposing\Train_7cars_13000_Light.txt', '1', -1);
+Train.Add('Op_Light_02', 'Trains\Opposing\Train_7cars_13000_Light.txt', '1', -1);
+Train.Add('Op_Light_03', 'Trains\Opposing\Train_7cars_13000_Light.txt', '1', -1);
+Train.Add('Op_Light_04', 'Trains\Opposing\Train_7cars_13000_Light.txt', '1', -1);
+Train.Add('Op_Light_05', 'Trains\Opposing\Train_7cars_13000_Light.txt', '1', -1);
+Train.Add('Op_Light_06', 'Trains\Opposing\Train_7cars_13000_Light.txt', '1', -1);
+Train.Add('Op_Light_07', 'Trains\Opposing\Train_7cars_13000_Light.txt', '1', -1);
+Train.Add('Op_Light_08', 'Trains\Opposing\Train_7cars_13000_Light.txt', '1', -1);
+Train.Add('Op_Dark_01', 'Trains\Opposing\Train_7cars_13000_Dark.txt', '1', -1);
+Train.Add('Op_Dark_02', 'Trains\Opposing\Train_7cars_13000_Dark.txt', '1', -1);
+Train.Add('Op_Dark_03', 'Trains\Opposing\Train_7cars_13000_Dark.txt', '1', -1);
+Train.Add('Op_Dark_04', 'Trains\Opposing\Train_7cars_13000_Dark.txt', '1', -1);
+Train.Add('Op_Dark_07', 'Trains\Opposing\Train_7cars_13000_Dark.txt', '1', -1);

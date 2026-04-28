@@ -6,6 +6,8 @@ Rail_02,Structures\Tracks\Rail_02.x,//バラスト
 Rail_03,Structures\Tracks\Rail_03.x,//スラブ（地下）
 Rail_04,Structures\Tracks\Rail_04.x,//スラブ（地下明るい）
 Rail_Side,Structures\Tracks\Rail_Side.x,//東横線-日比谷線間 線路脇
+Rail_Side_02,Structures\Tracks\Rail_Side_02.x,//レール外側付属パーツ（霞ケ関手前 引き上げ線エリア用）
+Top_Side_01,Structures\Wall\Top_Side_01.x,//天井外側付属パーツ（霞ケ関手前 引き上げ線エリア用）
 
 BG,Structures\Background\bg2.x
 
@@ -14,9 +16,15 @@ PF_L_02,Structures\Station\Platform\PF_L_02.x
 PF_L_S_02,Structures\Station\Platform\PF_L_S_02.x
 PF_L_03,Structures\Station\Platform\PF_L_03.x
 PF_L_S_03,Structures\Station\Platform\PF_L_S_03.x,//CG
+PF_L_05,Structures\Station\Platform\PF_L_05.x,//日比谷駅
+PF_L_06,Structures\Station\Platform\PF_L_06.x,//虎ノ門ヒルズ駅
+PF_L_S_04,Structures\Station\Platform\PF_L_S_04.x,//日比谷駅
+PF_L_S_05,Structures\Station\Platform\PF_L_S_05.x,//虎ノ門ヒルズ駅
 Sta_Top_L,Structures\Station\Ceiling\Sta_Top_L.x
 Sta_Top_L_01,Structures\Station\Ceiling\Sta_Top_L_01.x,//駅天井（左ホーム）
 Sta_Top_L_02,Structures\Station\Ceiling\Sta_Top_L_02.x,//駅天井（中目黒）
+Sta_Top_L_03,Structures\Station\Ceiling\Sta_Top_L_03.x,//駅天井（幅広・X-5以遠用）
+Sta_Top_L_04,Structures\Station\Ceiling\Sta_Top_L_04.x,//駅天井（虎ノ門ヒルズ）
 Sta_Top_R,Structures\Station\Ceiling\Sta_Top_R.x,//駅天井（右ホーム）
 PF_L_S,Structures\Station\Platform\PF_L_S.x,//CG
 PF_R,Structures\Station\Platform\PF_R.x,//CG
@@ -24,13 +32,29 @@ PF_R_S,Structures\Station\Platform\PF_R_S.x,//CG
 Sta_Wall_L,Structures\Station\Wall\Sta_Wall_L.x
 Sta_Wall_L_02,Structures\Station\Wall\Sta_Wall_L_02.x
 Sta_Wall_L_03,Structures\Station\Wall\Sta_Wall_L_03.x
+Sta_Wall_L_04,Structures\Station\Wall\Sta_Wall_L_04.x,//神谷町駅
+Sta_Wall_L_05,Structures\Station\Wall\Sta_Wall_L_05.x,//虎ノ門ヒルズ駅
+Sta_Wall_L_07,Structures\Station\Wall\Sta_Wall_L_07.x,//日比谷駅
 Line_color_L,Structures\Station\Wall\Line_color_L.x,//CG
 Sta_Wall_R,Structures\Station\Wall\Sta_Wall_R.x,//トンネル区間 反対線右壁
 Sta_Wall_F,Structures\Station\Wall\Sta_Wall_F.x,//駅の終端の壁（両面）
 Sta_Wall_F_01,Structures\Station\Wall\Sta_Wall_F_L_01.x,//恵比寿駅終端壁
 Sta_Wall_F_02,Structures\Station\Wall\Sta_Wall_F_02.x,//広尾駅終端壁
 Sta_Wall_F_03,Structures\Station\Wall\Sta_Wall_F_03.x,//六本木駅終端壁
+Sta_Wall_F_04,Structures\Station\Wall\Sta_Wall_F_04.x,//神谷町駅終端壁
+Sta_Wall_F_05,Structures\Station\Wall\Sta_Wall_F_05.x,//虎ノ門ヒルズ駅終端壁
+Sta_Wall_F_06,Structures\Station\Wall\Sta_Wall_F_06.x,//霞ケ関駅終端壁
+Sta_Wall_F_06_2,Structures\Station\Wall\Sta_Wall_F_06_2.x,//霞ケ関駅手前壁
+Sta_Wall_F_07,Structures\Station\Wall\Sta_Wall_F_07.x,//日比谷駅終端壁
+Sta_Wall_F_04_2,Structures\Station\Wall\Sta_Wall_F_04_2.x,//神谷町駅 ホーム幅縮小段差壁
+Pole_05,Structures\Station\Pole\Pole_05.x,//神谷町駅 ホーム柱
+Pole_06,Structures\Station\Pole\Pole_06.x,//虎ノ門ヒルズ駅 ホーム柱
+Pole_03,Structures\Station\Pole\Pole_03.x,//霞ヶ関駅 ホーム柱（中央用）
+Pole_07,Structures\Station\Pole\Pole_07.x,//霞ヶ関駅 ホーム柱（自線寄り用）
+Pole_08,Structures\Station\Pole\Pole_08.x,//日比谷駅 ホーム柱
 nakame_signal,Structures\Station\Other\nakame_signal.x,//中目黒出発信号機
+Kasumi_Stand,Structures\Station\Other\Kasumi_Stand.x,//霞ヶ関駅 ホーム上スタンド
+Kasumi_Exsit,Structures\Station\Other\Kasumi_Exsit.x,//霞ヶ関駅 出口/階段
 Pole,Structures\Station\Pole\Pole.x,//CG
 
 PF_L_01,Structures\Station\Platform\PF_L_01.x,//恵比寿駅
@@ -65,6 +89,7 @@ info_big,Structures\Station\Sign\info_big.x,//案内表示（大）
 kokoku_white,Structures\Station\Sign\kokoku_white.x,//広告パネル（白地）
 kokoku_zasshi,Structures\Station\Sign\kokoku_zasshi.x,//広告パネル（雑誌）
 roppongi_stlipe,Structures\Station\Sign\roppongi_stlipe.x,//六本木ラインカラーストライプ
+kasumi_stlipe,Structures\Station\Sign\kasumi_stlipe.x,//霞ヶ関ラインカラーストライプ
 Sign_1,Structures\Sign\1.x,//閉塞標識
 Sign_2,Structures\Sign\2.x,//閉塞標識
 Sign_3,Structures\Sign\3.x,//閉塞標識
@@ -108,6 +133,7 @@ Wall_L,Structures\Wall\Wall_L.x
 Wall_R,Structures\Wall\Wall_R_01.x
 
 Wall_L_01,Structures\Wall\Wall_L_01.x
+Wall_L_kasumi,Structures\Wall\Wall_L_kasumi.x,//霞ケ関駅トンネル左壁
 light,Structures\Wall\light.x,//トンネル照明
 kasen,Structures\Wall\kasen.x,//架線
 Nakame_01,Structures\Wall\Nakame_01.x,//中目黒周辺壁
@@ -123,5 +149,28 @@ nakame_b01,Structures\Bilding\nakame_01.x,//中目黒建物群
 nakame_b02,Structures\Bilding\nakame_02.x,//中目黒建物群02
 nakame_b03,Structures\Bilding\nakame_03.x,//中目黒建物群03
 hosen,Structures\Train\hosen.x,//保線車両
+Train_13000_Cab,Structures\Train\Train_13000_Cab.x,//対向列車 13000系 先頭車（明）
+Train_13000_Cab_Rear,Structures\Train\Train_13000_Cab_Rear.x,//対向列車 13000系 後尾車（明・180度反転）
+Train_13000_Mid,Structures\Train\Train_13000_Mid.x,//対向列車 13000系 中間車（明）
+Train_13000_Cab_Dark,Structures\Train\Train_13000_Cab_Dark.x,//対向列車 13000系 先頭車（暗）
+Train_13000_Cab_Rear_Dark,Structures\Train\Train_13000_Cab_Dark_Rear.x,//対向列車 13000系 後尾車（暗・180度反転）
+Train_13000_Mid_Dark,Structures\Train\Train_13000_Mid_Dark.x,//対向列車 13000系 中間車（暗）
 
 Top,Structures\Wall\Top_01.x
+
+Crowd_1_01,Structures\Station\Passenger\Crowd_1_01.x,//ホーム待ち客1人
+Crowd_1_02,Structures\Station\Passenger\Crowd_1_02.x,//ホーム待ち客1人
+Crowd_1_03,Structures\Station\Passenger\Crowd_1_03.x,//ホーム待ち客1人
+Crowd_2_01,Structures\Station\Passenger\Crowd_2_01.x,//ホーム待ち客2人
+Crowd_2_02,Structures\Station\Passenger\Crowd_2_02.x,//ホーム待ち客2人
+Crowd_2_03,Structures\Station\Passenger\Crowd_2_03.x,//ホーム待ち客2人
+EmptySpot,Structures\Station\Passenger\EmptySpot.x,//無人スポット（透明ダミー）
+Crowd_3_01,Structures\Station\Passenger\Crowd_3_01.x,//ホーム待ち客3人
+Crowd_3_02,Structures\Station\Passenger\Crowd_3_02.x,//ホーム待ち客3人
+Crowd_3_03,Structures\Station\Passenger\Crowd_3_03.x,//ホーム待ち客3人
+Crowd_5_01,Structures\Station\Passenger\Crowd_5_01.x,//ホーム待ち客5人
+Crowd_5_02,Structures\Station\Passenger\Crowd_5_02.x,//ホーム待ち客5人
+Crowd_5_03,Structures\Station\Passenger\Crowd_5_03.x,//ホーム待ち客5人
+Crowd_5_04,Structures\Station\Passenger\Crowd_5_04.x,//ホーム待ち客5人
+Crowd_10_01,Structures\Station\Passenger\Crowd_10_01.x,//ホーム待ち客10人
+Crowd_10_02,Structures\Station\Passenger\Crowd_10_02.x,//ホーム待ち客10人
