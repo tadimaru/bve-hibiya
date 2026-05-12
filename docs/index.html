@@ -169,13 +169,13 @@
   <section id="download">
     <h2>ダウンロード</h2>
     <div class="release-box">
-      <div class="section-label">最新リリース v0.2.0</div>
-      <div class="route">中目黒 〜 日比谷</div>
-      <div class="date" id="release-date">2026年4月30日 公開予定</div>
-      <a class="btn-download disabled" id="download-btn" href="#">4月30日 公開予定</a>
+      <div class="section-label">最新リリース v0.3.0</div>
+      <div class="route">中目黒 〜 上野</div>
+      <div class="date" id="release-date">2026年5月12日 公開予定</div>
+      <a class="btn-download disabled" id="download-btn" href="#">5月12日 公開予定</a>
       <div id="prerelease-fallback" style="margin-top:16px; font-size:0.9rem; color:#666;">
         公開までの間は、現行の
-        <a href="https://github.com/tadimaru/bve-hibiya/releases/download/v0.1.0/bve-hibiya-v0.1.0.zip" style="color:#1a1a2e; font-weight:bold;">v0.1.0（中目黒〜六本木）</a>
+        <a href="https://github.com/tadimaru/bve-hibiya/releases/download/v0.2.0/bve-hibiya-v0.2.0.zip" style="color:#1a1a2e; font-weight:bold;">v0.2.0（中目黒〜日比谷）</a>
         をご利用いただけます。
       </div>
     </div>
@@ -187,7 +187,7 @@
       <tr><th>対象路線</th><td>東京メトロ日比谷線</td></tr>
       <tr><th>対応ソフト</th><td>BVE Trainsim 5</td></tr>
       <tr><th>制作区間（最終目標）</th><td>中目黒 〜 北千住（全21駅・約21.3km）</td></tr>
-      <tr><th>最新リリース</th><td>v0.2.0 中目黒 〜 日比谷（2026年4月30日）</td></tr>
+      <tr><th>最新リリース</th><td>v0.3.0 中目黒 〜 上野（2026年5月12日）</td></tr>
       <tr><th>同梱シナリオ</th><td>38S（朝ラッシュ・8:36発）／ 46S（昼間・11:17発）</td></tr>
       <tr><th>制作者</th><td>たでぃまる</td></tr>
     </table>
@@ -204,9 +204,17 @@
           <span style="color:#888;">（旧バージョンを使いたい方向け）</span>
         </div>
       </li>
-      <li class="current">
-        <div class="date-label">2026年4月30日 公開予定</div>
+      <li class="upcoming" style="opacity:0.85;">
+        <div class="date-label">2026年4月30日 公開済</div>
         v0.2.0 中目黒 〜 日比谷（朝ラッシュ・対向列車追加）
+        <div style="margin-top:6px; font-size:0.85rem; font-weight:normal;">
+          <a href="https://github.com/tadimaru/bve-hibiya/releases/download/v0.2.0/bve-hibiya-v0.2.0.zip" style="color:#1a1a2e;">▼ v0.2.0 をダウンロード</a>
+          <span style="color:#888;">（旧バージョンを使いたい方向け）</span>
+        </div>
+      </li>
+      <li class="current">
+        <div class="date-label">2026年5月12日 公開予定</div>
+        v0.3.0 中目黒 〜 上野（10駅延伸・ホームドア改修）
       </li>
       <li class="upcoming">
         <div class="date-label">以降 順次延伸</div>
@@ -304,14 +312,14 @@
 
 <script>
   (function () {
-    var releaseDate = new Date('2026-04-30T00:00:00+09:00');
+    var releaseDate = new Date('2026-05-12T00:00:00+09:00');
     var now = new Date();
     if (now >= releaseDate) {
       var btn = document.getElementById('download-btn');
       btn.classList.remove('disabled');
-      btn.href = 'https://github.com/tadimaru/bve-hibiya/releases/download/v0.2.0/bve-hibiya-v0.2.0.zip';
+      btn.href = 'https://github.com/tadimaru/bve-hibiya/releases/download/v0.3.0/bve-hibiya-v0.3.0.zip';
       btn.textContent = 'ダウンロード（ZIP）';
-      document.getElementById('release-date').textContent = '2026年4月30日 公開';
+      document.getElementById('release-date').textContent = '2026年5月12日 公開';
       var fallback = document.getElementById('prerelease-fallback');
       if (fallback) { fallback.style.display = 'none'; }
     }

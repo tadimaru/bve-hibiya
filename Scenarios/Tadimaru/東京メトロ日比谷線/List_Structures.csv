@@ -13,18 +13,30 @@ BG,Structures\Background\bg2.x
 
 PF_L,Structures\Station\Platform\PF_L.x
 PF_L_02,Structures\Station\Platform\PF_L_02.x
+PF_L_02_okachi,Structures\Station\Platform\PF_L_02_okachi.x,//仲御徒町（幅狭）
 PF_L_S_02,Structures\Station\Platform\PF_L_S_02.x
 PF_L_03,Structures\Station\Platform\PF_L_03.x
-PF_L_S_03,Structures\Station\Platform\PF_L_S_03.x,//CG
+PF_L_S_03,Structures\Station\Platform\PF_L_S_03.x
 PF_L_05,Structures\Station\Platform\PF_L_05.x,//日比谷駅
 PF_L_06,Structures\Station\Platform\PF_L_06.x,//虎ノ門ヒルズ駅
+PF_L_07,Structures\Station\Platform\PF_L_07.x,//築地駅
+PF_L_08,Structures\Station\Platform\PF_L_08.x,//茅場町駅
+PF_L_09,Structures\Station\Platform\PF_L_09.x,//銀座駅
+PF_L_10,Structures\Station\Platform\PF_L_10.x,//人形町・小伝馬町・秋葉原・上野
 PF_L_S_04,Structures\Station\Platform\PF_L_S_04.x,//日比谷駅
 PF_L_S_05,Structures\Station\Platform\PF_L_S_05.x,//虎ノ門ヒルズ駅
+PF_L_S_07,Structures\Station\Platform\PF_L_S_07.x,//茅場町駅
+PF_L_S_08,Structures\Station\Platform\PF_L_S_08.x,//銀座駅
+PF_L_S_09,Structures\Station\Platform\PF_L_S_09.x,//小伝馬町・秋葉原・仲御徒町
+PF_L_S_10,Structures\Station\Platform\PF_L_S_10.x,//上野駅
 Sta_Top_L,Structures\Station\Ceiling\Sta_Top_L.x
-Sta_Top_L_01,Structures\Station\Ceiling\Sta_Top_L_01.x,//駅天井（左ホーム）
+Sta_Top_L_01,Structures\Station\Ceiling\Sta_Top_L_01.x,//駅天井（一般的なタイプ）
 Sta_Top_L_02,Structures\Station\Ceiling\Sta_Top_L_02.x,//駅天井（中目黒）
-Sta_Top_L_03,Structures\Station\Ceiling\Sta_Top_L_03.x,//駅天井（幅広・X-5以遠用）
+Sta_Top_L_03,Structures\Station\Ceiling\Sta_Top_L_03.x,//駅天井（01の幅広タイプ）
 Sta_Top_L_04,Structures\Station\Ceiling\Sta_Top_L_04.x,//駅天井（虎ノ門ヒルズ）
+Sta_Top_L_05,Structures\Station\Ceiling\Sta_Top_L_05.x,//駅天井（茅場町・上野）
+Sta_Top_L_06,Structures\Station\Ceiling\Sta_Top_L_06.x,//駅天井（銀座）
+Sta_Top_L_07,Structures\Station\Ceiling\Sta_Top_L_07.x,//駅天井（01の超幅狭タイプ）
 Sta_Top_R,Structures\Station\Ceiling\Sta_Top_R.x,//駅天井（右ホーム）
 PF_L_S,Structures\Station\Platform\PF_L_S.x,//CG
 PF_R,Structures\Station\Platform\PF_R.x,//CG
@@ -35,6 +47,12 @@ Sta_Wall_L_03,Structures\Station\Wall\Sta_Wall_L_03.x
 Sta_Wall_L_04,Structures\Station\Wall\Sta_Wall_L_04.x,//神谷町駅
 Sta_Wall_L_05,Structures\Station\Wall\Sta_Wall_L_05.x,//虎ノ門ヒルズ駅
 Sta_Wall_L_07,Structures\Station\Wall\Sta_Wall_L_07.x,//日比谷駅
+Sta_Wall_L_08,Structures\Station\Wall\Sta_Wall_L_08.x,//築地駅
+Sta_Wall_L_09,Structures\Station\Wall\Sta_Wall_L_09.x,//茅場町駅
+Sta_Wall_L_10,Structures\Station\Wall\Sta_Wall_L_10.x,//人形町駅
+Sta_Wall_L_11,Structures\Station\Wall\Sta_Wall_L_11.x,//小伝馬町・秋葉原前半
+Sta_Wall_L_12,Structures\Station\Wall\Sta_Wall_L_12.x,//秋葉原後半（120m〜）
+Sta_Wall_L_13,Structures\Station\Wall\Sta_Wall_L_13.x,//上野駅
 Line_color_L,Structures\Station\Wall\Line_color_L.x,//CG
 Sta_Wall_R,Structures\Station\Wall\Sta_Wall_R.x,//トンネル区間 反対線右壁
 Sta_Wall_F,Structures\Station\Wall\Sta_Wall_F.x,//駅の終端の壁（両面）
@@ -47,14 +65,43 @@ Sta_Wall_F_06,Structures\Station\Wall\Sta_Wall_F_06.x,//霞ケ関駅終端壁
 Sta_Wall_F_06_2,Structures\Station\Wall\Sta_Wall_F_06_2.x,//霞ケ関駅手前壁
 Sta_Wall_F_07,Structures\Station\Wall\Sta_Wall_F_07.x,//日比谷駅終端壁
 Sta_Wall_F_04_2,Structures\Station\Wall\Sta_Wall_F_04_2.x,//神谷町駅 ホーム幅縮小段差壁
+Sta_Wall_F_08,Structures\Station\Wall\Sta_Wall_F_08.x,//銀座駅先端壁
+Sta_Wall_F_09,Structures\Station\Wall\Sta_Wall_F_09.x,//東銀座駅先端壁
+Sta_Wall_F_10,Structures\Station\Wall\Sta_Wall_F_10.x,//築地駅先端壁
+Sta_Wall_F_11,Structures\Station\Wall\Sta_Wall_F_11.x,//八丁堀駅先端壁
+Sta_Wall_F_12,Structures\Station\Wall\Sta_Wall_F_12.x,//茅場町駅先端壁
+Sta_Wall_F_13,Structures\Station\Wall\Sta_Wall_F_13.x,//人形町駅先端壁
+Sta_Wall_F_14,Structures\Station\Wall\Sta_Wall_F_14.x,//小伝馬町駅先端壁
+Sta_Wall_F_15,Structures\Station\Wall\Sta_Wall_F_15.x,//秋葉原駅先端壁
+Sta_Wall_F_16,Structures\Station\Wall\Sta_Wall_F_16.x,//仲御徒町駅先端壁
+Sta_Wall_F_17,Structures\Station\Wall\Sta_Wall_F_17.x,//上野駅先端壁
+Sta_Wall_F_81,Structures\Station\Wall\Sta_Wall_F_81.x,//東銀座駅ホーム終端壁
 Pole_05,Structures\Station\Pole\Pole_05.x,//神谷町駅 ホーム柱
 Pole_06,Structures\Station\Pole\Pole_06.x,//虎ノ門ヒルズ駅 ホーム柱
 Pole_03,Structures\Station\Pole\Pole_03.x,//霞ヶ関駅 ホーム柱（中央用）
 Pole_07,Structures\Station\Pole\Pole_07.x,//霞ヶ関駅 ホーム柱（自線寄り用）
 Pole_08,Structures\Station\Pole\Pole_08.x,//日比谷駅 ホーム柱
+Pole_09,Structures\Station\Pole\Pole_09.x,//銀座駅 ホーム柱
+Pole_10,Structures\Station\Pole\Pole_10.x,//銀座駅 ホーム柱
+Pole_11,Structures\Station\Pole\Pole_11.x,//人形町・小伝馬町・秋葉原 ホーム柱
+Pole_12,Structures\Station\Pole\Pole_12.x,//八丁堀駅 ホーム柱
+Pole_13,Structures\Station\Pole\Pole_13.x,//茅場町駅 ホーム柱
+Pole_14,Structures\Station\Pole\Pole_14.x,//上野駅 ホーム柱
+Pole_15,Structures\Station\Pole\Pole_15.x,//東銀座駅 ホーム柱
 nakame_signal,Structures\Station\Other\nakame_signal.x,//中目黒出発信号機
 Kasumi_Stand,Structures\Station\Other\Kasumi_Stand.x,//霞ヶ関駅 ホーム上スタンド
 Kasumi_Exsit,Structures\Station\Other\Kasumi_Exsit.x,//霞ヶ関駅 出口/階段
+Ginza_Exsit,Structures\Station\Other\Ginza_Exsit.x,//銀座駅 出口/階段
+E_Ginza_Exsit,Structures\Station\Other\E_Ginza_Exsit.x,//東銀座駅 出口/階段
+Bori_Stand,Structures\Station\Other\Bori_Stand.x,//八丁堀駅 ホーム上スタンド
+Naka_Exsit_1,Structures\Station\Other\Naka_Exsit_1.x,//仲御徒町駅 出口/階段
+Naka_Exsit_2,Structures\Station\Other\Naka_Exsit_2.x,//仲御徒町駅 出口/階段2
+Tsukiji_Exsit_1,Structures\Station\Exsit\tsukiji_1.x,//築地駅 出口/階段1
+Tsukiji_Exsit_2,Structures\Station\Exsit\tsukiji_2.x,//築地駅 出口/階段2
+Kayaba_Exsit,Structures\Station\Exsit\kayaba.x,//茅場町駅 出口/階段
+Ningyo_Exsit,Structures\Station\Exsit\ningyo.x,//人形町・小伝馬町駅 出口/階段
+Akiba_Exsit_1,Structures\Station\Exsit\akiba_1.x,//秋葉原駅 出口/階段1
+Akiba_Exsit_2,Structures\Station\Exsit\akiba_2.x,//秋葉原駅 出口/階段2
 Pole,Structures\Station\Pole\Pole.x,//CG
 
 PF_L_01,Structures\Station\Platform\PF_L_01.x,//恵比寿駅
@@ -69,10 +116,10 @@ Nakame_head,Structures\Pole\Nakame_head.x,//中目黒架線柱ヘッド
 Pole_Toyoko,Structures\Pole\Pole_01.x,//東横線架線柱
 Pole_head_L_01,Structures\Pole\Pole_head_L_01.x,//架線柱ヘッド（左側）
 Pole_head_R_01,Structures\Pole\Pole_head_R_01.x,//架線柱ヘッド（右側）
-HomeDoor,Structures\Station\HomeDoor\HomeDoor_01.x,//ホームドア（中間）
-HomeDoor_R,Structures\Station\HomeDoor\HomeDoor_01_R.x,//ホームドア（中間・右側用）
-HomeDoor_ST,Structures\Station\HomeDoor\HomeDoor_01_ST.x,//ホームドア（始端）
-HomeDoor_END,Structures\Station\HomeDoor\HomeDoor_01_END.x,//ホームドア（終端）
+HomeDoor,Structures\Station\HomeDoor\HomeDoor_H.x,//ホームドア（中間）
+HomeDoor_R,Structures\Station\HomeDoor\HomeDoor_H.x,//ホームドア（中間・右側用）
+HomeDoor_ST,Structures\Station\HomeDoor\HomeDoor_H_st.x,//ホームドア（始端）
+HomeDoor_END,Structures\Station\HomeDoor\HomeDoor_H_end.x,//ホームドア（終端）
 HomeDoor_TY,Structures\Station\HomeDoor\HomeDoor_TY.x,//ホームドア（東横線）
 
 
@@ -87,9 +134,20 @@ eakon,Structures\Station\Sign\eakon.x,//エアコン設備
 exsit_norikae,Structures\Station\Sign\exsit_norikae.x,//出口・乗り換えサイン（六本木専用）
 info_big,Structures\Station\Sign\info_big.x,//案内表示（大）
 kokoku_white,Structures\Station\Sign\kokoku_white.x,//広告パネル（白地）
+Kokoku_White_2,Structures\Station\Sign\kokoku_white_2.x,//広告パネル（白地）2（テクスチャ違い）
 kokoku_zasshi,Structures\Station\Sign\kokoku_zasshi.x,//広告パネル（雑誌）
 roppongi_stlipe,Structures\Station\Sign\roppongi_stlipe.x,//六本木ラインカラーストライプ
 kasumi_stlipe,Structures\Station\Sign\kasumi_stlipe.x,//霞ヶ関ラインカラーストライプ
+e_ginza_stlipe,Structures\Station\Sign\e_ginza_stlipe.x,//東銀座ラインカラーストライプ
+Info_Exsit_1,Structures\Station\Sign\info_exsit_1.x,//島式駅 駅広告 出口案内1
+Info_Rosen_1,Structures\Station\Sign\info_rosen_1.x,//島式駅 駅広告 路線案内1
+Info_Exsit_2,Structures\Station\Sign\info_exsit_2.x,//対向式駅 駅広告 出口案内2
+Info_Rosen_2,Structures\Station\Sign\info_rosen_2.x,//対向式駅 駅広告 路線案内2
+Info_Map,Structures\Station\Sign\info_map.x,//対向式駅 駅広告 案内図
+Ueno_Info,Structures\Station\Sign\ueno_info.x,//上野駅 案内表示
+Ueno_Obj,Structures\Station\Other\ueno_obj.x,//上野駅 オブジェクト
+naka_stlipe_1,Structures\Station\Sign\naka_stlipe_1.x,//仲御徒町ラインカラーストライプ1
+naka_stlipe_2,Structures\Station\Sign\naka_stlipe_2.x,//仲御徒町ラインカラーストライプ2
 Sign_1,Structures\Sign\1.x,//閉塞標識
 Sign_2,Structures\Sign\2.x,//閉塞標識
 Sign_3,Structures\Sign\3.x,//閉塞標識
@@ -134,6 +192,10 @@ Wall_R,Structures\Wall\Wall_R_01.x
 
 Wall_L_01,Structures\Wall\Wall_L_01.x
 Wall_L_kasumi,Structures\Wall\Wall_L_kasumi.x,//霞ケ関駅トンネル左壁
+Wall_L_ginza,Structures\Wall\Wall_L_ginza.x,//銀座駅島式ホーム壁
+Wall_L_E_Ginza,Structures\Wall\Wall_L_E_Ginza.x,//東銀座駅島式ホーム壁
+Wall_L_bori,Structures\Wall\Wall_L_bori.x,//八丁堀駅島式ホーム壁
+Wall_L_naka,Structures\Wall\Wall_L_naka.x,//仲御徒町駅島式ホーム壁
 light,Structures\Wall\light.x,//トンネル照明
 kasen,Structures\Wall\kasen.x,//架線
 Nakame_01,Structures\Wall\Nakame_01.x,//中目黒周辺壁
@@ -155,6 +217,12 @@ Train_13000_Mid,Structures\Train\Train_13000_Mid.x,//対向列車 13000系 中�
 Train_13000_Cab_Dark,Structures\Train\Train_13000_Cab_Dark.x,//対向列車 13000系 先頭車（暗）
 Train_13000_Cab_Rear_Dark,Structures\Train\Train_13000_Cab_Dark_Rear.x,//対向列車 13000系 後尾車（暗・180度反転）
 Train_13000_Mid_Dark,Structures\Train\Train_13000_Mid_Dark.x,//対向列車 13000系 中間車（暗）
+Train_70000_Cab,Structures\Train\Train_70000_Cab.x,//対向列車 70000系 先頭車（明）
+Train_70000_Cab_Rear,Structures\Train\Train_70000_Cab_Rear.x,//対向列車 70000系 後尾車（明・180度反転）
+Train_70000_Mid,Structures\Train\Train_70000_Mid.x,//対向列車 70000系 中間車（明）
+Train_70000_Cab_Dark,Structures\Train\Train_70000_Cab_Dark.x,//対向列車 70000系 先頭車（暗）
+Train_70000_Cab_Rear_Dark,Structures\Train\Train_70000_Cab_Dark_Rear.x,//対向列車 70000系 後尾車（暗・180度反転）
+Train_70000_Mid_Dark,Structures\Train\Train_70000_Mid_Dark.x,//対向列車 70000系 中間車（暗）
 
 Top,Structures\Wall\Top_01.x
 

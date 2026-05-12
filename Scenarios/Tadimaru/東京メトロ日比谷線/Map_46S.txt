@@ -126,6 +126,166 @@ Repeater['Crowd_Hibiya_R'].Begin('1', 2.2, 0.7, 0, 0, 180, 0, 0, 0, 5,
 9300;
 Repeater['Crowd_Hibiya_R'].End();
 
+## 銀座駅 (9560〜9700m / 島式・右ドア / 多い)
+9560;
+Repeater['Crowd_Ginza'].Begin(0, 2.2, 0.7, 0, 0, 180, 0, 0, 0, 5,
+    'Crowd_1_01', 'Crowd_2_01', 'EmptySpot', 'Crowd_1_02',
+    'Crowd_3_01', 'EmptySpot', 'Crowd_2_02', 'Crowd_1_03');
+9700;
+Repeater['Crowd_Ginza'].End();
+
+## 銀座駅 対向線 (Track[1] / 多い)
+9560;
+Repeater['Crowd_Ginza_R'].Begin('1', -2.2, 0.7, 0, 0, 0, 0, 0, 0, 5,
+    'Crowd_1_01', 'Crowd_2_01', 'EmptySpot', 'Crowd_1_02',
+    'Crowd_3_01', 'EmptySpot', 'Crowd_2_02', 'Crowd_1_03');
+9700;
+Repeater['Crowd_Ginza_R'].End();
+
+## 東銀座駅 (9960〜10100m / 島式・右ドア / 少ない)
+9960;
+Repeater['Crowd_E_Ginza'].Begin(0, 2.2, 0.7, 0, 0, 180, 0, 0, 0, 5,
+    'EmptySpot', 'Crowd_1_01', 'EmptySpot', 'Crowd_2_01',
+    'EmptySpot', 'Crowd_1_02', 'EmptySpot', 'Crowd_2_02');
+10100;
+Repeater['Crowd_E_Ginza'].End();
+
+## 東銀座駅 対向線 (Track[1] / 少ない)
+9960;
+Repeater['Crowd_E_Ginza_R'].Begin('1', -2.2, 0.7, 0, 0, 0, 0, 0, 0, 5,
+    'EmptySpot', 'Crowd_1_01', 'EmptySpot', 'Crowd_2_01',
+    'EmptySpot', 'Crowd_1_02', 'EmptySpot', 'Crowd_2_02');
+10100;
+Repeater['Crowd_E_Ginza_R'].End();
+
+## 築地駅 (10560〜10700m / 対向式・左ドア / 少ない)
+10560;
+Repeater['Crowd_Tsukiji'].Begin(0, -2.2, 0.7, 0, 0, 0, 0, 0, 0, 5,
+    'EmptySpot', 'Crowd_1_01', 'EmptySpot', 'Crowd_2_01',
+    'EmptySpot', 'Crowd_1_02', 'EmptySpot', 'Crowd_2_02');
+10700;
+Repeater['Crowd_Tsukiji'].End();
+
+## 築地駅 対向線 (Track[1] / 少ない)
+10560;
+Repeater['Crowd_Tsukiji_R'].Begin('1', 2.2, 0.7, 0, 0, 180, 0, 0, 0, 5,
+    'EmptySpot', 'Crowd_1_01', 'EmptySpot', 'Crowd_2_01',
+    'EmptySpot', 'Crowd_1_02', 'EmptySpot', 'Crowd_2_02');
+10700;
+Repeater['Crowd_Tsukiji_R'].End();
+
+## 八丁堀駅 (11560〜11700m / 島式・右ドア / 少ない)
+11560;
+Repeater['Crowd_Hatchobori'].Begin(0, 2.2, 0.7, 0, 0, 180, 0, 0, 0, 5,
+    'EmptySpot', 'Crowd_1_01', 'EmptySpot', 'Crowd_2_01',
+    'EmptySpot', 'Crowd_1_02', 'EmptySpot', 'Crowd_2_02');
+11700;
+Repeater['Crowd_Hatchobori'].End();
+
+## 八丁堀駅 対向線 (Track[1] / 少ない)
+11560;
+Repeater['Crowd_Hatchobori_R'].Begin('1', -2.2, 0.7, 0, 0, 0, 0, 0, 0, 5,
+    'EmptySpot', 'Crowd_1_01', 'EmptySpot', 'Crowd_2_01',
+    'EmptySpot', 'Crowd_1_02', 'EmptySpot', 'Crowd_2_02');
+11700;
+Repeater['Crowd_Hatchobori_R'].End();
+
+## 茅場町駅 (12060〜12200m / 対向式・左ドア / 多い)
+12060;
+Repeater['Crowd_Kayabacho'].Begin(0, -2.2, 0.7, 0, 0, 0, 0, 0, 0, 5,
+    'Crowd_1_01', 'Crowd_2_01', 'EmptySpot', 'Crowd_1_02',
+    'Crowd_3_01', 'EmptySpot', 'Crowd_2_02', 'Crowd_1_03');
+12200;
+Repeater['Crowd_Kayabacho'].End();
+
+## 茅場町駅 対向線 (Track[1] / 多い)
+12060;
+Repeater['Crowd_Kayabacho_R'].Begin('1', 2.2, 0.7, 0, 0, 180, 0, 0, 0, 5,
+    'Crowd_1_01', 'Crowd_2_01', 'EmptySpot', 'Crowd_1_02',
+    'Crowd_3_01', 'EmptySpot', 'Crowd_2_02', 'Crowd_1_03');
+12200;
+Repeater['Crowd_Kayabacho_R'].End();
+
+## 人形町駅 (12960〜13100m / 対向式・左ドア / 少ない)
+12960;
+Repeater['Crowd_Ningyocho'].Begin(0, -2.2, 0.7, 0, 0, 0, 0, 0, 0, 5,
+    'EmptySpot', 'Crowd_1_01', 'EmptySpot', 'Crowd_2_01',
+    'EmptySpot', 'Crowd_1_02', 'EmptySpot', 'Crowd_2_02');
+13100;
+Repeater['Crowd_Ningyocho'].End();
+
+## 人形町駅 対向線 (Track[1] / 少ない)
+12960;
+Repeater['Crowd_Ningyocho_R'].Begin('1', 2.2, 0.7, 0, 0, 180, 0, 0, 0, 5,
+    'EmptySpot', 'Crowd_1_01', 'EmptySpot', 'Crowd_2_01',
+    'EmptySpot', 'Crowd_1_02', 'EmptySpot', 'Crowd_2_02');
+13100;
+Repeater['Crowd_Ningyocho_R'].End();
+
+## 小伝馬町駅 (13560〜13700m / 対向式・左ドア / 少ない)
+13560;
+Repeater['Crowd_Kodemmacho'].Begin(0, -2.2, 0.7, 0, 0, 0, 0, 0, 0, 5,
+    'EmptySpot', 'Crowd_1_01', 'EmptySpot', 'Crowd_2_01',
+    'EmptySpot', 'Crowd_1_02', 'EmptySpot', 'Crowd_2_02');
+13700;
+Repeater['Crowd_Kodemmacho'].End();
+
+## 小伝馬町駅 対向線 (Track[1] / 少ない)
+13560;
+Repeater['Crowd_Kodemmacho_R'].Begin('1', 2.2, 0.7, 0, 0, 180, 0, 0, 0, 5,
+    'EmptySpot', 'Crowd_1_01', 'EmptySpot', 'Crowd_2_01',
+    'EmptySpot', 'Crowd_1_02', 'EmptySpot', 'Crowd_2_02');
+13700;
+Repeater['Crowd_Kodemmacho_R'].End();
+
+## 秋葉原駅 (14460〜14600m / 対向式・左ドア / 多い)
+14460;
+Repeater['Crowd_Akihabara'].Begin(0, -2.2, 0.7, 0, 0, 0, 0, 0, 0, 5,
+    'Crowd_1_01', 'Crowd_2_01', 'EmptySpot', 'Crowd_1_02',
+    'Crowd_3_01', 'EmptySpot', 'Crowd_2_02', 'Crowd_1_03');
+14600;
+Repeater['Crowd_Akihabara'].End();
+
+## 秋葉原駅 対向線 (Track[1] / 多い)
+14460;
+Repeater['Crowd_Akihabara_R'].Begin('1', 2.2, 0.7, 0, 0, 180, 0, 0, 0, 5,
+    'Crowd_1_01', 'Crowd_2_01', 'EmptySpot', 'Crowd_1_02',
+    'Crowd_3_01', 'EmptySpot', 'Crowd_2_02', 'Crowd_1_03');
+14600;
+Repeater['Crowd_Akihabara_R'].End();
+
+## 仲御徒町駅 (15460〜15600m / 島式・右ドア / 少ない)
+15460;
+Repeater['Crowd_Nakaokachi'].Begin(0, 2.2, 0.7, 0, 0, 180, 0, 0, 0, 5,
+    'EmptySpot', 'Crowd_1_01', 'EmptySpot', 'Crowd_2_01',
+    'EmptySpot', 'Crowd_1_02', 'EmptySpot', 'Crowd_2_02');
+15600;
+Repeater['Crowd_Nakaokachi'].End();
+
+## 仲御徒町駅 対向線 (Track[1] / 少ない)
+15460;
+Repeater['Crowd_Nakaokachi_R'].Begin('1', -2.2, 0.7, 0, 0, 0, 0, 0, 0, 5,
+    'EmptySpot', 'Crowd_1_01', 'EmptySpot', 'Crowd_2_01',
+    'EmptySpot', 'Crowd_1_02', 'EmptySpot', 'Crowd_2_02');
+15600;
+Repeater['Crowd_Nakaokachi_R'].End();
+
+## 上野駅 (15960〜16100m / 対向式・左ドア / 多い)
+15960;
+Repeater['Crowd_Ueno'].Begin(0, -2.2, 0.7, 0, 0, 0, 0, 0, 0, 5,
+    'Crowd_1_01', 'Crowd_2_01', 'EmptySpot', 'Crowd_1_02',
+    'Crowd_3_01', 'EmptySpot', 'Crowd_2_02', 'Crowd_1_03');
+16100;
+Repeater['Crowd_Ueno'].End();
+
+## 上野駅 対向線 (Track[1] / 多い)
+15960;
+Repeater['Crowd_Ueno_R'].Begin('1', 2.2, 0.7, 0, 0, 180, 0, 0, 0, 5,
+    'Crowd_1_01', 'Crowd_2_01', 'EmptySpot', 'Crowd_1_02',
+    'Crowd_3_01', 'EmptySpot', 'Crowd_2_02', 'Crowd_1_03');
+16100;
+Repeater['Crowd_Ueno_R'].End();
+
 # ============================================
 # 対向列車 — 46S 昼間スケジュール（距離程ベース発火）
 # ============================================
@@ -147,51 +307,181 @@ Repeater['Crowd_Hibiya_R'].End();
 0;
 Train['Op_Light_01'].Enable('00:00:00');
 1357; Train['Op_Light_01'].Stop(2.5, 3, 2.5, 40);
-857;  Train['Op_Light_01'].Stop(2.5, 90, 2.5, 60);
+867;  Train['Op_Light_01'].Stop(2.5, 90, 2.5, 60);
 
 # --- A 恵比寿入線（Dark） ---
 1800;
 Train['Op_Dark_01'].Enable('00:00:00');
 2357; Train['Op_Dark_01'].Stop(2.5, 3, 2.5, 40);
-1857; Train['Op_Dark_01'].Stop(2.5, 90, 2.5, 60);
-857;  Train['Op_Dark_01'].Stop(2.5, 25, 2.5, 60);
+1867; Train['Op_Dark_01'].Stop(2.5, 90, 2.5, 60);
+867;  Train['Op_Dark_01'].Stop(2.5, 25, 2.5, 60);
 
-# --- C 広尾〜六本木 中点すれ違い (4350m / Dark) ---
+# --- C 広尾〜六本木 中点すれ違い (4350m / 70K Dark) ---
 4250;
-Train['Op_Dark_02'].Enable('00:00:00');
-4430; Train['Op_Dark_02'].Stop(2.5, 1, 2.5, 45);
-3357; Train['Op_Dark_02'].Stop(2.5, 25, 2.5, 60);
-1857; Train['Op_Dark_02'].Stop(2.5, 25, 2.5, 60);
-857;  Train['Op_Dark_02'].Stop(2.5, 25, 2.5, 60);
+Train['Op_70K_Dark_01'].Enable('00:00:00');
+4430; Train['Op_70K_Dark_01'].Stop(2.5, 1, 2.5, 45);
+3367; Train['Op_70K_Dark_01'].Stop(2.5, 25, 2.5, 60);
+1867; Train['Op_70K_Dark_01'].Stop(2.5, 25, 2.5, 60);
+867;  Train['Op_70K_Dark_01'].Stop(2.5, 25, 2.5, 60);
 
 # --- C 六本木〜神谷町 中点すれ違い (5850m / Dark) ---
 5750;
 Train['Op_Dark_03'].Enable('00:00:00');
 5930; Train['Op_Dark_03'].Stop(2.5, 1, 2.5, 45);
-5057; Train['Op_Dark_03'].Stop(2.5, 25, 2.5, 60);
-3357; Train['Op_Dark_03'].Stop(2.5, 25, 2.5, 60);
-1857; Train['Op_Dark_03'].Stop(2.5, 25, 2.5, 60);
-857;  Train['Op_Dark_03'].Stop(2.5, 25, 2.5, 60);
+5067; Train['Op_Dark_03'].Stop(2.5, 25, 2.5, 60);
+3367; Train['Op_Dark_03'].Stop(2.5, 25, 2.5, 60);
+1867; Train['Op_Dark_03'].Stop(2.5, 25, 2.5, 60);
+867;  Train['Op_Dark_03'].Stop(2.5, 25, 2.5, 60);
 
-# --- A 虎ノ門入線（Dark） ---
+# --- A 虎ノ門入線（70K Dark） ---
 7100;
-Train['Op_Dark_04'].Enable('00:00:00');
-7657; Train['Op_Dark_04'].Stop(2.5, 3, 2.5, 40);
-7157; Train['Op_Dark_04'].Stop(2.5, 90, 2.5, 60);
-6357; Train['Op_Dark_04'].Stop(2.5, 25, 2.5, 60);
-5057; Train['Op_Dark_04'].Stop(2.5, 25, 2.5, 60);
-3357; Train['Op_Dark_04'].Stop(2.5, 25, 2.5, 60);
-1857; Train['Op_Dark_04'].Stop(2.5, 25, 2.5, 60);
-857;  Train['Op_Dark_04'].Stop(2.5, 25, 2.5, 60);
+Train['Op_70K_Dark_02'].Enable('00:00:00');
+7657; Train['Op_70K_Dark_02'].Stop(2.5, 3, 2.5, 40);
+7167; Train['Op_70K_Dark_02'].Stop(2.5, 90, 2.5, 60);
+6367; Train['Op_70K_Dark_02'].Stop(2.5, 25, 2.5, 60);
+5067; Train['Op_70K_Dark_02'].Stop(2.5, 25, 2.5, 60);
+3367; Train['Op_70K_Dark_02'].Stop(2.5, 25, 2.5, 60);
+1867; Train['Op_70K_Dark_02'].Stop(2.5, 25, 2.5, 60);
+867;  Train['Op_70K_Dark_02'].Stop(2.5, 25, 2.5, 60);
 
-# --- B 日比谷既停車（Light） ---
+# --- B 日比谷既停車（70K Light） ---
 9000;
-Train['Op_Light_03'].Enable('00:00:00');
-9157; Train['Op_Light_03'].Stop(2.5, 60, 2.5, 60);
-7957; Train['Op_Light_03'].Stop(2.5, 25, 2.5, 60);
-7157; Train['Op_Light_03'].Stop(2.5, 25, 2.5, 60);
-6357; Train['Op_Light_03'].Stop(2.5, 25, 2.5, 60);
-5057; Train['Op_Light_03'].Stop(2.5, 25, 2.5, 60);
-3357; Train['Op_Light_03'].Stop(2.5, 25, 2.5, 60);
-1857; Train['Op_Light_03'].Stop(2.5, 25, 2.5, 60);
-857;  Train['Op_Light_03'].Stop(2.5, 25, 2.5, 60);
+Train['Op_70K_Light_01'].Enable('00:00:00');
+9167; Train['Op_70K_Light_01'].Stop(2.5, 60, 2.5, 60);
+7967; Train['Op_70K_Light_01'].Stop(2.5, 25, 2.5, 60);
+7167; Train['Op_70K_Light_01'].Stop(2.5, 25, 2.5, 60);
+6367; Train['Op_70K_Light_01'].Stop(2.5, 25, 2.5, 60);
+5067; Train['Op_70K_Light_01'].Stop(2.5, 25, 2.5, 60);
+3367; Train['Op_70K_Light_01'].Stop(2.5, 25, 2.5, 60);
+1867; Train['Op_70K_Light_01'].Stop(2.5, 25, 2.5, 60);
+867;  Train['Op_70K_Light_01'].Stop(2.5, 25, 2.5, 60);
+
+# ============================================
+# 延伸区間 対向列車 — 銀座〜上野
+# ============================================
+
+# --- A 銀座入線（13000 Dark / 差し替えで空いた Op_Dark_02 を再利用） ---
+9500;
+Train['Op_Dark_02'].Enable('00:00:00');
+10057; Train['Op_Dark_02'].Stop(2.5, 3, 2.5, 40);
+9567;  Train['Op_Dark_02'].Stop(2.5, 90, 2.5, 60);
+9167;  Train['Op_Dark_02'].Stop(2.5, 25, 2.5, 60);
+7967;  Train['Op_Dark_02'].Stop(2.5, 25, 2.5, 60);
+7167;  Train['Op_Dark_02'].Stop(2.5, 25, 2.5, 60);
+6367;  Train['Op_Dark_02'].Stop(2.5, 25, 2.5, 60);
+5067;  Train['Op_Dark_02'].Stop(2.5, 25, 2.5, 60);
+3367;  Train['Op_Dark_02'].Stop(2.5, 25, 2.5, 60);
+1867;  Train['Op_Dark_02'].Stop(2.5, 25, 2.5, 60);
+867;   Train['Op_Dark_02'].Stop(2.5, 25, 2.5, 60);
+
+# --- B 築地既停車（13000 Light） ---
+10400;
+Train['Op_Light_04'].Enable('00:00:00');
+10567; Train['Op_Light_04'].Stop(2.5, 60, 2.5, 60);
+9967;  Train['Op_Light_04'].Stop(2.5, 25, 2.5, 60);
+9567;  Train['Op_Light_04'].Stop(2.5, 25, 2.5, 60);
+9167;  Train['Op_Light_04'].Stop(2.5, 25, 2.5, 60);
+7967;  Train['Op_Light_04'].Stop(2.5, 25, 2.5, 60);
+7167;  Train['Op_Light_04'].Stop(2.5, 25, 2.5, 60);
+6367;  Train['Op_Light_04'].Stop(2.5, 25, 2.5, 60);
+5067;  Train['Op_Light_04'].Stop(2.5, 25, 2.5, 60);
+3367;  Train['Op_Light_04'].Stop(2.5, 25, 2.5, 60);
+1867;  Train['Op_Light_04'].Stop(2.5, 25, 2.5, 60);
+867;   Train['Op_Light_04'].Stop(2.5, 25, 2.5, 60);
+
+# --- B 八丁堀既停車（70K Light） ---
+11400;
+Train['Op_70K_Light_02'].Enable('00:00:00');
+11567; Train['Op_70K_Light_02'].Stop(2.5, 60, 2.5, 60);
+10567; Train['Op_70K_Light_02'].Stop(2.5, 25, 2.5, 60);
+9967;  Train['Op_70K_Light_02'].Stop(2.5, 25, 2.5, 60);
+9567;  Train['Op_70K_Light_02'].Stop(2.5, 25, 2.5, 60);
+9167;  Train['Op_70K_Light_02'].Stop(2.5, 25, 2.5, 60);
+7967;  Train['Op_70K_Light_02'].Stop(2.5, 25, 2.5, 60);
+7167;  Train['Op_70K_Light_02'].Stop(2.5, 25, 2.5, 60);
+6367;  Train['Op_70K_Light_02'].Stop(2.5, 25, 2.5, 60);
+5067;  Train['Op_70K_Light_02'].Stop(2.5, 25, 2.5, 60);
+3367;  Train['Op_70K_Light_02'].Stop(2.5, 25, 2.5, 60);
+1867;  Train['Op_70K_Light_02'].Stop(2.5, 25, 2.5, 60);
+867;   Train['Op_70K_Light_02'].Stop(2.5, 25, 2.5, 60);
+
+# --- C 茅場町〜人形町 中点すれ違い (12650m / 13000 Dark / 差し替えで空いた Op_Dark_04 を再利用) ---
+12550;
+Train['Op_Dark_04'].Enable('00:00:00');
+12730; Train['Op_Dark_04'].Stop(2.5, 1, 2.5, 45);
+12067; Train['Op_Dark_04'].Stop(2.5, 25, 2.5, 60);
+11567; Train['Op_Dark_04'].Stop(2.5, 25, 2.5, 60);
+10567; Train['Op_Dark_04'].Stop(2.5, 25, 2.5, 60);
+9967;  Train['Op_Dark_04'].Stop(2.5, 25, 2.5, 60);
+9567;  Train['Op_Dark_04'].Stop(2.5, 25, 2.5, 60);
+9167;  Train['Op_Dark_04'].Stop(2.5, 25, 2.5, 60);
+7967;  Train['Op_Dark_04'].Stop(2.5, 25, 2.5, 60);
+7167;  Train['Op_Dark_04'].Stop(2.5, 25, 2.5, 60);
+6367;  Train['Op_Dark_04'].Stop(2.5, 25, 2.5, 60);
+5067;  Train['Op_Dark_04'].Stop(2.5, 25, 2.5, 60);
+3367;  Train['Op_Dark_04'].Stop(2.5, 25, 2.5, 60);
+1867;  Train['Op_Dark_04'].Stop(2.5, 25, 2.5, 60);
+867;   Train['Op_Dark_04'].Stop(2.5, 25, 2.5, 60);
+
+# --- C 小伝馬町〜秋葉原 中点すれ違い (14150m / 70K Dark) ---
+14050;
+Train['Op_70K_Dark_03'].Enable('00:00:00');
+14230; Train['Op_70K_Dark_03'].Stop(2.5, 1, 2.5, 45);
+13567; Train['Op_70K_Dark_03'].Stop(2.5, 25, 2.5, 60);
+12967; Train['Op_70K_Dark_03'].Stop(2.5, 25, 2.5, 60);
+12067; Train['Op_70K_Dark_03'].Stop(2.5, 25, 2.5, 60);
+11567; Train['Op_70K_Dark_03'].Stop(2.5, 25, 2.5, 60);
+10567; Train['Op_70K_Dark_03'].Stop(2.5, 25, 2.5, 60);
+9967;  Train['Op_70K_Dark_03'].Stop(2.5, 25, 2.5, 60);
+9567;  Train['Op_70K_Dark_03'].Stop(2.5, 25, 2.5, 60);
+9167;  Train['Op_70K_Dark_03'].Stop(2.5, 25, 2.5, 60);
+7967;  Train['Op_70K_Dark_03'].Stop(2.5, 25, 2.5, 60);
+7167;  Train['Op_70K_Dark_03'].Stop(2.5, 25, 2.5, 60);
+6367;  Train['Op_70K_Dark_03'].Stop(2.5, 25, 2.5, 60);
+5067;  Train['Op_70K_Dark_03'].Stop(2.5, 25, 2.5, 60);
+3367;  Train['Op_70K_Dark_03'].Stop(2.5, 25, 2.5, 60);
+1867;  Train['Op_70K_Dark_03'].Stop(2.5, 25, 2.5, 60);
+867;   Train['Op_70K_Dark_03'].Stop(2.5, 25, 2.5, 60);
+
+# --- B 仲御徒町既停車（13000 Light） ---
+15300;
+Train['Op_Light_02'].Enable('00:00:00');
+15467; Train['Op_Light_02'].Stop(2.5, 60, 2.5, 60);
+14467; Train['Op_Light_02'].Stop(2.5, 25, 2.5, 60);
+13567; Train['Op_Light_02'].Stop(2.5, 25, 2.5, 60);
+12967; Train['Op_Light_02'].Stop(2.5, 25, 2.5, 60);
+12067; Train['Op_Light_02'].Stop(2.5, 25, 2.5, 60);
+11567; Train['Op_Light_02'].Stop(2.5, 25, 2.5, 60);
+10567; Train['Op_Light_02'].Stop(2.5, 25, 2.5, 60);
+9967;  Train['Op_Light_02'].Stop(2.5, 25, 2.5, 60);
+9567;  Train['Op_Light_02'].Stop(2.5, 25, 2.5, 60);
+9167;  Train['Op_Light_02'].Stop(2.5, 25, 2.5, 60);
+7967;  Train['Op_Light_02'].Stop(2.5, 25, 2.5, 60);
+7167;  Train['Op_Light_02'].Stop(2.5, 25, 2.5, 60);
+6367;  Train['Op_Light_02'].Stop(2.5, 25, 2.5, 60);
+5067;  Train['Op_Light_02'].Stop(2.5, 25, 2.5, 60);
+3367;  Train['Op_Light_02'].Stop(2.5, 25, 2.5, 60);
+1867;  Train['Op_Light_02'].Stop(2.5, 25, 2.5, 60);
+867;   Train['Op_Light_02'].Stop(2.5, 25, 2.5, 60);
+
+# --- B 上野既停車（70K Light） ---
+15800;
+Train['Op_70K_Light_03'].Enable('00:00:00');
+15967; Train['Op_70K_Light_03'].Stop(2.5, 60, 2.5, 60);
+15467; Train['Op_70K_Light_03'].Stop(2.5, 25, 2.5, 60);
+14467; Train['Op_70K_Light_03'].Stop(2.5, 25, 2.5, 60);
+13567; Train['Op_70K_Light_03'].Stop(2.5, 25, 2.5, 60);
+12967; Train['Op_70K_Light_03'].Stop(2.5, 25, 2.5, 60);
+12067; Train['Op_70K_Light_03'].Stop(2.5, 25, 2.5, 60);
+11567; Train['Op_70K_Light_03'].Stop(2.5, 25, 2.5, 60);
+10567; Train['Op_70K_Light_03'].Stop(2.5, 25, 2.5, 60);
+9967;  Train['Op_70K_Light_03'].Stop(2.5, 25, 2.5, 60);
+9567;  Train['Op_70K_Light_03'].Stop(2.5, 25, 2.5, 60);
+9167;  Train['Op_70K_Light_03'].Stop(2.5, 25, 2.5, 60);
+7967;  Train['Op_70K_Light_03'].Stop(2.5, 25, 2.5, 60);
+7167;  Train['Op_70K_Light_03'].Stop(2.5, 25, 2.5, 60);
+6367;  Train['Op_70K_Light_03'].Stop(2.5, 25, 2.5, 60);
+5067;  Train['Op_70K_Light_03'].Stop(2.5, 25, 2.5, 60);
+3367;  Train['Op_70K_Light_03'].Stop(2.5, 25, 2.5, 60);
+1867;  Train['Op_70K_Light_03'].Stop(2.5, 25, 2.5, 60);
+867;   Train['Op_70K_Light_03'].Stop(2.5, 25, 2.5, 60);

@@ -129,6 +129,166 @@ Repeater['Crowd_Hibiya_R'].Begin('1', 2.2, 0.7, 0, 0, 180, 0, 0, 0, 5,
 9300;
 Repeater['Crowd_Hibiya_R'].End();
 
+## 銀座駅 (9560〜9700m / 島式・右ドア / 朝混雑)
+9560;
+Repeater['Crowd_Ginza'].Begin(0, 2.2, 0.7, 0, 0, 180, 0, 0, 0, 5,
+    'Crowd_3_01', 'Crowd_5_01', 'Crowd_2_01', 'Crowd_3_02',
+    'Crowd_5_02', 'Crowd_2_02', 'Crowd_3_03', 'Crowd_5_03');
+9700;
+Repeater['Crowd_Ginza'].End();
+
+## 銀座駅 対向線 (Track[1] / 朝混雑)
+9560;
+Repeater['Crowd_Ginza_R'].Begin('1', -2.2, 0.7, 0, 0, 0, 0, 0, 0, 5,
+    'Crowd_3_01', 'Crowd_5_01', 'Crowd_2_01', 'Crowd_3_02',
+    'Crowd_5_02', 'Crowd_2_02', 'Crowd_3_03', 'Crowd_5_03');
+9700;
+Repeater['Crowd_Ginza_R'].End();
+
+## 東銀座駅 (9960〜10100m / 島式・右ドア / 朝普通)
+9960;
+Repeater['Crowd_E_Ginza'].Begin(0, 2.2, 0.7, 0, 0, 180, 0, 0, 0, 5,
+    'Crowd_1_01', 'Crowd_2_01', 'Crowd_3_01', 'Crowd_1_02',
+    'Crowd_2_02', 'Crowd_3_02', 'Crowd_1_03', 'Crowd_2_03');
+10100;
+Repeater['Crowd_E_Ginza'].End();
+
+## 東銀座駅 対向線 (Track[1] / 朝普通)
+9960;
+Repeater['Crowd_E_Ginza_R'].Begin('1', -2.2, 0.7, 0, 0, 0, 0, 0, 0, 5,
+    'Crowd_1_01', 'Crowd_2_01', 'Crowd_3_01', 'Crowd_1_02',
+    'Crowd_2_02', 'Crowd_3_02', 'Crowd_1_03', 'Crowd_2_03');
+10100;
+Repeater['Crowd_E_Ginza_R'].End();
+
+## 築地駅 (10560〜10700m / 対向式・左ドア / 朝普通)
+10560;
+Repeater['Crowd_Tsukiji'].Begin(0, -2.2, 0.7, 0, 0, 0, 0, 0, 0, 5,
+    'Crowd_1_01', 'Crowd_2_01', 'Crowd_3_01', 'Crowd_1_02',
+    'Crowd_2_02', 'Crowd_3_02', 'Crowd_1_03', 'Crowd_2_03');
+10700;
+Repeater['Crowd_Tsukiji'].End();
+
+## 築地駅 対向線 (Track[1] / 朝普通)
+10560;
+Repeater['Crowd_Tsukiji_R'].Begin('1', 2.2, 0.7, 0, 0, 180, 0, 0, 0, 5,
+    'Crowd_1_01', 'Crowd_2_01', 'Crowd_3_01', 'Crowd_1_02',
+    'Crowd_2_02', 'Crowd_3_02', 'Crowd_1_03', 'Crowd_2_03');
+10700;
+Repeater['Crowd_Tsukiji_R'].End();
+
+## 八丁堀駅 (11560〜11700m / 島式・右ドア / 朝普通)
+11560;
+Repeater['Crowd_Hatchobori'].Begin(0, 2.2, 0.7, 0, 0, 180, 0, 0, 0, 5,
+    'Crowd_1_01', 'Crowd_2_01', 'Crowd_3_01', 'Crowd_1_02',
+    'Crowd_2_02', 'Crowd_3_02', 'Crowd_1_03', 'Crowd_2_03');
+11700;
+Repeater['Crowd_Hatchobori'].End();
+
+## 八丁堀駅 対向線 (Track[1] / 朝普通)
+11560;
+Repeater['Crowd_Hatchobori_R'].Begin('1', -2.2, 0.7, 0, 0, 0, 0, 0, 0, 5,
+    'Crowd_1_01', 'Crowd_2_01', 'Crowd_3_01', 'Crowd_1_02',
+    'Crowd_2_02', 'Crowd_3_02', 'Crowd_1_03', 'Crowd_2_03');
+11700;
+Repeater['Crowd_Hatchobori_R'].End();
+
+## 茅場町駅 (12060〜12200m / 対向式・左ドア / 朝混雑)
+12060;
+Repeater['Crowd_Kayabacho'].Begin(0, -2.2, 0.7, 0, 0, 0, 0, 0, 0, 5,
+    'Crowd_3_01', 'Crowd_5_01', 'Crowd_2_01', 'Crowd_3_02',
+    'Crowd_5_02', 'Crowd_2_02', 'Crowd_3_03', 'Crowd_5_03');
+12200;
+Repeater['Crowd_Kayabacho'].End();
+
+## 茅場町駅 対向線 (Track[1] / 朝混雑)
+12060;
+Repeater['Crowd_Kayabacho_R'].Begin('1', 2.2, 0.7, 0, 0, 180, 0, 0, 0, 5,
+    'Crowd_3_01', 'Crowd_5_01', 'Crowd_2_01', 'Crowd_3_02',
+    'Crowd_5_02', 'Crowd_2_02', 'Crowd_3_03', 'Crowd_5_03');
+12200;
+Repeater['Crowd_Kayabacho_R'].End();
+
+## 人形町駅 (12960〜13100m / 対向式・左ドア / 朝普通)
+12960;
+Repeater['Crowd_Ningyocho'].Begin(0, -2.2, 0.7, 0, 0, 0, 0, 0, 0, 5,
+    'Crowd_1_01', 'Crowd_2_01', 'Crowd_3_01', 'Crowd_1_02',
+    'Crowd_2_02', 'Crowd_3_02', 'Crowd_1_03', 'Crowd_2_03');
+13100;
+Repeater['Crowd_Ningyocho'].End();
+
+## 人形町駅 対向線 (Track[1] / 朝普通)
+12960;
+Repeater['Crowd_Ningyocho_R'].Begin('1', 2.2, 0.7, 0, 0, 180, 0, 0, 0, 5,
+    'Crowd_1_01', 'Crowd_2_01', 'Crowd_3_01', 'Crowd_1_02',
+    'Crowd_2_02', 'Crowd_3_02', 'Crowd_1_03', 'Crowd_2_03');
+13100;
+Repeater['Crowd_Ningyocho_R'].End();
+
+## 小伝馬町駅 (13560〜13700m / 対向式・左ドア / 朝普通)
+13560;
+Repeater['Crowd_Kodemmacho'].Begin(0, -2.2, 0.7, 0, 0, 0, 0, 0, 0, 5,
+    'Crowd_1_01', 'Crowd_2_01', 'Crowd_3_01', 'Crowd_1_02',
+    'Crowd_2_02', 'Crowd_3_02', 'Crowd_1_03', 'Crowd_2_03');
+13700;
+Repeater['Crowd_Kodemmacho'].End();
+
+## 小伝馬町駅 対向線 (Track[1] / 朝普通)
+13560;
+Repeater['Crowd_Kodemmacho_R'].Begin('1', 2.2, 0.7, 0, 0, 180, 0, 0, 0, 5,
+    'Crowd_1_01', 'Crowd_2_01', 'Crowd_3_01', 'Crowd_1_02',
+    'Crowd_2_02', 'Crowd_3_02', 'Crowd_1_03', 'Crowd_2_03');
+13700;
+Repeater['Crowd_Kodemmacho_R'].End();
+
+## 秋葉原駅 (14460〜14600m / 対向式・左ドア / 朝混雑)
+14460;
+Repeater['Crowd_Akihabara'].Begin(0, -2.2, 0.7, 0, 0, 0, 0, 0, 0, 5,
+    'Crowd_3_01', 'Crowd_5_01', 'Crowd_2_01', 'Crowd_3_02',
+    'Crowd_5_02', 'Crowd_2_02', 'Crowd_3_03', 'Crowd_5_03');
+14600;
+Repeater['Crowd_Akihabara'].End();
+
+## 秋葉原駅 対向線 (Track[1] / 朝混雑)
+14460;
+Repeater['Crowd_Akihabara_R'].Begin('1', 2.2, 0.7, 0, 0, 180, 0, 0, 0, 5,
+    'Crowd_3_01', 'Crowd_5_01', 'Crowd_2_01', 'Crowd_3_02',
+    'Crowd_5_02', 'Crowd_2_02', 'Crowd_3_03', 'Crowd_5_03');
+14600;
+Repeater['Crowd_Akihabara_R'].End();
+
+## 仲御徒町駅 (15460〜15600m / 島式・右ドア / 朝普通)
+15460;
+Repeater['Crowd_Nakaokachi'].Begin(0, 2.2, 0.7, 0, 0, 180, 0, 0, 0, 5,
+    'Crowd_1_01', 'Crowd_2_01', 'Crowd_3_01', 'Crowd_1_02',
+    'Crowd_2_02', 'Crowd_3_02', 'Crowd_1_03', 'Crowd_2_03');
+15600;
+Repeater['Crowd_Nakaokachi'].End();
+
+## 仲御徒町駅 対向線 (Track[1] / 朝普通)
+15460;
+Repeater['Crowd_Nakaokachi_R'].Begin('1', -2.2, 0.7, 0, 0, 0, 0, 0, 0, 5,
+    'Crowd_1_01', 'Crowd_2_01', 'Crowd_3_01', 'Crowd_1_02',
+    'Crowd_2_02', 'Crowd_3_02', 'Crowd_1_03', 'Crowd_2_03');
+15600;
+Repeater['Crowd_Nakaokachi_R'].End();
+
+## 上野駅 (15960〜16100m / 対向式・左ドア / 朝混雑)
+15960;
+Repeater['Crowd_Ueno'].Begin(0, -2.2, 0.7, 0, 0, 0, 0, 0, 0, 5,
+    'Crowd_3_01', 'Crowd_5_01', 'Crowd_2_01', 'Crowd_3_02',
+    'Crowd_5_02', 'Crowd_2_02', 'Crowd_3_03', 'Crowd_5_03');
+16100;
+Repeater['Crowd_Ueno'].End();
+
+## 上野駅 対向線 (Track[1] / 朝混雑)
+15960;
+Repeater['Crowd_Ueno_R'].Begin('1', 2.2, 0.7, 0, 0, 180, 0, 0, 0, 5,
+    'Crowd_3_01', 'Crowd_5_01', 'Crowd_2_01', 'Crowd_3_02',
+    'Crowd_5_02', 'Crowd_2_02', 'Crowd_3_03', 'Crowd_5_03');
+16100;
+Repeater['Crowd_Ueno_R'].End();
+
 # ============================================
 # 対向列車 — 38S 朝ラッシュスケジュール（距離程ベース発火）
 # ============================================
@@ -147,114 +307,293 @@ Repeater['Crowd_Hibiya_R'].End();
 0;
 Train['Op_Light_01'].Enable('00:00:00');
 1357; Train['Op_Light_01'].Stop(2.5, 3, 2.5, 40);
-857;  Train['Op_Light_01'].Stop(2.5, 90, 2.5, 60);
+867;  Train['Op_Light_01'].Stop(2.5, 90, 2.5, 60);
 
 # Op_Light_02: 恵比寿停車（自列車1700m通過時に発火 = 恵比寿2000m -300m）
 1700;
 Train['Op_Light_02'].Enable('00:00:00');
-1857; Train['Op_Light_02'].Stop(2.5, 60, 2.5, 60);
-857;  Train['Op_Light_02'].Stop(2.5, 25, 2.5, 60);
+1867; Train['Op_Light_02'].Stop(2.5, 60, 2.5, 60);
+867;  Train['Op_Light_02'].Stop(2.5, 25, 2.5, 60);
 
 # Op_Light_03: 広尾停車（自列車3200m通過時に発火 = 広尾3500m -300m）
 3200;
 Train['Op_Light_03'].Enable('00:00:00');
-3357; Train['Op_Light_03'].Stop(2.5, 60, 2.5, 60);
-1857; Train['Op_Light_03'].Stop(2.5, 25, 2.5, 60);
-857;  Train['Op_Light_03'].Stop(2.5, 25, 2.5, 60);
+3367; Train['Op_Light_03'].Stop(2.5, 60, 2.5, 60);
+1867; Train['Op_Light_03'].Stop(2.5, 25, 2.5, 60);
+867;  Train['Op_Light_03'].Stop(2.5, 25, 2.5, 60);
 
-# Op_Light_04: 六本木停車（広尾3500m通過時に発火）
+# Op_70K_Light_01: 六本木停車（広尾3500m通過時に発火）
 4900;
-Train['Op_Light_04'].Enable('00:00:00');
-5057; Train['Op_Light_04'].Stop(2.5, 60, 2.5, 60);
-3357; Train['Op_Light_04'].Stop(2.5, 25, 2.5, 60);
-1857; Train['Op_Light_04'].Stop(2.5, 25, 2.5, 60);
-857;  Train['Op_Light_04'].Stop(2.5, 25, 2.5, 60);
+Train['Op_70K_Light_01'].Enable('00:00:00');
+5067; Train['Op_70K_Light_01'].Stop(2.5, 60, 2.5, 60);
+3367; Train['Op_70K_Light_01'].Stop(2.5, 25, 2.5, 60);
+1867; Train['Op_70K_Light_01'].Stop(2.5, 25, 2.5, 60);
+867;  Train['Op_70K_Light_01'].Stop(2.5, 25, 2.5, 60);
 
 # Op_Light_05: 神谷町停車（六本木5200m通過時に発火）
 6200;
 Train['Op_Light_05'].Enable('00:00:00');
-6357; Train['Op_Light_05'].Stop(2.5, 60, 2.5, 60);
-5057; Train['Op_Light_05'].Stop(2.5, 25, 2.5, 60);
-3357; Train['Op_Light_05'].Stop(2.5, 25, 2.5, 60);
-1857; Train['Op_Light_05'].Stop(2.5, 25, 2.5, 60);
-857;  Train['Op_Light_05'].Stop(2.5, 25, 2.5, 60);
+6367; Train['Op_Light_05'].Stop(2.5, 60, 2.5, 60);
+5067; Train['Op_Light_05'].Stop(2.5, 25, 2.5, 60);
+3367; Train['Op_Light_05'].Stop(2.5, 25, 2.5, 60);
+1867; Train['Op_Light_05'].Stop(2.5, 25, 2.5, 60);
+867;  Train['Op_Light_05'].Stop(2.5, 25, 2.5, 60);
 
-# Op_Light_06: 虎ノ門停車（神谷町6500m通過時に発火）
+# Op_70K_Light_02: 虎ノ門停車（神谷町6500m通過時に発火）
 7000;
-Train['Op_Light_06'].Enable('00:00:00');
-7157; Train['Op_Light_06'].Stop(2.5, 60, 2.5, 60);
-6357; Train['Op_Light_06'].Stop(2.5, 25, 2.5, 60);
-5057; Train['Op_Light_06'].Stop(2.5, 25, 2.5, 60);
-3357; Train['Op_Light_06'].Stop(2.5, 25, 2.5, 60);
-1857; Train['Op_Light_06'].Stop(2.5, 25, 2.5, 60);
-857;  Train['Op_Light_06'].Stop(2.5, 25, 2.5, 60);
+Train['Op_70K_Light_02'].Enable('00:00:00');
+7167; Train['Op_70K_Light_02'].Stop(2.5, 60, 2.5, 60);
+6367; Train['Op_70K_Light_02'].Stop(2.5, 25, 2.5, 60);
+5067; Train['Op_70K_Light_02'].Stop(2.5, 25, 2.5, 60);
+3367; Train['Op_70K_Light_02'].Stop(2.5, 25, 2.5, 60);
+1867; Train['Op_70K_Light_02'].Stop(2.5, 25, 2.5, 60);
+867;  Train['Op_70K_Light_02'].Stop(2.5, 25, 2.5, 60);
 
 # Op_Light_07: 霞ヶ関停車（虎ノ門7300m通過時に発火）
 7800;
 Train['Op_Light_07'].Enable('00:00:00');
 7967; Train['Op_Light_07'].Stop(2.5, 60, 2.5, 60);
-7157; Train['Op_Light_07'].Stop(2.5, 25, 2.5, 60);
-6357; Train['Op_Light_07'].Stop(2.5, 25, 2.5, 60);
-5057; Train['Op_Light_07'].Stop(2.5, 25, 2.5, 60);
-3357; Train['Op_Light_07'].Stop(2.5, 25, 2.5, 60);
-1857; Train['Op_Light_07'].Stop(2.5, 25, 2.5, 60);
-857;  Train['Op_Light_07'].Stop(2.5, 25, 2.5, 60);
+7167; Train['Op_Light_07'].Stop(2.5, 25, 2.5, 60);
+6367; Train['Op_Light_07'].Stop(2.5, 25, 2.5, 60);
+5067; Train['Op_Light_07'].Stop(2.5, 25, 2.5, 60);
+3367; Train['Op_Light_07'].Stop(2.5, 25, 2.5, 60);
+1867; Train['Op_Light_07'].Stop(2.5, 25, 2.5, 60);
+867;  Train['Op_Light_07'].Stop(2.5, 25, 2.5, 60);
 
-# Op_Light_08: 日比谷停車（霞ヶ関8100m通過時に発火）
+# Op_70K_Light_03: 日比谷停車（霞ヶ関8100m通過時に発火）
 9000;
-Train['Op_Light_08'].Enable('00:00:00');
-9157; Train['Op_Light_08'].Stop(2.5, 60, 2.5, 60);
-7957; Train['Op_Light_08'].Stop(2.5, 25, 2.5, 60);
-7157; Train['Op_Light_08'].Stop(2.5, 25, 2.5, 60);
-6357; Train['Op_Light_08'].Stop(2.5, 25, 2.5, 60);
-5057; Train['Op_Light_08'].Stop(2.5, 25, 2.5, 60);
-3357; Train['Op_Light_08'].Stop(2.5, 25, 2.5, 60);
-1857; Train['Op_Light_08'].Stop(2.5, 25, 2.5, 60);
-857;  Train['Op_Light_08'].Stop(2.5, 25, 2.5, 60);
+Train['Op_70K_Light_03'].Enable('00:00:00');
+9167; Train['Op_70K_Light_03'].Stop(2.5, 60, 2.5, 60);
+7967; Train['Op_70K_Light_03'].Stop(2.5, 25, 2.5, 60);
+7167; Train['Op_70K_Light_03'].Stop(2.5, 25, 2.5, 60);
+6367; Train['Op_70K_Light_03'].Stop(2.5, 25, 2.5, 60);
+5067; Train['Op_70K_Light_03'].Stop(2.5, 25, 2.5, 60);
+3367; Train['Op_70K_Light_03'].Stop(2.5, 25, 2.5, 60);
+1867; Train['Op_70K_Light_03'].Stop(2.5, 25, 2.5, 60);
+867;  Train['Op_70K_Light_03'].Stop(2.5, 25, 2.5, 60);
 
 # === パターンC: 駅間すれ違いシーン (Dark) ===
 
-# Op_Dark_01: 中目黒〜恵比寿（中点1500m: Enable 1400m / Stop 1600m）
+# Op_70K_Dark_01: 中目黒〜恵比寿（中点1500m: Enable 1400m / Stop 1600m）
 1400;
-Train['Op_Dark_01'].Enable('00:00:00');
-1620; Train['Op_Dark_01'].Stop(2.5, 1, 2.5, 45);
-857;  Train['Op_Dark_01'].Stop(2.5, 25, 2.5, 60);
+Train['Op_70K_Dark_01'].Enable('00:00:00');
+1620; Train['Op_70K_Dark_01'].Stop(2.5, 1, 2.5, 45);
+867;  Train['Op_70K_Dark_01'].Stop(2.5, 25, 2.5, 60);
 
 # Op_Dark_02: 恵比寿〜広尾（中点2750m: Enable 2650m / Stop 2850m）
 2650;
 Train['Op_Dark_02'].Enable('00:00:00');
 2870; Train['Op_Dark_02'].Stop(2.5, 1, 2.5, 45);
-1857; Train['Op_Dark_02'].Stop(2.5, 25, 2.5, 60);
-857;  Train['Op_Dark_02'].Stop(2.5, 25, 2.5, 60);
+1867; Train['Op_Dark_02'].Stop(2.5, 25, 2.5, 60);
+867;  Train['Op_Dark_02'].Stop(2.5, 25, 2.5, 60);
 
-# Op_Dark_03: 広尾〜六本木（中点4350m: Enable 4250m / Stop 4450m）
+# Op_70K_Dark_02: 広尾〜六本木（中点4350m: Enable 4250m / Stop 4450m）
 4250;
-Train['Op_Dark_03'].Enable('00:00:00');
-4430; Train['Op_Dark_03'].Stop(2.5, 1, 2.5, 45);
-3357; Train['Op_Dark_03'].Stop(2.5, 25, 2.5, 60);
-1857; Train['Op_Dark_03'].Stop(2.5, 25, 2.5, 60);
-857;  Train['Op_Dark_03'].Stop(2.5, 25, 2.5, 60);
+Train['Op_70K_Dark_02'].Enable('00:00:00');
+4430; Train['Op_70K_Dark_02'].Stop(2.5, 1, 2.5, 45);
+3367; Train['Op_70K_Dark_02'].Stop(2.5, 25, 2.5, 60);
+1867; Train['Op_70K_Dark_02'].Stop(2.5, 25, 2.5, 60);
+867;  Train['Op_70K_Dark_02'].Stop(2.5, 25, 2.5, 60);
 
 # Op_Dark_04: 六本木〜神谷町（中点5850m: Enable 5750m / Stop 5950m）
 5750;
 Train['Op_Dark_04'].Enable('00:00:00');
 5930; Train['Op_Dark_04'].Stop(2.5, 1, 2.5, 45);
-5057; Train['Op_Dark_04'].Stop(2.5, 25, 2.5, 60);
-3357; Train['Op_Dark_04'].Stop(2.5, 25, 2.5, 60);
-1857; Train['Op_Dark_04'].Stop(2.5, 25, 2.5, 60);
-857;  Train['Op_Dark_04'].Stop(2.5, 25, 2.5, 60);
+5067; Train['Op_Dark_04'].Stop(2.5, 25, 2.5, 60);
+3367; Train['Op_Dark_04'].Stop(2.5, 25, 2.5, 60);
+1867; Train['Op_Dark_04'].Stop(2.5, 25, 2.5, 60);
+867;  Train['Op_Dark_04'].Stop(2.5, 25, 2.5, 60);
 
 # Op_Dark_07: 霞ヶ関〜日比谷（中点8700m: Enable 8600m / Stop 8800m）
 8600;
 Train['Op_Dark_07'].Enable('00:00:00');
 8820; Train['Op_Dark_07'].Stop(2.5, 1, 2.5, 45);
-7957; Train['Op_Dark_07'].Stop(2.5, 25, 2.5, 60);
-7157; Train['Op_Dark_07'].Stop(2.5, 25, 2.5, 60);
-6357; Train['Op_Dark_07'].Stop(2.5, 25, 2.5, 60);
-5057; Train['Op_Dark_07'].Stop(2.5, 25, 2.5, 60);
-3357; Train['Op_Dark_07'].Stop(2.5, 25, 2.5, 60);
-1857; Train['Op_Dark_07'].Stop(2.5, 25, 2.5, 60);
-857;  Train['Op_Dark_07'].Stop(2.5, 25, 2.5, 60);
+7967; Train['Op_Dark_07'].Stop(2.5, 25, 2.5, 60);
+7167; Train['Op_Dark_07'].Stop(2.5, 25, 2.5, 60);
+6367; Train['Op_Dark_07'].Stop(2.5, 25, 2.5, 60);
+5067; Train['Op_Dark_07'].Stop(2.5, 25, 2.5, 60);
+3367; Train['Op_Dark_07'].Stop(2.5, 25, 2.5, 60);
+1867; Train['Op_Dark_07'].Stop(2.5, 25, 2.5, 60);
+867;  Train['Op_Dark_07'].Stop(2.5, 25, 2.5, 60);
+
+# ============================================
+# 延伸区間 対向列車 — 銀座〜上野（朝ラッシュ）
+# ============================================
+
+# Op_Light_04: 銀座停車（再利用 / 13000 Light）
+9400;
+Train['Op_Light_04'].Enable('00:00:00');
+9567; Train['Op_Light_04'].Stop(2.5, 60, 2.5, 60);
+9167; Train['Op_Light_04'].Stop(2.5, 25, 2.5, 60);
+7967; Train['Op_Light_04'].Stop(2.5, 25, 2.5, 60);
+7167; Train['Op_Light_04'].Stop(2.5, 25, 2.5, 60);
+6367; Train['Op_Light_04'].Stop(2.5, 25, 2.5, 60);
+5067; Train['Op_Light_04'].Stop(2.5, 25, 2.5, 60);
+3367; Train['Op_Light_04'].Stop(2.5, 25, 2.5, 60);
+1867; Train['Op_Light_04'].Stop(2.5, 25, 2.5, 60);
+867;  Train['Op_Light_04'].Stop(2.5, 25, 2.5, 60);
+
+# Op_Light_06: 東銀座停車（再利用 / 13000 Light）
+9800;
+Train['Op_Light_06'].Enable('00:00:00');
+9967;  Train['Op_Light_06'].Stop(2.5, 60, 2.5, 60);
+9567;  Train['Op_Light_06'].Stop(2.5, 25, 2.5, 60);
+9167;  Train['Op_Light_06'].Stop(2.5, 25, 2.5, 60);
+7967;  Train['Op_Light_06'].Stop(2.5, 25, 2.5, 60);
+7167;  Train['Op_Light_06'].Stop(2.5, 25, 2.5, 60);
+6367;  Train['Op_Light_06'].Stop(2.5, 25, 2.5, 60);
+5067;  Train['Op_Light_06'].Stop(2.5, 25, 2.5, 60);
+3367;  Train['Op_Light_06'].Stop(2.5, 25, 2.5, 60);
+1867;  Train['Op_Light_06'].Stop(2.5, 25, 2.5, 60);
+867;   Train['Op_Light_06'].Stop(2.5, 25, 2.5, 60);
+
+# Op_70K_Light_04: 築地停車（70K Light）
+10400;
+Train['Op_70K_Light_04'].Enable('00:00:00');
+10567; Train['Op_70K_Light_04'].Stop(2.5, 60, 2.5, 60);
+9967;  Train['Op_70K_Light_04'].Stop(2.5, 25, 2.5, 60);
+9567;  Train['Op_70K_Light_04'].Stop(2.5, 25, 2.5, 60);
+9167;  Train['Op_70K_Light_04'].Stop(2.5, 25, 2.5, 60);
+7967;  Train['Op_70K_Light_04'].Stop(2.5, 25, 2.5, 60);
+7167;  Train['Op_70K_Light_04'].Stop(2.5, 25, 2.5, 60);
+6367;  Train['Op_70K_Light_04'].Stop(2.5, 25, 2.5, 60);
+5067;  Train['Op_70K_Light_04'].Stop(2.5, 25, 2.5, 60);
+3367;  Train['Op_70K_Light_04'].Stop(2.5, 25, 2.5, 60);
+1867;  Train['Op_70K_Light_04'].Stop(2.5, 25, 2.5, 60);
+867;   Train['Op_70K_Light_04'].Stop(2.5, 25, 2.5, 60);
+
+# Op_70K_Dark_03: 築地〜八丁堀すれ違い（中点11200m / 70K Dark）
+11100;
+Train['Op_70K_Dark_03'].Enable('00:00:00');
+11280; Train['Op_70K_Dark_03'].Stop(2.5, 1, 2.5, 45);
+10567; Train['Op_70K_Dark_03'].Stop(2.5, 25, 2.5, 60);
+9967;  Train['Op_70K_Dark_03'].Stop(2.5, 25, 2.5, 60);
+9567;  Train['Op_70K_Dark_03'].Stop(2.5, 25, 2.5, 60);
+9167;  Train['Op_70K_Dark_03'].Stop(2.5, 25, 2.5, 60);
+7967;  Train['Op_70K_Dark_03'].Stop(2.5, 25, 2.5, 60);
+7167;  Train['Op_70K_Dark_03'].Stop(2.5, 25, 2.5, 60);
+6367;  Train['Op_70K_Dark_03'].Stop(2.5, 25, 2.5, 60);
+5067;  Train['Op_70K_Dark_03'].Stop(2.5, 25, 2.5, 60);
+3367;  Train['Op_70K_Dark_03'].Stop(2.5, 25, 2.5, 60);
+1867;  Train['Op_70K_Dark_03'].Stop(2.5, 25, 2.5, 60);
+867;   Train['Op_70K_Dark_03'].Stop(2.5, 25, 2.5, 60);
+
+# Op_Light_09: 茅場町停車（新規 / 13000 Light）
+11900;
+Train['Op_Light_09'].Enable('00:00:00');
+12067; Train['Op_Light_09'].Stop(2.5, 60, 2.5, 60);
+11567; Train['Op_Light_09'].Stop(2.5, 25, 2.5, 60);
+10567; Train['Op_Light_09'].Stop(2.5, 25, 2.5, 60);
+9967;  Train['Op_Light_09'].Stop(2.5, 25, 2.5, 60);
+9567;  Train['Op_Light_09'].Stop(2.5, 25, 2.5, 60);
+9167;  Train['Op_Light_09'].Stop(2.5, 25, 2.5, 60);
+7967;  Train['Op_Light_09'].Stop(2.5, 25, 2.5, 60);
+7167;  Train['Op_Light_09'].Stop(2.5, 25, 2.5, 60);
+6367;  Train['Op_Light_09'].Stop(2.5, 25, 2.5, 60);
+5067;  Train['Op_Light_09'].Stop(2.5, 25, 2.5, 60);
+3367;  Train['Op_Light_09'].Stop(2.5, 25, 2.5, 60);
+1867;  Train['Op_Light_09'].Stop(2.5, 25, 2.5, 60);
+867;   Train['Op_Light_09'].Stop(2.5, 25, 2.5, 60);
+
+# Op_Dark_01: 茅場町〜人形町すれ違い（再利用 / 中点12650m / 13000 Dark）
+12550;
+Train['Op_Dark_01'].Enable('00:00:00');
+12730; Train['Op_Dark_01'].Stop(2.5, 1, 2.5, 45);
+12067; Train['Op_Dark_01'].Stop(2.5, 25, 2.5, 60);
+11567; Train['Op_Dark_01'].Stop(2.5, 25, 2.5, 60);
+10567; Train['Op_Dark_01'].Stop(2.5, 25, 2.5, 60);
+9967;  Train['Op_Dark_01'].Stop(2.5, 25, 2.5, 60);
+9567;  Train['Op_Dark_01'].Stop(2.5, 25, 2.5, 60);
+9167;  Train['Op_Dark_01'].Stop(2.5, 25, 2.5, 60);
+7967;  Train['Op_Dark_01'].Stop(2.5, 25, 2.5, 60);
+7167;  Train['Op_Dark_01'].Stop(2.5, 25, 2.5, 60);
+6367;  Train['Op_Dark_01'].Stop(2.5, 25, 2.5, 60);
+5067;  Train['Op_Dark_01'].Stop(2.5, 25, 2.5, 60);
+3367;  Train['Op_Dark_01'].Stop(2.5, 25, 2.5, 60);
+1867;  Train['Op_Dark_01'].Stop(2.5, 25, 2.5, 60);
+867;   Train['Op_Dark_01'].Stop(2.5, 25, 2.5, 60);
+
+# Op_70K_Light_06: 小伝馬町停車（70K Light）
+13400;
+Train['Op_70K_Light_06'].Enable('00:00:00');
+13567; Train['Op_70K_Light_06'].Stop(2.5, 60, 2.5, 60);
+12967; Train['Op_70K_Light_06'].Stop(2.5, 25, 2.5, 60);
+12067; Train['Op_70K_Light_06'].Stop(2.5, 25, 2.5, 60);
+11567; Train['Op_70K_Light_06'].Stop(2.5, 25, 2.5, 60);
+10567; Train['Op_70K_Light_06'].Stop(2.5, 25, 2.5, 60);
+9967;  Train['Op_70K_Light_06'].Stop(2.5, 25, 2.5, 60);
+9567;  Train['Op_70K_Light_06'].Stop(2.5, 25, 2.5, 60);
+9167;  Train['Op_70K_Light_06'].Stop(2.5, 25, 2.5, 60);
+7967;  Train['Op_70K_Light_06'].Stop(2.5, 25, 2.5, 60);
+7167;  Train['Op_70K_Light_06'].Stop(2.5, 25, 2.5, 60);
+6367;  Train['Op_70K_Light_06'].Stop(2.5, 25, 2.5, 60);
+5067;  Train['Op_70K_Light_06'].Stop(2.5, 25, 2.5, 60);
+3367;  Train['Op_70K_Light_06'].Stop(2.5, 25, 2.5, 60);
+1867;  Train['Op_70K_Light_06'].Stop(2.5, 25, 2.5, 60);
+867;   Train['Op_70K_Light_06'].Stop(2.5, 25, 2.5, 60);
+
+# Op_Dark_03: 小伝馬町〜秋葉原すれ違い（再利用 / 中点14150m / 13000 Dark）
+14050;
+Train['Op_Dark_03'].Enable('00:00:00');
+14230; Train['Op_Dark_03'].Stop(2.5, 1, 2.5, 45);
+13567; Train['Op_Dark_03'].Stop(2.5, 25, 2.5, 60);
+12967; Train['Op_Dark_03'].Stop(2.5, 25, 2.5, 60);
+12067; Train['Op_Dark_03'].Stop(2.5, 25, 2.5, 60);
+11567; Train['Op_Dark_03'].Stop(2.5, 25, 2.5, 60);
+10567; Train['Op_Dark_03'].Stop(2.5, 25, 2.5, 60);
+9967;  Train['Op_Dark_03'].Stop(2.5, 25, 2.5, 60);
+9567;  Train['Op_Dark_03'].Stop(2.5, 25, 2.5, 60);
+9167;  Train['Op_Dark_03'].Stop(2.5, 25, 2.5, 60);
+7967;  Train['Op_Dark_03'].Stop(2.5, 25, 2.5, 60);
+7167;  Train['Op_Dark_03'].Stop(2.5, 25, 2.5, 60);
+6367;  Train['Op_Dark_03'].Stop(2.5, 25, 2.5, 60);
+5067;  Train['Op_Dark_03'].Stop(2.5, 25, 2.5, 60);
+3367;  Train['Op_Dark_03'].Stop(2.5, 25, 2.5, 60);
+1867;  Train['Op_Dark_03'].Stop(2.5, 25, 2.5, 60);
+867;   Train['Op_Dark_03'].Stop(2.5, 25, 2.5, 60);
+
+# Op_70K_Dark_04: 秋葉原〜仲御徒町すれ違い（中点15100m / 70K Dark）
+15000;
+Train['Op_70K_Dark_04'].Enable('00:00:00');
+15180; Train['Op_70K_Dark_04'].Stop(2.5, 1, 2.5, 45);
+14467; Train['Op_70K_Dark_04'].Stop(2.5, 25, 2.5, 60);
+13567; Train['Op_70K_Dark_04'].Stop(2.5, 25, 2.5, 60);
+12967; Train['Op_70K_Dark_04'].Stop(2.5, 25, 2.5, 60);
+12067; Train['Op_70K_Dark_04'].Stop(2.5, 25, 2.5, 60);
+11567; Train['Op_70K_Dark_04'].Stop(2.5, 25, 2.5, 60);
+10567; Train['Op_70K_Dark_04'].Stop(2.5, 25, 2.5, 60);
+9967;  Train['Op_70K_Dark_04'].Stop(2.5, 25, 2.5, 60);
+9567;  Train['Op_70K_Dark_04'].Stop(2.5, 25, 2.5, 60);
+9167;  Train['Op_70K_Dark_04'].Stop(2.5, 25, 2.5, 60);
+7967;  Train['Op_70K_Dark_04'].Stop(2.5, 25, 2.5, 60);
+7167;  Train['Op_70K_Dark_04'].Stop(2.5, 25, 2.5, 60);
+6367;  Train['Op_70K_Dark_04'].Stop(2.5, 25, 2.5, 60);
+5067;  Train['Op_70K_Dark_04'].Stop(2.5, 25, 2.5, 60);
+3367;  Train['Op_70K_Dark_04'].Stop(2.5, 25, 2.5, 60);
+1867;  Train['Op_70K_Dark_04'].Stop(2.5, 25, 2.5, 60);
+867;   Train['Op_70K_Dark_04'].Stop(2.5, 25, 2.5, 60);
+
+# Op_Light_11: 上野停車（新規 / 13000 Light）
+15800;
+Train['Op_Light_11'].Enable('00:00:00');
+15967; Train['Op_Light_11'].Stop(2.5, 60, 2.5, 60);
+15467; Train['Op_Light_11'].Stop(2.5, 25, 2.5, 60);
+14467; Train['Op_Light_11'].Stop(2.5, 25, 2.5, 60);
+13567; Train['Op_Light_11'].Stop(2.5, 25, 2.5, 60);
+12967; Train['Op_Light_11'].Stop(2.5, 25, 2.5, 60);
+12067; Train['Op_Light_11'].Stop(2.5, 25, 2.5, 60);
+11567; Train['Op_Light_11'].Stop(2.5, 25, 2.5, 60);
+10567; Train['Op_Light_11'].Stop(2.5, 25, 2.5, 60);
+9967;  Train['Op_Light_11'].Stop(2.5, 25, 2.5, 60);
+9567;  Train['Op_Light_11'].Stop(2.5, 25, 2.5, 60);
+9167;  Train['Op_Light_11'].Stop(2.5, 25, 2.5, 60);
+7967;  Train['Op_Light_11'].Stop(2.5, 25, 2.5, 60);
+7167;  Train['Op_Light_11'].Stop(2.5, 25, 2.5, 60);
+6367;  Train['Op_Light_11'].Stop(2.5, 25, 2.5, 60);
+5067;  Train['Op_Light_11'].Stop(2.5, 25, 2.5, 60);
+3367;  Train['Op_Light_11'].Stop(2.5, 25, 2.5, 60);
+1867;  Train['Op_Light_11'].Stop(2.5, 25, 2.5, 60);
+867;   Train['Op_Light_11'].Stop(2.5, 25, 2.5, 60);
 
 # ============================================
 # 先行列車（PreTrain）— 38S 朝ラッシュ 2分先行
@@ -270,6 +609,13 @@ Train['Op_Dark_07'].Enable('00:00:00');
 # ランダム停車時間（60〜120秒）
 $ebisu_stop = 60 + rand(60);
 $roppongi_stop = 60 + rand(60);
+
+# 延伸区間主要駅は控えめランダム（ベース停車時間 +rand(30)）
+$kasumigaseki_stop = 50 + rand(30);    # 霞ヶ関: 40秒駅 50-80秒
+$ginza_stop = 35 + rand(30);           # 銀座: 35秒駅 35-65秒
+$higashiginza_stop = 35 + rand(30);    # 東銀座: 35秒駅 35-65秒
+$hatchobori_stop = 25 + rand(30);      # 八丁堀: 25秒駅 25-55秒
+$kayabacho_stop = 25 + rand(30);       # 茅場町: 25秒駅 25-55秒
 
 # 中目黒（停車中扱い・40秒、末尾停止位置 859m）
 858;
@@ -307,11 +653,11 @@ PreTrain.Pass('08:47:00');
 7159;
 PreTrain.Pass('08:47:40');
 
-# 霞ヶ関（40秒、末尾停止位置 7959m）
+# 霞ヶ関（ランダム50-80秒、末尾停止位置 7959m）8:49:00=31740秒
 7958;
-PreTrain.Pass('08:49:00');
+PreTrain.Pass(31740);
 7959;
-PreTrain.Pass('08:49:40');
+PreTrain.Pass(31740 + $kasumigaseki_stop);
 
 # 日比谷（60秒、末尾停止位置 9159m）
 9158;
@@ -319,8 +665,93 @@ PreTrain.Pass('08:52:00');
 9159;
 PreTrain.Pass('08:53:00');
 
-15500;
-PreTrain.Pass('08:53:30');
+# 銀座（ランダム35-65秒、末尾停止位置 9559m）8:53:30=32010秒
+9558;
+PreTrain.Pass(32010);
+9559;
+PreTrain.Pass(32010 + $ginza_stop);
+
+# 東銀座（ランダム35-65秒、末尾停止位置 9959m）8:55:30=32130秒
+9958;
+PreTrain.Pass(32130);
+9959;
+PreTrain.Pass(32130 + $higashiginza_stop);
+
+# 築地（25秒、末尾停止位置 10559m）
+10558;
+PreTrain.Pass('08:57:30');
+10559;
+PreTrain.Pass('08:57:55');
+
+# 八丁堀（ランダム50-80秒、末尾停止位置 11559m）9:00:00=32400秒
+11558;
+PreTrain.Pass(32400);
+11559;
+PreTrain.Pass(32400 + $hatchobori_stop);
+
+# 茅場町（ランダム50-80秒、末尾停止位置 12059m）9:02:00=32520秒
+12058;
+PreTrain.Pass(32520);
+12059;
+PreTrain.Pass(32520 + $kayabacho_stop);
+
+# 人形町（25秒、末尾停止位置 12959m）
+12958;
+PreTrain.Pass('09:04:00');
+12959;
+PreTrain.Pass('09:04:25');
+
+# 小伝馬町（25秒、末尾停止位置 13559m）
+13558;
+PreTrain.Pass('09:06:00');
+13559;
+PreTrain.Pass('09:06:25');
+
+# 秋葉原（25秒、末尾停止位置 14459m）
+14458;
+PreTrain.Pass('09:08:00');
+14459;
+PreTrain.Pass('09:08:25');
+
+# 仲御徒町（25秒、末尾停止位置 15459m）
+15458;
+PreTrain.Pass('09:10:00');
+15459;
+PreTrain.Pass('09:10:25');
+
+# 上野（25秒、末尾停止位置 15959m）
+15958;
+PreTrain.Pass('09:12:00');
+15959;
+PreTrain.Pass('09:12:25');
+
+# 入谷（25秒、末尾停止位置 17159m）
+17158;
+PreTrain.Pass('09:14:00');
+17159;
+PreTrain.Pass('09:14:25');
+
+# 三ノ輪（25秒、末尾停止位置 18359m）
+18358;
+PreTrain.Pass('09:16:00');
+18359;
+PreTrain.Pass('09:16:25');
+
+# 南千住（25秒、末尾停止位置 19159m）
+19158;
+PreTrain.Pass('09:18:00');
+19159;
+PreTrain.Pass('09:18:25');
+
+# 北千住（25秒、末尾停止位置 21159m / 終点扱い）
+21158;
+PreTrain.Pass('09:22:00');
+21159;
+PreTrain.Pass('09:22:25');
+
+# 終端マーカー（先行列車を路線外へ消す）
+22000;
+PreTrain.Pass('09:23:30');
 
 # ============================================
 # 31番地上子（前方予告）— 38S用 10m間隔細密配置
@@ -1180,3 +1611,663 @@ PreTrain.Pass('08:53:30');
 9480; Beacon.Put(31, 1, 0);
 9490; Beacon.Put(31, 1, 0);
 9500; Beacon.Put(31, 1, 0);
+9510; Beacon.Put(31, 1, 0);
+9520; Beacon.Put(31, 1, 0);
+9530; Beacon.Put(31, 1, 0);
+9540; Beacon.Put(31, 1, 0);
+9550; Beacon.Put(31, 1, 0);
+9560; Beacon.Put(31, 1, 0);
+9570; Beacon.Put(31, 1, 0);
+9580; Beacon.Put(31, 1, 0);
+9590; Beacon.Put(31, 1, 0);
+9600; Beacon.Put(31, 1, 0);
+9610; Beacon.Put(31, 1, 0);
+9620; Beacon.Put(31, 1, 0);
+9630; Beacon.Put(31, 1, 0);
+9640; Beacon.Put(31, 1, 0);
+9650; Beacon.Put(31, 1, 0);
+9660; Beacon.Put(31, 1, 0);
+9670; Beacon.Put(31, 1, 0);
+9680; Beacon.Put(31, 1, 0);
+9690; Beacon.Put(31, 1, 0);
+9700; Beacon.Put(31, 1, 0);
+9710; Beacon.Put(31, 1, 0);
+9720; Beacon.Put(31, 1, 0);
+9730; Beacon.Put(31, 1, 0);
+9740; Beacon.Put(31, 1, 0);
+9750; Beacon.Put(31, 1, 0);
+9760; Beacon.Put(31, 1, 0);
+9770; Beacon.Put(31, 1, 0);
+9780; Beacon.Put(31, 1, 0);
+9790; Beacon.Put(31, 1, 0);
+9800; Beacon.Put(31, 1, 0);
+9810; Beacon.Put(31, 1, 0);
+9820; Beacon.Put(31, 1, 0);
+9830; Beacon.Put(31, 1, 0);
+9840; Beacon.Put(31, 1, 0);
+9850; Beacon.Put(31, 1, 0);
+9860; Beacon.Put(31, 1, 0);
+9870; Beacon.Put(31, 1, 0);
+9880; Beacon.Put(31, 1, 0);
+9890; Beacon.Put(31, 1, 0);
+9900; Beacon.Put(31, 1, 0);
+9910; Beacon.Put(31, 1, 0);
+9920; Beacon.Put(31, 1, 0);
+9930; Beacon.Put(31, 1, 0);
+9940; Beacon.Put(31, 1, 0);
+9950; Beacon.Put(31, 1, 0);
+9960; Beacon.Put(31, 1, 0);
+9970; Beacon.Put(31, 1, 0);
+9980; Beacon.Put(31, 1, 0);
+9990; Beacon.Put(31, 1, 0);
+10000; Beacon.Put(31, 1, 0);
+10010; Beacon.Put(31, 1, 0);
+10020; Beacon.Put(31, 1, 0);
+10030; Beacon.Put(31, 1, 0);
+10040; Beacon.Put(31, 1, 0);
+10050; Beacon.Put(31, 1, 0);
+10060; Beacon.Put(31, 1, 0);
+10070; Beacon.Put(31, 1, 0);
+10080; Beacon.Put(31, 1, 0);
+10090; Beacon.Put(31, 1, 0);
+10100; Beacon.Put(31, 1, 0);
+10110; Beacon.Put(31, 1, 0);
+10120; Beacon.Put(31, 1, 0);
+10130; Beacon.Put(31, 1, 0);
+10140; Beacon.Put(31, 1, 0);
+10150; Beacon.Put(31, 1, 0);
+10160; Beacon.Put(31, 1, 0);
+10170; Beacon.Put(31, 1, 0);
+10180; Beacon.Put(31, 1, 0);
+10190; Beacon.Put(31, 1, 0);
+10200; Beacon.Put(31, 1, 0);
+10210; Beacon.Put(31, 1, 0);
+10220; Beacon.Put(31, 1, 0);
+10230; Beacon.Put(31, 1, 0);
+10240; Beacon.Put(31, 1, 0);
+10250; Beacon.Put(31, 1, 0);
+10260; Beacon.Put(31, 1, 0);
+10270; Beacon.Put(31, 1, 0);
+10280; Beacon.Put(31, 1, 0);
+10290; Beacon.Put(31, 1, 0);
+10300; Beacon.Put(31, 1, 0);
+10310; Beacon.Put(31, 1, 0);
+10320; Beacon.Put(31, 1, 0);
+10330; Beacon.Put(31, 1, 0);
+10340; Beacon.Put(31, 1, 0);
+10350; Beacon.Put(31, 1, 0);
+10360; Beacon.Put(31, 1, 0);
+10370; Beacon.Put(31, 1, 0);
+10380; Beacon.Put(31, 1, 0);
+10390; Beacon.Put(31, 1, 0);
+10400; Beacon.Put(31, 1, 0);
+10410; Beacon.Put(31, 1, 0);
+10420; Beacon.Put(31, 1, 0);
+10430; Beacon.Put(31, 1, 0);
+10440; Beacon.Put(31, 1, 0);
+10450; Beacon.Put(31, 1, 0);
+10460; Beacon.Put(31, 1, 0);
+10470; Beacon.Put(31, 1, 0);
+10480; Beacon.Put(31, 1, 0);
+10490; Beacon.Put(31, 1, 0);
+10500; Beacon.Put(31, 1, 0);
+10510; Beacon.Put(31, 1, 0);
+10520; Beacon.Put(31, 1, 0);
+10530; Beacon.Put(31, 1, 0);
+10540; Beacon.Put(31, 1, 0);
+10550; Beacon.Put(31, 1, 0);
+10560; Beacon.Put(31, 1, 0);
+10570; Beacon.Put(31, 1, 0);
+10580; Beacon.Put(31, 1, 0);
+10590; Beacon.Put(31, 1, 0);
+10600; Beacon.Put(31, 1, 0);
+10610; Beacon.Put(31, 1, 0);
+10620; Beacon.Put(31, 1, 0);
+10630; Beacon.Put(31, 1, 0);
+10640; Beacon.Put(31, 1, 0);
+10650; Beacon.Put(31, 1, 0);
+10660; Beacon.Put(31, 1, 0);
+10670; Beacon.Put(31, 1, 0);
+10680; Beacon.Put(31, 1, 0);
+10690; Beacon.Put(31, 1, 0);
+10700; Beacon.Put(31, 1, 0);
+10710; Beacon.Put(31, 1, 0);
+10720; Beacon.Put(31, 1, 0);
+10730; Beacon.Put(31, 1, 0);
+10740; Beacon.Put(31, 1, 0);
+10750; Beacon.Put(31, 1, 0);
+10760; Beacon.Put(31, 1, 0);
+10770; Beacon.Put(31, 1, 0);
+10780; Beacon.Put(31, 1, 0);
+10790; Beacon.Put(31, 1, 0);
+10800; Beacon.Put(31, 1, 0);
+10810; Beacon.Put(31, 1, 0);
+10820; Beacon.Put(31, 1, 0);
+10830; Beacon.Put(31, 1, 0);
+10840; Beacon.Put(31, 1, 0);
+10850; Beacon.Put(31, 1, 0);
+10860; Beacon.Put(31, 1, 0);
+10870; Beacon.Put(31, 1, 0);
+10880; Beacon.Put(31, 1, 0);
+10890; Beacon.Put(31, 1, 0);
+10900; Beacon.Put(31, 1, 0);
+10910; Beacon.Put(31, 1, 0);
+10920; Beacon.Put(31, 1, 0);
+10930; Beacon.Put(31, 1, 0);
+10940; Beacon.Put(31, 1, 0);
+10950; Beacon.Put(31, 1, 0);
+10960; Beacon.Put(31, 1, 0);
+10970; Beacon.Put(31, 1, 0);
+10980; Beacon.Put(31, 1, 0);
+10990; Beacon.Put(31, 1, 0);
+11000; Beacon.Put(31, 1, 0);
+11010; Beacon.Put(31, 1, 0);
+11020; Beacon.Put(31, 1, 0);
+11030; Beacon.Put(31, 1, 0);
+11040; Beacon.Put(31, 1, 0);
+11050; Beacon.Put(31, 1, 0);
+11060; Beacon.Put(31, 1, 0);
+11070; Beacon.Put(31, 1, 0);
+11080; Beacon.Put(31, 1, 0);
+11090; Beacon.Put(31, 1, 0);
+11100; Beacon.Put(31, 1, 0);
+11110; Beacon.Put(31, 1, 0);
+11120; Beacon.Put(31, 1, 0);
+11130; Beacon.Put(31, 1, 0);
+11140; Beacon.Put(31, 1, 0);
+11150; Beacon.Put(31, 1, 0);
+11160; Beacon.Put(31, 1, 0);
+11170; Beacon.Put(31, 1, 0);
+11180; Beacon.Put(31, 1, 0);
+11190; Beacon.Put(31, 1, 0);
+11200; Beacon.Put(31, 1, 0);
+11210; Beacon.Put(31, 1, 0);
+11220; Beacon.Put(31, 1, 0);
+11230; Beacon.Put(31, 1, 0);
+11240; Beacon.Put(31, 1, 0);
+11250; Beacon.Put(31, 1, 0);
+11260; Beacon.Put(31, 1, 0);
+11270; Beacon.Put(31, 1, 0);
+11280; Beacon.Put(31, 1, 0);
+11290; Beacon.Put(31, 1, 0);
+11300; Beacon.Put(31, 1, 0);
+11310; Beacon.Put(31, 1, 0);
+11320; Beacon.Put(31, 1, 0);
+11330; Beacon.Put(31, 1, 0);
+11340; Beacon.Put(31, 1, 0);
+11350; Beacon.Put(31, 1, 0);
+11360; Beacon.Put(31, 1, 0);
+11370; Beacon.Put(31, 1, 0);
+11380; Beacon.Put(31, 1, 0);
+11390; Beacon.Put(31, 1, 0);
+11400; Beacon.Put(31, 1, 0);
+11410; Beacon.Put(31, 1, 0);
+11420; Beacon.Put(31, 1, 0);
+11430; Beacon.Put(31, 1, 0);
+11440; Beacon.Put(31, 1, 0);
+11450; Beacon.Put(31, 1, 0);
+11460; Beacon.Put(31, 1, 0);
+11470; Beacon.Put(31, 1, 0);
+11480; Beacon.Put(31, 1, 0);
+11490; Beacon.Put(31, 1, 0);
+11500; Beacon.Put(31, 1, 0);
+11510; Beacon.Put(31, 1, 0);
+11520; Beacon.Put(31, 1, 0);
+11530; Beacon.Put(31, 1, 0);
+11540; Beacon.Put(31, 1, 0);
+11550; Beacon.Put(31, 1, 0);
+11560; Beacon.Put(31, 1, 0);
+11570; Beacon.Put(31, 1, 0);
+11580; Beacon.Put(31, 1, 0);
+11590; Beacon.Put(31, 1, 0);
+11600; Beacon.Put(31, 1, 0);
+11610; Beacon.Put(31, 1, 0);
+11620; Beacon.Put(31, 1, 0);
+11630; Beacon.Put(31, 1, 0);
+11640; Beacon.Put(31, 1, 0);
+11650; Beacon.Put(31, 1, 0);
+11660; Beacon.Put(31, 1, 0);
+11670; Beacon.Put(31, 1, 0);
+11680; Beacon.Put(31, 1, 0);
+11690; Beacon.Put(31, 1, 0);
+11700; Beacon.Put(31, 1, 0);
+11710; Beacon.Put(31, 1, 0);
+11720; Beacon.Put(31, 1, 0);
+11730; Beacon.Put(31, 1, 0);
+11740; Beacon.Put(31, 1, 0);
+11750; Beacon.Put(31, 1, 0);
+11760; Beacon.Put(31, 1, 0);
+11770; Beacon.Put(31, 1, 0);
+11780; Beacon.Put(31, 1, 0);
+11790; Beacon.Put(31, 1, 0);
+11800; Beacon.Put(31, 1, 0);
+11810; Beacon.Put(31, 1, 0);
+11820; Beacon.Put(31, 1, 0);
+11830; Beacon.Put(31, 1, 0);
+11840; Beacon.Put(31, 1, 0);
+11850; Beacon.Put(31, 1, 0);
+11860; Beacon.Put(31, 1, 0);
+11870; Beacon.Put(31, 1, 0);
+11880; Beacon.Put(31, 1, 0);
+11890; Beacon.Put(31, 1, 0);
+11900; Beacon.Put(31, 1, 0);
+11910; Beacon.Put(31, 1, 0);
+11920; Beacon.Put(31, 1, 0);
+11930; Beacon.Put(31, 1, 0);
+11940; Beacon.Put(31, 1, 0);
+11950; Beacon.Put(31, 1, 0);
+11960; Beacon.Put(31, 1, 0);
+11970; Beacon.Put(31, 1, 0);
+11980; Beacon.Put(31, 1, 0);
+11990; Beacon.Put(31, 1, 0);
+12000; Beacon.Put(31, 1, 0);
+12010; Beacon.Put(31, 1, 0);
+12020; Beacon.Put(31, 1, 0);
+12030; Beacon.Put(31, 1, 0);
+12040; Beacon.Put(31, 1, 0);
+12050; Beacon.Put(31, 1, 0);
+12060; Beacon.Put(31, 1, 0);
+12070; Beacon.Put(31, 1, 0);
+12080; Beacon.Put(31, 1, 0);
+12090; Beacon.Put(31, 1, 0);
+12100; Beacon.Put(31, 1, 0);
+12110; Beacon.Put(31, 1, 0);
+12120; Beacon.Put(31, 1, 0);
+12130; Beacon.Put(31, 1, 0);
+12140; Beacon.Put(31, 1, 0);
+12150; Beacon.Put(31, 1, 0);
+12160; Beacon.Put(31, 1, 0);
+12170; Beacon.Put(31, 1, 0);
+12180; Beacon.Put(31, 1, 0);
+12190; Beacon.Put(31, 1, 0);
+12200; Beacon.Put(31, 1, 0);
+12210; Beacon.Put(31, 1, 0);
+12220; Beacon.Put(31, 1, 0);
+12230; Beacon.Put(31, 1, 0);
+12240; Beacon.Put(31, 1, 0);
+12250; Beacon.Put(31, 1, 0);
+12260; Beacon.Put(31, 1, 0);
+12270; Beacon.Put(31, 1, 0);
+12280; Beacon.Put(31, 1, 0);
+12290; Beacon.Put(31, 1, 0);
+12300; Beacon.Put(31, 1, 0);
+12310; Beacon.Put(31, 1, 0);
+12320; Beacon.Put(31, 1, 0);
+12330; Beacon.Put(31, 1, 0);
+12340; Beacon.Put(31, 1, 0);
+12350; Beacon.Put(31, 1, 0);
+12360; Beacon.Put(31, 1, 0);
+12370; Beacon.Put(31, 1, 0);
+12380; Beacon.Put(31, 1, 0);
+12390; Beacon.Put(31, 1, 0);
+12400; Beacon.Put(31, 1, 0);
+12410; Beacon.Put(31, 1, 0);
+12420; Beacon.Put(31, 1, 0);
+12430; Beacon.Put(31, 1, 0);
+12440; Beacon.Put(31, 1, 0);
+12450; Beacon.Put(31, 1, 0);
+12460; Beacon.Put(31, 1, 0);
+12470; Beacon.Put(31, 1, 0);
+12480; Beacon.Put(31, 1, 0);
+12490; Beacon.Put(31, 1, 0);
+12500; Beacon.Put(31, 1, 0);
+12510; Beacon.Put(31, 1, 0);
+12520; Beacon.Put(31, 1, 0);
+12530; Beacon.Put(31, 1, 0);
+12540; Beacon.Put(31, 1, 0);
+12550; Beacon.Put(31, 1, 0);
+12560; Beacon.Put(31, 1, 0);
+12570; Beacon.Put(31, 1, 0);
+12580; Beacon.Put(31, 1, 0);
+12590; Beacon.Put(31, 1, 0);
+12600; Beacon.Put(31, 1, 0);
+12610; Beacon.Put(31, 1, 0);
+12620; Beacon.Put(31, 1, 0);
+12630; Beacon.Put(31, 1, 0);
+12640; Beacon.Put(31, 1, 0);
+12650; Beacon.Put(31, 1, 0);
+12660; Beacon.Put(31, 1, 0);
+12670; Beacon.Put(31, 1, 0);
+12680; Beacon.Put(31, 1, 0);
+12690; Beacon.Put(31, 1, 0);
+12700; Beacon.Put(31, 1, 0);
+12710; Beacon.Put(31, 1, 0);
+12720; Beacon.Put(31, 1, 0);
+12730; Beacon.Put(31, 1, 0);
+12740; Beacon.Put(31, 1, 0);
+12750; Beacon.Put(31, 1, 0);
+12760; Beacon.Put(31, 1, 0);
+12770; Beacon.Put(31, 1, 0);
+12780; Beacon.Put(31, 1, 0);
+12790; Beacon.Put(31, 1, 0);
+12800; Beacon.Put(31, 1, 0);
+12810; Beacon.Put(31, 1, 0);
+12820; Beacon.Put(31, 1, 0);
+12830; Beacon.Put(31, 1, 0);
+12840; Beacon.Put(31, 1, 0);
+12850; Beacon.Put(31, 1, 0);
+12860; Beacon.Put(31, 1, 0);
+12870; Beacon.Put(31, 1, 0);
+12880; Beacon.Put(31, 1, 0);
+12890; Beacon.Put(31, 1, 0);
+12900; Beacon.Put(31, 1, 0);
+12910; Beacon.Put(31, 1, 0);
+12920; Beacon.Put(31, 1, 0);
+12930; Beacon.Put(31, 1, 0);
+12940; Beacon.Put(31, 1, 0);
+12950; Beacon.Put(31, 1, 0);
+12960; Beacon.Put(31, 1, 0);
+12970; Beacon.Put(31, 1, 0);
+12980; Beacon.Put(31, 1, 0);
+12990; Beacon.Put(31, 1, 0);
+13000; Beacon.Put(31, 1, 0);
+13010; Beacon.Put(31, 1, 0);
+13020; Beacon.Put(31, 1, 0);
+13030; Beacon.Put(31, 1, 0);
+13040; Beacon.Put(31, 1, 0);
+13050; Beacon.Put(31, 1, 0);
+13060; Beacon.Put(31, 1, 0);
+13070; Beacon.Put(31, 1, 0);
+13080; Beacon.Put(31, 1, 0);
+13090; Beacon.Put(31, 1, 0);
+13100; Beacon.Put(31, 1, 0);
+13110; Beacon.Put(31, 1, 0);
+13120; Beacon.Put(31, 1, 0);
+13130; Beacon.Put(31, 1, 0);
+13140; Beacon.Put(31, 1, 0);
+13150; Beacon.Put(31, 1, 0);
+13160; Beacon.Put(31, 1, 0);
+13170; Beacon.Put(31, 1, 0);
+13180; Beacon.Put(31, 1, 0);
+13190; Beacon.Put(31, 1, 0);
+13200; Beacon.Put(31, 1, 0);
+13210; Beacon.Put(31, 1, 0);
+13220; Beacon.Put(31, 1, 0);
+13230; Beacon.Put(31, 1, 0);
+13240; Beacon.Put(31, 1, 0);
+13250; Beacon.Put(31, 1, 0);
+13260; Beacon.Put(31, 1, 0);
+13270; Beacon.Put(31, 1, 0);
+13280; Beacon.Put(31, 1, 0);
+13290; Beacon.Put(31, 1, 0);
+13300; Beacon.Put(31, 1, 0);
+13310; Beacon.Put(31, 1, 0);
+13320; Beacon.Put(31, 1, 0);
+13330; Beacon.Put(31, 1, 0);
+13340; Beacon.Put(31, 1, 0);
+13350; Beacon.Put(31, 1, 0);
+13360; Beacon.Put(31, 1, 0);
+13370; Beacon.Put(31, 1, 0);
+13380; Beacon.Put(31, 1, 0);
+13390; Beacon.Put(31, 1, 0);
+13400; Beacon.Put(31, 1, 0);
+13410; Beacon.Put(31, 1, 0);
+13420; Beacon.Put(31, 1, 0);
+13430; Beacon.Put(31, 1, 0);
+13440; Beacon.Put(31, 1, 0);
+13450; Beacon.Put(31, 1, 0);
+13460; Beacon.Put(31, 1, 0);
+13470; Beacon.Put(31, 1, 0);
+13480; Beacon.Put(31, 1, 0);
+13490; Beacon.Put(31, 1, 0);
+13500; Beacon.Put(31, 1, 0);
+13510; Beacon.Put(31, 1, 0);
+13520; Beacon.Put(31, 1, 0);
+13530; Beacon.Put(31, 1, 0);
+13540; Beacon.Put(31, 1, 0);
+13550; Beacon.Put(31, 1, 0);
+13560; Beacon.Put(31, 1, 0);
+13570; Beacon.Put(31, 1, 0);
+13580; Beacon.Put(31, 1, 0);
+13590; Beacon.Put(31, 1, 0);
+13600; Beacon.Put(31, 1, 0);
+13610; Beacon.Put(31, 1, 0);
+13620; Beacon.Put(31, 1, 0);
+13630; Beacon.Put(31, 1, 0);
+13640; Beacon.Put(31, 1, 0);
+13650; Beacon.Put(31, 1, 0);
+13660; Beacon.Put(31, 1, 0);
+13670; Beacon.Put(31, 1, 0);
+13680; Beacon.Put(31, 1, 0);
+13690; Beacon.Put(31, 1, 0);
+13700; Beacon.Put(31, 1, 0);
+13710; Beacon.Put(31, 1, 0);
+13720; Beacon.Put(31, 1, 0);
+13730; Beacon.Put(31, 1, 0);
+13740; Beacon.Put(31, 1, 0);
+13750; Beacon.Put(31, 1, 0);
+13760; Beacon.Put(31, 1, 0);
+13770; Beacon.Put(31, 1, 0);
+13780; Beacon.Put(31, 1, 0);
+13790; Beacon.Put(31, 1, 0);
+13800; Beacon.Put(31, 1, 0);
+13810; Beacon.Put(31, 1, 0);
+13820; Beacon.Put(31, 1, 0);
+13830; Beacon.Put(31, 1, 0);
+13840; Beacon.Put(31, 1, 0);
+13850; Beacon.Put(31, 1, 0);
+13860; Beacon.Put(31, 1, 0);
+13870; Beacon.Put(31, 1, 0);
+13880; Beacon.Put(31, 1, 0);
+13890; Beacon.Put(31, 1, 0);
+13900; Beacon.Put(31, 1, 0);
+13910; Beacon.Put(31, 1, 0);
+13920; Beacon.Put(31, 1, 0);
+13930; Beacon.Put(31, 1, 0);
+13940; Beacon.Put(31, 1, 0);
+13950; Beacon.Put(31, 1, 0);
+13960; Beacon.Put(31, 1, 0);
+13970; Beacon.Put(31, 1, 0);
+13980; Beacon.Put(31, 1, 0);
+13990; Beacon.Put(31, 1, 0);
+14000; Beacon.Put(31, 1, 0);
+14010; Beacon.Put(31, 1, 0);
+14020; Beacon.Put(31, 1, 0);
+14030; Beacon.Put(31, 1, 0);
+14040; Beacon.Put(31, 1, 0);
+14050; Beacon.Put(31, 1, 0);
+14060; Beacon.Put(31, 1, 0);
+14070; Beacon.Put(31, 1, 0);
+14080; Beacon.Put(31, 1, 0);
+14090; Beacon.Put(31, 1, 0);
+14100; Beacon.Put(31, 1, 0);
+14110; Beacon.Put(31, 1, 0);
+14120; Beacon.Put(31, 1, 0);
+14130; Beacon.Put(31, 1, 0);
+14140; Beacon.Put(31, 1, 0);
+14150; Beacon.Put(31, 1, 0);
+14160; Beacon.Put(31, 1, 0);
+14170; Beacon.Put(31, 1, 0);
+14180; Beacon.Put(31, 1, 0);
+14190; Beacon.Put(31, 1, 0);
+14200; Beacon.Put(31, 1, 0);
+14210; Beacon.Put(31, 1, 0);
+14220; Beacon.Put(31, 1, 0);
+14230; Beacon.Put(31, 1, 0);
+14240; Beacon.Put(31, 1, 0);
+14250; Beacon.Put(31, 1, 0);
+14260; Beacon.Put(31, 1, 0);
+14270; Beacon.Put(31, 1, 0);
+14280; Beacon.Put(31, 1, 0);
+14290; Beacon.Put(31, 1, 0);
+14300; Beacon.Put(31, 1, 0);
+14310; Beacon.Put(31, 1, 0);
+14320; Beacon.Put(31, 1, 0);
+14330; Beacon.Put(31, 1, 0);
+14340; Beacon.Put(31, 1, 0);
+14350; Beacon.Put(31, 1, 0);
+14360; Beacon.Put(31, 1, 0);
+14370; Beacon.Put(31, 1, 0);
+14380; Beacon.Put(31, 1, 0);
+14390; Beacon.Put(31, 1, 0);
+14400; Beacon.Put(31, 1, 0);
+14410; Beacon.Put(31, 1, 0);
+14420; Beacon.Put(31, 1, 0);
+14430; Beacon.Put(31, 1, 0);
+14440; Beacon.Put(31, 1, 0);
+14450; Beacon.Put(31, 1, 0);
+14460; Beacon.Put(31, 1, 0);
+14470; Beacon.Put(31, 1, 0);
+14480; Beacon.Put(31, 1, 0);
+14490; Beacon.Put(31, 1, 0);
+14500; Beacon.Put(31, 1, 0);
+14510; Beacon.Put(31, 1, 0);
+14520; Beacon.Put(31, 1, 0);
+14530; Beacon.Put(31, 1, 0);
+14540; Beacon.Put(31, 1, 0);
+14550; Beacon.Put(31, 1, 0);
+14560; Beacon.Put(31, 1, 0);
+14570; Beacon.Put(31, 1, 0);
+14580; Beacon.Put(31, 1, 0);
+14590; Beacon.Put(31, 1, 0);
+14600; Beacon.Put(31, 1, 0);
+14610; Beacon.Put(31, 1, 0);
+14620; Beacon.Put(31, 1, 0);
+14630; Beacon.Put(31, 1, 0);
+14640; Beacon.Put(31, 1, 0);
+14650; Beacon.Put(31, 1, 0);
+14660; Beacon.Put(31, 1, 0);
+14670; Beacon.Put(31, 1, 0);
+14680; Beacon.Put(31, 1, 0);
+14690; Beacon.Put(31, 1, 0);
+14700; Beacon.Put(31, 1, 0);
+14710; Beacon.Put(31, 1, 0);
+14720; Beacon.Put(31, 1, 0);
+14730; Beacon.Put(31, 1, 0);
+14740; Beacon.Put(31, 1, 0);
+14750; Beacon.Put(31, 1, 0);
+14760; Beacon.Put(31, 1, 0);
+14770; Beacon.Put(31, 1, 0);
+14780; Beacon.Put(31, 1, 0);
+14790; Beacon.Put(31, 1, 0);
+14800; Beacon.Put(31, 1, 0);
+14810; Beacon.Put(31, 1, 0);
+14820; Beacon.Put(31, 1, 0);
+14830; Beacon.Put(31, 1, 0);
+14840; Beacon.Put(31, 1, 0);
+14850; Beacon.Put(31, 1, 0);
+14860; Beacon.Put(31, 1, 0);
+14870; Beacon.Put(31, 1, 0);
+14880; Beacon.Put(31, 1, 0);
+14890; Beacon.Put(31, 1, 0);
+14900; Beacon.Put(31, 1, 0);
+14910; Beacon.Put(31, 1, 0);
+14920; Beacon.Put(31, 1, 0);
+14930; Beacon.Put(31, 1, 0);
+14940; Beacon.Put(31, 1, 0);
+14950; Beacon.Put(31, 1, 0);
+14960; Beacon.Put(31, 1, 0);
+14970; Beacon.Put(31, 1, 0);
+14980; Beacon.Put(31, 1, 0);
+14990; Beacon.Put(31, 1, 0);
+15000; Beacon.Put(31, 1, 0);
+15010; Beacon.Put(31, 1, 0);
+15020; Beacon.Put(31, 1, 0);
+15030; Beacon.Put(31, 1, 0);
+15040; Beacon.Put(31, 1, 0);
+15050; Beacon.Put(31, 1, 0);
+15060; Beacon.Put(31, 1, 0);
+15070; Beacon.Put(31, 1, 0);
+15080; Beacon.Put(31, 1, 0);
+15090; Beacon.Put(31, 1, 0);
+15100; Beacon.Put(31, 1, 0);
+15110; Beacon.Put(31, 1, 0);
+15120; Beacon.Put(31, 1, 0);
+15130; Beacon.Put(31, 1, 0);
+15140; Beacon.Put(31, 1, 0);
+15150; Beacon.Put(31, 1, 0);
+15160; Beacon.Put(31, 1, 0);
+15170; Beacon.Put(31, 1, 0);
+15180; Beacon.Put(31, 1, 0);
+15190; Beacon.Put(31, 1, 0);
+15200; Beacon.Put(31, 1, 0);
+15210; Beacon.Put(31, 1, 0);
+15220; Beacon.Put(31, 1, 0);
+15230; Beacon.Put(31, 1, 0);
+15240; Beacon.Put(31, 1, 0);
+15250; Beacon.Put(31, 1, 0);
+15260; Beacon.Put(31, 1, 0);
+15270; Beacon.Put(31, 1, 0);
+15280; Beacon.Put(31, 1, 0);
+15290; Beacon.Put(31, 1, 0);
+15300; Beacon.Put(31, 1, 0);
+15310; Beacon.Put(31, 1, 0);
+15320; Beacon.Put(31, 1, 0);
+15330; Beacon.Put(31, 1, 0);
+15340; Beacon.Put(31, 1, 0);
+15350; Beacon.Put(31, 1, 0);
+15360; Beacon.Put(31, 1, 0);
+15370; Beacon.Put(31, 1, 0);
+15380; Beacon.Put(31, 1, 0);
+15390; Beacon.Put(31, 1, 0);
+15400; Beacon.Put(31, 1, 0);
+15410; Beacon.Put(31, 1, 0);
+15420; Beacon.Put(31, 1, 0);
+15430; Beacon.Put(31, 1, 0);
+15440; Beacon.Put(31, 1, 0);
+15450; Beacon.Put(31, 1, 0);
+15460; Beacon.Put(31, 1, 0);
+15470; Beacon.Put(31, 1, 0);
+15480; Beacon.Put(31, 1, 0);
+15490; Beacon.Put(31, 1, 0);
+15500; Beacon.Put(31, 1, 0);
+15510; Beacon.Put(31, 1, 0);
+15520; Beacon.Put(31, 1, 0);
+15530; Beacon.Put(31, 1, 0);
+15540; Beacon.Put(31, 1, 0);
+15550; Beacon.Put(31, 1, 0);
+15560; Beacon.Put(31, 1, 0);
+15570; Beacon.Put(31, 1, 0);
+15580; Beacon.Put(31, 1, 0);
+15590; Beacon.Put(31, 1, 0);
+15600; Beacon.Put(31, 1, 0);
+15610; Beacon.Put(31, 1, 0);
+15620; Beacon.Put(31, 1, 0);
+15630; Beacon.Put(31, 1, 0);
+15640; Beacon.Put(31, 1, 0);
+15650; Beacon.Put(31, 1, 0);
+15660; Beacon.Put(31, 1, 0);
+15670; Beacon.Put(31, 1, 0);
+15680; Beacon.Put(31, 1, 0);
+15690; Beacon.Put(31, 1, 0);
+15700; Beacon.Put(31, 1, 0);
+15710; Beacon.Put(31, 1, 0);
+15720; Beacon.Put(31, 1, 0);
+15730; Beacon.Put(31, 1, 0);
+15740; Beacon.Put(31, 1, 0);
+15750; Beacon.Put(31, 1, 0);
+15760; Beacon.Put(31, 1, 0);
+15770; Beacon.Put(31, 1, 0);
+15780; Beacon.Put(31, 1, 0);
+15790; Beacon.Put(31, 1, 0);
+15800; Beacon.Put(31, 1, 0);
+15810; Beacon.Put(31, 1, 0);
+15820; Beacon.Put(31, 1, 0);
+15830; Beacon.Put(31, 1, 0);
+15840; Beacon.Put(31, 1, 0);
+15850; Beacon.Put(31, 1, 0);
+15860; Beacon.Put(31, 1, 0);
+15870; Beacon.Put(31, 1, 0);
+15880; Beacon.Put(31, 1, 0);
+15890; Beacon.Put(31, 1, 0);
+15900; Beacon.Put(31, 1, 0);
+15910; Beacon.Put(31, 1, 0);
+15920; Beacon.Put(31, 1, 0);
+15930; Beacon.Put(31, 1, 0);
+15940; Beacon.Put(31, 1, 0);
+15950; Beacon.Put(31, 1, 0);
+15960; Beacon.Put(31, 1, 0);
+15970; Beacon.Put(31, 1, 0);
+15980; Beacon.Put(31, 1, 0);
+15990; Beacon.Put(31, 1, 0);
+16000; Beacon.Put(31, 1, 0);
+16010; Beacon.Put(31, 1, 0);
+16020; Beacon.Put(31, 1, 0);
+16030; Beacon.Put(31, 1, 0);
+16040; Beacon.Put(31, 1, 0);
+16050; Beacon.Put(31, 1, 0);
+16060; Beacon.Put(31, 1, 0);
+16070; Beacon.Put(31, 1, 0);
+16080; Beacon.Put(31, 1, 0);
+16090; Beacon.Put(31, 1, 0);
+16100; Beacon.Put(31, 1, 0);
