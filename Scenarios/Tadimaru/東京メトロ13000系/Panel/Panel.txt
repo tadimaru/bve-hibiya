@@ -1,0 +1,243 @@
+BveTs Instrument Panel 2.01:utf-8
+
+[This]
+Resolution     = 1800
+Left           = 0
+Top            = 0
+Right          = 1900
+Bottom         = 1900
+DaytimeImage   = panel.png
+NighttimeImage = panel_night.png
+Center         = 900, 1050
+Origin         = 900, 900
+
+[Needle]
+Subject      = kmph
+Location     = 554, 1400
+DaytimeImage = needle.png
+Origin       = 12, 160
+Radius       = 100
+InitialAngle = -120
+LastAngle    = 120
+Minimum      = 0
+Maximum      = 120
+Layer        = 7
+StopPin      = TRUE
+NaturalFreq  = 10
+DampingRatio = 0.7
+
+[DigitalNumber]
+Subject      = kmph
+Location     = 460, 1450
+DaytimeImage = speed.png
+Interval     = 29
+Layer        = 5
+
+[PilotLamp]
+Subject = ats132
+Location = 0, 0
+DaytimeImage = signal_green.png
+Layer = 6
+
+[PilotLamp]
+Subject = ats131
+Location = 0, 0
+DaytimeImage = signal_red.png
+Layer = 6
+
+[PilotLamp]
+Subject = ats101
+Location = 0, 0
+DaytimeImage = signal_x.png
+Layer = 6
+
+[PilotLamp]
+Subject = ats133
+Location = 0, 0
+DaytimeImage = signal_fwd.png
+Layer = 6
+
+[PilotLamp]
+Subject = ats134
+Location = 0, 0
+DaytimeImage = signal_p.png
+Layer = 6
+
+[DigitalNumber]
+Subject      = ats92
+Location     = 1600, 1263
+DaytimeImage = mode_key.png
+Interval     = 32
+Layer        = 6
+
+[PilotLamp]
+Subject = door
+Location = 0, 0
+DaytimeImage = signal_door.png
+Layer = 6
+
+[PilotLamp]
+Subject = ats102
+Location = 0, 0
+DaytimeImage = ..\atc\full\a102.png
+Layer = 6
+
+[PilotLamp]
+Subject = ats104
+Location = 0, 0
+DaytimeImage = ..\atc\full\a104.png
+Layer = 6
+
+[PilotLamp]
+Subject = ats105
+Location = 0, 0
+DaytimeImage = ..\atc\full\a105.png
+Layer = 6
+
+[PilotLamp]
+Subject = ats106
+Location = 0, 0
+DaytimeImage = ..\atc\full\a106.png
+Layer = 6
+
+[PilotLamp]
+Subject = ats107
+Location = 0, 0
+DaytimeImage = ..\atc\full\a107.png
+Layer = 6
+
+[PilotLamp]
+Subject = ats108
+Location = 0, 0
+DaytimeImage = ..\atc\full\a108.png
+Layer = 6
+
+[PilotLamp]
+Subject = ats109
+Location = 0, 0
+DaytimeImage = ..\atc\full\a109.png
+Layer = 6
+
+[PilotLamp]
+Subject = ats110
+Location = 0, 0
+DaytimeImage = ..\atc\full\a110.png
+Layer = 6
+
+[PilotLamp]
+Subject = ats111
+Location = 0, 0
+DaytimeImage = ..\atc\full\a111.png
+Layer = 6
+
+[PilotLamp]
+Subject = ats112
+Location = 0, 0
+DaytimeImage = ..\atc\full\a112.png
+Layer = 6
+
+[PilotLamp]
+Subject = ats113
+Location = 0, 0
+DaytimeImage = ..\atc\full\a113.png
+Layer = 6
+
+[PilotLamp]
+Subject = ats114
+Location = 0, 0
+DaytimeImage = ..\atc\full\a114.png
+Layer = 6
+
+[PilotLamp]
+Subject = ats115
+Location = 0, 0
+DaytimeImage = ..\atc\full\a115.png
+Layer = 6
+
+[PilotLamp]
+Subject = ats116
+Location = 0, 0
+DaytimeImage = ..\atc\full\a116.png
+Layer = 6
+
+[PilotLamp]
+Subject = ats117
+Location = 0, 0
+DaytimeImage = ..\atc\full\a117.png
+Layer = 6
+
+[PilotLamp]
+Subject = ats118
+Location = 0, 0
+DaytimeImage = ..\atc\full\a118.png
+Layer = 6
+
+[PilotLamp]
+Subject = ats119
+Location = 0, 0
+DaytimeImage = ..\atc\full\a119.png
+Layer = 6
+
+[PilotLamp]
+Subject = ats120
+Location = 0, 0
+DaytimeImage = ..\atc\full\a120.png
+Layer = 6
+
+[PilotLamp]
+Subject = ats121
+Location = 0, 0
+DaytimeImage = ..\atc\full\a121.png
+Layer = 6
+
+[PilotLamp]
+Subject = ats122
+Location = 0, 0
+DaytimeImage = ..\atc\full\a122.png
+Layer = 6
+
+[PilotLamp]
+Subject = ats123
+Location = 0, 0
+DaytimeImage = ..\atc\full\a123.png
+Layer = 6
+
+[PilotLamp]
+Subject = ats124
+Location = 0, 0
+DaytimeImage = ..\atc\full\a124.png
+Layer = 6
+
+[PilotLamp]
+Subject = ats125
+Location = 0, 0
+DaytimeImage = ..\atc\full\a125.png
+Layer = 6
+
+[DigitalNumber]
+Subject      = brake
+Location     = 230, 1251
+DaytimeImage = mascon_eb.png
+Interval     = 21
+Layer        = 5
+
+[DigitalNumber]
+Subject      = brake
+Location     = 230, 1272
+DaytimeImage = mascon_brake.png
+Interval     = 147
+Layer        = 5
+
+[DigitalNumber]
+Subject      = brake
+Location     = 230, 1419
+DaytimeImage = mascon_n.png
+Interval     = 21
+Layer        = 5
+
+[DigitalNumber]
+Subject      = power
+Location     = 230, 1419
+DaytimeImage = mascon_power.png
+Interval     = 105
+Layer        = 6

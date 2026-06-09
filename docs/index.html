@@ -20,74 +20,63 @@
       color: #333;
       line-height: 1.7;
     }
-    header {
-      background: #1a1a2e;
-      color: #fff;
-      padding: 40px 20px;
-      text-align: center;
+
+    /* ===== レイアウト（サイドバー + 本文） ===== */
+    .layout { display: flex; align-items: flex-start; min-height: 100vh; }
+    .sidebar {
+      width: 240px; flex-shrink: 0; background: #16213e; color: #bbb;
+      position: sticky; top: 0; height: 100vh; padding: 28px 0; overflow-y: auto;
     }
+    .sb-brand { padding: 0 24px 20px; border-bottom: 1px solid #2a3a5e; margin-bottom: 12px; }
+    .sb-brand-title { color: #fff; font-size: 1.1rem; font-weight: bold; }
+    .sb-brand-sub { color: #8893a8; font-size: 0.8rem; margin-top: 2px; }
+    .sb-nav { display: flex; flex-direction: column; }
+    .sb-item { display: block; padding: 12px 24px; text-decoration: none; border-left: 3px solid transparent; }
+    .sb-item:hover { background: #1e2d4f; }
+    .sb-item.active { background: #1e2d4f; border-left-color: #e8850a; }
+    .sb-item-main { display: block; font-weight: bold; font-size: 0.98rem; color: #fff; }
+    .sb-item-sub { display: block; font-size: 0.78rem; color: #8893a8; margin-top: 1px; }
+    .sb-links { margin-top: 24px; padding: 16px 24px 0; border-top: 1px solid #2a3a5e; display: flex; flex-direction: column; gap: 8px; }
+    .sb-links a { color: #9aa6bd; font-size: 0.82rem; text-decoration: none; }
+    .sb-links a:hover { color: #fff; }
+    .main { flex: 1; min-width: 0; }
+
+    header { background: #1a1a2e; color: #fff; padding: 40px 20px; text-align: center; }
     header h1 { font-size: 1.8rem; margin-bottom: 8px; }
     header p { font-size: 1rem; color: #aaa; }
 
-    .banner {
-      background: linear-gradient(135deg, #e8850a, #c96d00);
-      color: #fff;
-      text-align: center;
-      padding: 24px 20px;
-    }
+    .banner { background: linear-gradient(135deg, #e8850a, #c96d00); color: #fff; text-align: center; padding: 24px 20px; }
     .banner p { font-size: 0.95rem; margin-bottom: 12px; }
     .banner a.btn-steam {
-      display: inline-block;
-      background: #fff;
-      color: #c96d00;
-      font-weight: bold;
-      padding: 10px 28px;
-      border-radius: 4px;
-      text-decoration: none;
-      font-size: 1rem;
+      display: inline-block; background: #fff; color: #c96d00; font-weight: bold;
+      padding: 10px 28px; border-radius: 4px; text-decoration: none; font-size: 1rem;
     }
     .banner a.btn-steam:hover { background: #ffe0b2; }
 
     .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
 
     section { margin-bottom: 48px; }
-    h2 {
-      font-size: 1.3rem;
-      border-left: 4px solid #1a1a2e;
-      padding-left: 12px;
-      margin-bottom: 16px;
-    }
+    h2 { font-size: 1.3rem; border-left: 4px solid #1a1a2e; padding-left: 12px; margin-bottom: 16px; }
 
-    .release-box {
-      background: #fff;
-      border: 2px solid #1a1a2e;
-      border-radius: 8px;
-      padding: 24px;
-      text-align: center;
+    .cross-link {
+      background: #fff; border: 1px dashed #e8850a; border-radius: 8px;
+      padding: 16px 20px; margin-bottom: 32px; font-size: 0.95rem;
     }
-    .release-box .section-label {
-      font-size: 0.85rem;
-      color: #888;
-      margin-bottom: 4px;
-    }
+    .cross-link a { color: #c96d00; font-weight: bold; }
+
+    .release-box { background: #fff; border: 2px solid #1a1a2e; border-radius: 8px; padding: 24px; text-align: center; }
+    .release-box .section-label { font-size: 0.85rem; color: #888; margin-bottom: 4px; }
     .release-box .route { font-size: 1.2rem; font-weight: bold; margin-bottom: 4px; }
     .release-box .date { color: #888; font-size: 0.9rem; margin-bottom: 20px; }
     .btn-download {
-      display: inline-block;
-      background: #1a1a2e;
-      color: #fff;
-      padding: 12px 36px;
-      border-radius: 4px;
-      text-decoration: none;
-      font-size: 1rem;
-      font-weight: bold;
+      display: inline-block; background: #1a1a2e; color: #fff; padding: 12px 36px;
+      border-radius: 4px; text-decoration: none; font-size: 1rem; font-weight: bold;
     }
     .btn-download:hover { background: #2d2d50; }
-    .btn-download.disabled {
-      background: #ccc;
-      color: #888;
-      cursor: not-allowed;
-      pointer-events: none;
+    .btn-download.disabled { background: #ccc; color: #888; cursor: not-allowed; pointer-events: none; }
+    .upgrade-note {
+      background: #fff8ef; border: 1px solid #f0d9b8; border-radius: 6px;
+      padding: 14px 18px; margin-top: 16px; font-size: 0.9rem; color: #5a4a32;
     }
 
     table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; overflow: hidden; }
@@ -95,231 +84,247 @@
     th { background: #f0f0f0; font-weight: bold; width: 160px; }
 
     .schedule-list { list-style: none; }
-    .schedule-list li {
-      background: #fff;
-      border-left: 4px solid #ccc;
-      padding: 12px 16px;
-      margin-bottom: 8px;
-      border-radius: 0 4px 4px 0;
-    }
+    .schedule-list li { background: #fff; border-left: 4px solid #ccc; padding: 12px 16px; margin-bottom: 8px; border-radius: 0 4px 4px 0; }
     .schedule-list li.current { border-left-color: #e8850a; font-weight: bold; }
     .schedule-list li.upcoming { border-left-color: #ccc; color: #888; }
     .schedule-list .date-label { font-size: 0.85rem; color: #888; }
 
     .install-steps { list-style: none; counter-reset: step; }
-    .install-steps li {
-      counter-increment: step;
-      background: #fff;
-      padding: 14px 16px 14px 56px;
-      margin-bottom: 8px;
-      border-radius: 4px;
-      position: relative;
-    }
+    .install-steps li { counter-increment: step; background: #fff; padding: 14px 16px 14px 56px; margin-bottom: 8px; border-radius: 4px; position: relative; }
     .install-steps li::before {
-      content: counter(step);
-      position: absolute;
-      left: 16px;
-      top: 50%;
-      transform: translateY(-50%);
-      background: #1a1a2e;
-      color: #fff;
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-      font-size: 0.9rem;
+      content: counter(step); position: absolute; left: 16px; top: 50%; transform: translateY(-50%);
+      background: #1a1a2e; color: #fff; width: 28px; height: 28px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9rem;
     }
-    code {
-      background: #eee;
-      padding: 2px 6px;
-      border-radius: 3px;
-      font-family: monospace;
-      font-size: 0.9em;
-    }
+    code { background: #eee; padding: 2px 6px; border-radius: 3px; font-family: monospace; font-size: 0.9em; }
 
-    footer {
-      background: #1a1a2e;
-      color: #aaa;
-      text-align: center;
-      padding: 32px 20px;
-      font-size: 0.9rem;
-    }
+    footer { background: #1a1a2e; color: #aaa; text-align: center; padding: 32px 20px; font-size: 0.9rem; }
     footer a { color: #ccc; }
+
+    @media (max-width: 720px) {
+      .layout { display: block; }
+      .sidebar { width: 100%; height: auto; position: static; padding: 16px 0; }
+      .sb-brand { text-align: center; }
+      .sb-nav { flex-direction: row; }
+      .sb-item { flex: 1; border-left: none; border-bottom: 3px solid transparent; text-align: center; padding: 10px; }
+      .sb-item.active { border-left: none; border-bottom-color: #e8850a; }
+      .sb-links { flex-direction: row; justify-content: center; gap: 20px; border-top: none; margin-top: 12px; }
+    }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>BVE5 東京メトロ日比谷線</h1>
-  <p>制作: たでぃまる</p>
-</header>
+<div class="layout">
 
-<div class="banner">
-  <p>同じ作者が、鉄道の<strong>運行管理シミュレーター</strong>もひとりで開発しています。</p>
-  <a class="btn-steam" href="https://store.steampowered.com/app/4282480/?utm_source=bve" target="_blank">
-    Steam でウィッシュリストに追加する →
-  </a>
-</div>
-
-<div class="container">
-
-  <section id="download">
-    <h2>ダウンロード</h2>
-    <div class="release-box">
-      <div class="section-label">最新リリース v0.3.0</div>
-      <div class="route">中目黒 〜 上野</div>
-      <div class="date" id="release-date">2026年5月12日 公開予定</div>
-      <a class="btn-download disabled" id="download-btn" href="#">5月12日 公開予定</a>
-      <div id="prerelease-fallback" style="margin-top:16px; font-size:0.9rem; color:#666;">
-        公開までの間は、現行の
-        <a href="https://github.com/tadimaru/bve-hibiya/releases/download/v0.2.0/bve-hibiya-v0.2.0.zip" style="color:#1a1a2e; font-weight:bold;">v0.2.0（中目黒〜日比谷）</a>
-        をご利用いただけます。
-      </div>
+  <aside class="sidebar">
+    <div class="sb-brand">
+      <div class="sb-brand-title">BVEデータ配布ページ</div>
+      <div class="sb-brand-sub">たでぃまる</div>
     </div>
-  </section>
+    <nav class="sb-nav">
+      <a href="index.html" class="sb-item active">
+        <span class="sb-item-main">東京メトロ日比谷線</span>
+        <span class="sb-item-sub">路線データ</span>
+      </a>
+      <a href="./vehicle.html" class="sb-item">
+        <span class="sb-item-main">東京メトロ13000系</span>
+        <span class="sb-item-sub">車両データ</span>
+      </a>
+    </nav>
+    <div class="sb-links">
+      <a href="https://store.steampowered.com/app/4282480/?utm_source=bve" target="_blank">運行管理SIM（Steam）</a>
+      <a href="https://x.com/tadi_maru" target="_blank">X @tadi_maru</a>
+    </div>
+  </aside>
 
-  <section id="about">
-    <h2>路線について</h2>
-    <table>
-      <tr><th>対象路線</th><td>東京メトロ日比谷線</td></tr>
-      <tr><th>対応ソフト</th><td>BVE Trainsim 5</td></tr>
-      <tr><th>制作区間（最終目標）</th><td>中目黒 〜 北千住（全21駅・約21.3km）</td></tr>
-      <tr><th>最新リリース</th><td>v0.3.0 中目黒 〜 上野（2026年5月12日）</td></tr>
-      <tr><th>同梱シナリオ</th><td>38S（朝ラッシュ・8:36発）／ 46S（昼間・11:17発）</td></tr>
-      <tr><th>制作者</th><td>たでぃまる</td></tr>
-    </table>
-  </section>
+  <div class="main">
 
-  <section id="schedule">
-    <h2>公開スケジュール</h2>
-    <ul class="schedule-list">
-      <li class="upcoming" style="opacity:0.85;">
-        <div class="date-label">2026年4月12日 公開済</div>
-        v0.1.0 中目黒 〜 六本木（部分開業）
-        <div style="margin-top:6px; font-size:0.85rem; font-weight:normal;">
-          <a href="https://github.com/tadimaru/bve-hibiya/releases/download/v0.1.0/bve-hibiya-v0.1.0.zip" style="color:#1a1a2e;">▼ v0.1.0 をダウンロード</a>
-          <span style="color:#888;">（旧バージョンを使いたい方向け）</span>
+    <header>
+      <h1>BVE5 東京メトロ日比谷線</h1>
+      <p>路線データ ／ 制作: たでぃまる</p>
+    </header>
+
+    <div class="banner">
+      <p>同じ作者が、鉄道の<strong>運行管理シミュレーター</strong>もひとりで開発しています。</p>
+      <a class="btn-steam" href="https://store.steampowered.com/app/4282480/?utm_source=bve" target="_blank">
+        Steam でウィッシュリストに追加する →
+      </a>
+    </div>
+
+    <div class="container">
+
+      <div class="cross-link">
+        🚃 この路線を運転するには車両が必要です。本路線の指定車両「東京メトロ13000系」を配布中 →
+        <a href="./vehicle.html">車両データのページへ</a>
+      </div>
+
+      <section id="download">
+        <h2>ダウンロード</h2>
+        <div class="release-box">
+          <div class="section-label">最新リリース v0.3.1</div>
+          <div class="route">中目黒 〜 上野</div>
+          <div class="date" id="release-date">2026年6月10日 公開予定</div>
+          <a class="btn-download disabled" id="download-btn" href="#">6月10日 公開予定</a>
+          <div id="prerelease-fallback" style="margin-top:16px; font-size:0.9rem; color:#666;">
+            公開までの間は、現行の
+            <a href="https://github.com/tadimaru/bve-hibiya/releases/download/v0.3.0/bve-hibiya-v0.3.0.zip" style="color:#1a1a2e; font-weight:bold;">v0.3.0（中目黒〜上野）</a>
+            をご利用いただけます。
+          </div>
         </div>
-      </li>
-      <li class="upcoming" style="opacity:0.85;">
-        <div class="date-label">2026年4月30日 公開済</div>
-        v0.2.0 中目黒 〜 日比谷（朝ラッシュ・対向列車追加）
-        <div style="margin-top:6px; font-size:0.85rem; font-weight:normal;">
-          <a href="https://github.com/tadimaru/bve-hibiya/releases/download/v0.2.0/bve-hibiya-v0.2.0.zip" style="color:#1a1a2e;">▼ v0.2.0 をダウンロード</a>
-          <span style="color:#888;">（旧バージョンを使いたい方向け）</span>
+
+        <div class="upgrade-note">
+          💡 <strong>すでに v0.3.0 をお持ちの方へ</strong><br>
+          路線データの再ダウンロードは不要です。各シナリオファイルの <code>Vehicle =</code> 行を
+          <code>Vehicle = Tadimaru\東京メトロ13000系\Vehicle.txt</code> に書き換えるだけで、配布中の13000系に対応します。
+          （v0.3.1 は、この指定をあらかじめ済ませたものです）
         </div>
-      </li>
-      <li class="current">
-        <div class="date-label">2026年5月12日 公開予定</div>
-        v0.3.0 中目黒 〜 上野（10駅延伸・ホームドア改修）
-      </li>
-      <li class="upcoming">
-        <div class="date-label">以降 順次延伸</div>
-        〜 北千住（全線）
-      </li>
-    </ul>
-  </section>
+      </section>
 
-  <section id="install">
-    <h2>インストール方法</h2>
-    <ol class="install-steps">
-      <li><a href="https://bvets.net/" target="_blank">BVE Trainsim 5</a> をインストールしてください。</li>
-      <li>上のダウンロードボタンからZIPファイルをダウンロードします。</li>
-      <li>ZIPを解凍し、<code>Scenarios</code> フォルダの中身（<code>東京メトロ日比谷線-38S_北千住行.txt</code>・<code>東京メトロ日比谷線-46S_北千住行.txt</code> と <code>Tadimaru</code> フォルダ）を BVE の <code>Scenarios</code> フォルダにコピーします。</li>
-      <li>下記「使用車両について」を参考に、シナリオファイル内の <code>Vehicle =</code> 行を書き換えます。</li>
-      <li>BVE を起動し、シナリオ一覧から「東京メトロ日比谷線」を選択してください。</li>
-    </ol>
-  </section>
+      <section id="about">
+        <h2>路線について</h2>
+        <table>
+          <tr><th>対象路線</th><td>東京メトロ日比谷線</td></tr>
+          <tr><th>対応ソフト</th><td>BVE Trainsim 5</td></tr>
+          <tr><th>制作区間（最終目標）</th><td>中目黒 〜 北千住（全21駅・約21.3km）</td></tr>
+          <tr><th>最新リリース</th><td>v0.3.1 中目黒 〜 上野（2026年6月10日）</td></tr>
+          <tr><th>同梱シナリオ</th><td>38S（朝ラッシュ・8:36発）／ 46S（昼間・11:17発）</td></tr>
+          <tr><th>対応車両</th><td>東京メトロ13000系（<a href="./vehicle.html" style="color:#c96d00;">車両ページ</a>で配布）</td></tr>
+          <tr><th>制作者</th><td>たでぃまる</td></tr>
+        </table>
+      </section>
 
-  <section id="vehicle">
-    <h2>使用車両について</h2>
-    <p>この路線はATC（自動列車制御装置）を実装しています。動作には<strong>メトロ総合プラグイン対応の車両</strong>が必要です。</p>
-    <p style="margin-top:10px;">指定車両は設けていません。<code>Scenarios/</code> 内の各シナリオファイル（<code>〜-38S_北千住行.txt</code>・<code>〜-46S_北千住行.txt</code>）にある <code>Vehicle = ここにお好きな車両を指定してください</code> の行を、お手持ちの車両ファイルのパスに書き換えてください。</p>
-  </section>
+      <section id="schedule">
+        <h2>公開スケジュール</h2>
+        <ul class="schedule-list">
+          <li class="upcoming" style="opacity:0.85;">
+            <div class="date-label">2026年4月12日 公開済</div>
+            v0.1.0 中目黒 〜 六本木（部分開業）
+            <div style="margin-top:6px; font-size:0.85rem; font-weight:normal;">
+              <a href="https://github.com/tadimaru/bve-hibiya/releases/download/v0.1.0/bve-hibiya-v0.1.0.zip" style="color:#1a1a2e;">▼ v0.1.0 をダウンロード</a>
+              <span style="color:#888;">（旧バージョンを使いたい方向け）</span>
+            </div>
+          </li>
+          <li class="upcoming" style="opacity:0.85;">
+            <div class="date-label">2026年4月30日 公開済</div>
+            v0.2.0 中目黒 〜 日比谷（朝ラッシュ・対向列車追加）
+            <div style="margin-top:6px; font-size:0.85rem; font-weight:normal;">
+              <a href="https://github.com/tadimaru/bve-hibiya/releases/download/v0.2.0/bve-hibiya-v0.2.0.zip" style="color:#1a1a2e;">▼ v0.2.0 をダウンロード</a>
+              <span style="color:#888;">（旧バージョンを使いたい方向け）</span>
+            </div>
+          </li>
+          <li class="upcoming" style="opacity:0.85;">
+            <div class="date-label">2026年5月12日 公開済</div>
+            v0.3.0 中目黒 〜 上野（10駅延伸・ホームドア改修）
+            <div style="margin-top:6px; font-size:0.85rem; font-weight:normal;">
+              <a href="https://github.com/tadimaru/bve-hibiya/releases/download/v0.3.0/bve-hibiya-v0.3.0.zip" style="color:#1a1a2e;">▼ v0.3.0 をダウンロード</a>
+              <span style="color:#888;">（旧バージョンを使いたい方向け）</span>
+            </div>
+          </li>
+          <li class="current">
+            <div class="date-label">2026年6月10日 公開予定</div>
+            v0.3.1 13000系を既定車両に指定（区間はv0.3.0と同じ）
+          </li>
+          <li class="upcoming">
+            <div class="date-label">以降 順次延伸</div>
+            〜 北千住（全線）
+          </li>
+        </ul>
+      </section>
 
-  <section id="policy">
-    <h2>利用ポリシー</h2>
-    <table>
-      <tr>
-        <th>そのまま転載・再配布</th>
-        <td>❌ NG — 本データを「BVE5 東京メトロ日比谷線」の路線データとして別サイトや配布所等にアップロードすることは禁止します（改変の有無を問わず）。</td>
-      </tr>
-      <tr>
-        <th>ストラクチャーの転用</th>
-        <td>✅ OK — 収録のストラクチャー（.x ファイル・テクスチャ）を自作路線へ組み込むことは歓迎します。</td>
-      </tr>
-      <tr>
-        <th>動画配信・実況</th>
-        <td>
-          ✅ OK — YouTube 等の動画サイトでの配信・実況は自由に行っていただけます。<br>
-          <span style="color:#666; font-size:0.95em;">
-            ※ できればで構いませんが、概要欄等に
-            <a href="https://tadimaru.github.io/bve-hibiya/" target="_blank">配布ページのリンク</a>
-            や
-            <a href="https://x.com/tadi_maru" target="_blank">X（@tadi_maru）</a>
-            を記載していただけると嬉しいです（任意）。
-          </span><br>
-          <small style="color:#888;">本データと他者様のデータを組み合わせた際のトラブルについては、当方は一切責任を負いません。</small>
-        </td>
-      </tr>
-    </table>
-    <p style="margin-top:14px; color:#666; font-size:0.9rem;">本データの使用によって生じたいかなる損害・トラブルについても、制作者は責任を負いかねます。自己責任にてご利用ください。</p>
-  </section>
+      <section id="install">
+        <h2>インストール方法</h2>
+        <ol class="install-steps">
+          <li><a href="https://bvets.net/" target="_blank">BVE Trainsim 5</a> をインストールしてください。</li>
+          <li>上のボタンから<strong>路線データ</strong>のZIPをダウンロードします。</li>
+          <li>ZIPを解凍し、中身（<code>東京メトロ日比谷線-38S_北千住行.txt</code>・<code>東京メトロ日比谷線-46S_北千住行.txt</code> と <code>Tadimaru</code> フォルダ）を BVE の <code>Scenarios</code> フォルダにコピーします。</li>
+          <li><strong>車両を用意します。</strong> 本路線の指定車両「東京メトロ13000系」を <a href="./vehicle.html">車両データのページ</a> から入手してください（v0.3.1 なら <code>Vehicle =</code> 行は設定済みです）。</li>
+          <li>BVE を起動し、シナリオ一覧から「東京メトロ日比谷線」を選択してください。</li>
+        </ol>
+      </section>
 
-  <section id="howto">
-    <h2>運転方法（ATC起動手順）</h2>
-    <p>始発駅出発前に、以下の手順で保安装置を起動してください。</p>
-    <ol class="install-steps" style="margin-top:14px;">
-      <li>非常ブレーキをかけ、シフトレバーを<strong>中立</strong>にします。</li>
-      <li><strong>8キー</strong>を押して保安装置を「<strong>東京メトロ（営団）</strong>」に設定します。<br><small style="color:#888;">※車両によって異なる場合があります</small></li>
-      <li>ブレーキを緩めると ATC が作動します。</li>
-    </ol>
-  </section>
+      <section id="policy">
+        <h2>利用ポリシー（路線データ）</h2>
+        <table>
+          <tr>
+            <th>そのまま転載・再配布</th>
+            <td>❌ NG — 本データを「BVE5 東京メトロ日比谷線」の路線データとして別サイトや配布所等にアップロードすることは禁止します（改変の有無を問わず）。</td>
+          </tr>
+          <tr>
+            <th>ストラクチャーの転用</th>
+            <td>✅ OK — 収録のストラクチャー（.x ファイル・テクスチャ）を自作路線へ組み込むことは歓迎します。</td>
+          </tr>
+          <tr>
+            <th>動画配信・実況</th>
+            <td>
+              ✅ OK — YouTube 等の動画サイトでの配信・実況は自由に行っていただけます。<br>
+              <span style="color:#666; font-size:0.95em;">
+                ※ できればで構いませんが、概要欄等に
+                <a href="https://tadimaru.github.io/bve-hibiya/" target="_blank">配布ページのリンク</a>
+                や
+                <a href="https://x.com/tadi_maru" target="_blank">X（@tadi_maru）</a>
+                を記載していただけると嬉しいです（任意）。
+              </span><br>
+              <small style="color:#888;">本データと他者様のデータを組み合わせた際のトラブルについては、当方は一切責任を負いません。</small>
+            </td>
+          </tr>
+        </table>
+        <p style="margin-top:14px; color:#666; font-size:0.9rem;">本データの使用によって生じたいかなる損害・トラブルについても、制作者は責任を負いかねます。自己責任にてご利用ください。</p>
+      </section>
 
-  <section id="plugin">
-    <h2>使用プラグイン</h2>
-    <p>本路線のATC実装には <a href="http://www.nozomi.vc/71_ats/index.htm" target="_blank"><strong>メトロ総合プラグイン</strong></a>（制作: 高橋うさお氏）を使用しています。</p>
-    <p style="margin-top:10px;">素晴らしいプラグインを公開してくださった高橋うさお氏に感謝申し上げます。</p>
-  </section>
+      <section id="howto">
+        <h2>運転方法（ATC起動手順）</h2>
+        <p>始発駅出発前に、以下の手順で保安装置を起動してください。</p>
+        <ol class="install-steps" style="margin-top:14px;">
+          <li>非常ブレーキをかけ、シフトレバーを<strong>中立</strong>にします。</li>
+          <li><strong>8キー</strong>を押して保安装置を「<strong>東京メトロ（営団）</strong>」に設定します。<br><small style="color:#888;">※ 指定車両の13000系の場合は、右側のモニターに「<strong>地下鉄</strong>」と表示されます。これが表示されていれば次のステップに進んでください。（車両によって表示は異なる場合があります）</small></li>
+          <li>ブレーキを緩めると ATC が作動します。</li>
+        </ol>
+      </section>
 
-  <section id="author">
-    <h2>作者について</h2>
-    <p>たでぃまる / 合同会社たでぃまる<br>
-    BVE路線データの制作と、鉄道運行管理ゲームの開発をひとりでやっています。</p>
-    <p style="margin-top:12px;">
-      <a href="https://x.com/tadi_maru" target="_blank">X（旧Twitter）@tadimaru</a>
-    </p>
-  </section>
+      <section id="plugin">
+        <h2>使用プラグイン</h2>
+        <p>本路線のATC実装には <a href="http://www.nozomi.vc/71_ats/index.htm" target="_blank"><strong>メトロ総合プラグイン</strong></a>（制作: 高橋うさお氏）を使用しています。</p>
+        <p style="margin-top:10px;">素晴らしいプラグインを公開してくださった高橋うさお氏に感謝申し上げます。</p>
+      </section>
 
+      <section id="author">
+        <h2>作者について</h2>
+        <p>たでぃまる / 合同会社たでぃまる<br>
+        BVE路線データの制作と、鉄道運行管理ゲームの開発をひとりでやっています。</p>
+        <p style="margin-top:12px;">
+          <a href="https://x.com/tadi_maru" target="_blank">X（旧Twitter）@tadimaru</a>
+        </p>
+      </section>
+
+    </div>
+
+    <footer>
+      <p style="margin-bottom:16px;">
+        <a href="https://store.steampowered.com/app/4282480/?utm_source=bve" target="_blank">
+          <img src="sim-banner.png" alt="鉄道運行管理シミュレーター 2026年4月15日発売予定" style="max-width:460px; width:100%; border-radius:4px;">
+        </a>
+      </p>
+      <p>&copy; 2026 たでぃまる / 合同会社たでぃまる</p>
+      <p style="margin-top:8px;">
+        <a href="https://store.steampowered.com/app/4282480/?utm_source=bve" target="_blank">鉄道運行管理シミュレーター（Steam）</a>
+        &nbsp;|&nbsp;
+        <a href="https://x.com/tadi_maru" target="_blank">X @tadi_maru</a>
+      </p>
+    </footer>
+
+  </div>
 </div>
-
-<footer>
-  <p style="margin-bottom:16px;">
-    <a href="https://store.steampowered.com/app/4282480/?utm_source=bve" target="_blank">
-      <img src="sim-banner.png" alt="鉄道運行管理シミュレーター 2026年4月15日発売予定" style="max-width:460px; width:100%; border-radius:4px;">
-    </a>
-  </p>
-  <p>&copy; 2026 たでぃまる / 合同会社たでぃまる</p>
-  <p style="margin-top:8px;">
-    <a href="https://store.steampowered.com/app/4282480/?utm_source=bve" target="_blank">鉄道運行管理シミュレーター（Steam）</a>
-    &nbsp;|&nbsp;
-    <a href="https://x.com/tadi_maru" target="_blank">X @tadi_maru</a>
-  </p>
-</footer>
 
 <script>
   (function () {
-    var releaseDate = new Date('2026-05-12T00:00:00+09:00');
+    var releaseDate = new Date('2026-06-10T00:00:00+09:00');
     var now = new Date();
     if (now >= releaseDate) {
       var btn = document.getElementById('download-btn');
       btn.classList.remove('disabled');
-      btn.href = 'https://github.com/tadimaru/bve-hibiya/releases/download/v0.3.0/bve-hibiya-v0.3.0.zip';
+      btn.href = 'https://github.com/tadimaru/bve-hibiya/releases/download/v0.3.1/bve-hibiya-v0.3.1.zip';
       btn.textContent = 'ダウンロード（ZIP）';
-      document.getElementById('release-date').textContent = '2026年5月12日 公開';
+      document.getElementById('release-date').textContent = '2026年6月10日 公開';
       var fallback = document.getElementById('prerelease-fallback');
       if (fallback) { fallback.style.display = 'none'; }
     }

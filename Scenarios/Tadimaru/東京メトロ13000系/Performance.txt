@@ -1,0 +1,11 @@
+[Power]
+Force         = power_force.csv
+Current       = power_current.csv
+NoLoadCurrent = power_noload.csv
+Params        = power_params.csv
+
+[Brake]
+Force         = brake_force.csv
+Current       = brake_current.csv
+NoLoadCurrent = brake_noload.csv
+Params        = brake_params.csv

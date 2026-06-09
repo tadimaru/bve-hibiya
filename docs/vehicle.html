@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BVE5 東京メトロ13000系（車両データ） | たでぃまる</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3J0D9DF3VS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3J0D9DF3VS');
+  </script>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    /* ===== レイアウト（サイドバー + 本文） ===== */
+    .layout { display: flex; align-items: flex-start; min-height: 100vh; }
+    .sidebar {
+      width: 240px; flex-shrink: 0; background: #16213e; color: #bbb;
+      position: sticky; top: 0; height: 100vh; padding: 28px 0; overflow-y: auto;
+    }
+    .sb-brand { padding: 0 24px 20px; border-bottom: 1px solid #2a3a5e; margin-bottom: 12px; }
+    .sb-brand-title { color: #fff; font-size: 1.1rem; font-weight: bold; }
+    .sb-brand-sub { color: #8893a8; font-size: 0.8rem; margin-top: 2px; }
+    .sb-nav { display: flex; flex-direction: column; }
+    .sb-item { display: block; padding: 12px 24px; text-decoration: none; border-left: 3px solid transparent; }
+    .sb-item:hover { background: #1e2d4f; }
+    .sb-item.active { background: #1e2d4f; border-left-color: #e8850a; }
+    .sb-item-main { display: block; font-weight: bold; font-size: 0.98rem; color: #fff; }
+    .sb-item-sub { display: block; font-size: 0.78rem; color: #8893a8; margin-top: 1px; }
+    .sb-links { margin-top: 24px; padding: 16px 24px 0; border-top: 1px solid #2a3a5e; display: flex; flex-direction: column; gap: 8px; }
+    .sb-links a { color: #9aa6bd; font-size: 0.82rem; text-decoration: none; }
+    .sb-links a:hover { color: #fff; }
+    .main { flex: 1; min-width: 0; }
+
+    header { background: #1a1a2e; color: #fff; padding: 40px 20px; text-align: center; }
+    header h1 { font-size: 1.8rem; margin-bottom: 8px; }
+    header p { font-size: 1rem; color: #aaa; }
+
+    .banner { background: linear-gradient(135deg, #e8850a, #c96d00); color: #fff; text-align: center; padding: 24px 20px; }
+    .banner p { font-size: 0.95rem; margin-bottom: 12px; }
+    .banner a.btn-steam {
+      display: inline-block; background: #fff; color: #c96d00; font-weight: bold;
+      padding: 10px 28px; border-radius: 4px; text-decoration: none; font-size: 1rem;
+    }
+    .banner a.btn-steam:hover { background: #ffe0b2; }
+
+    .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+
+    section { margin-bottom: 48px; }
+    h2 { font-size: 1.3rem; border-left: 4px solid #1a1a2e; padding-left: 12px; margin-bottom: 16px; }
+
+    .cross-link {
+      background: #fff; border: 1px dashed #1a1a2e; border-radius: 8px;
+      padding: 16px 20px; margin-bottom: 32px; font-size: 0.95rem;
+    }
+    .cross-link a { color: #1a1a2e; font-weight: bold; }
+
+    .release-box { background: #fff; border: 2px solid #e8850a; border-radius: 8px; padding: 24px; text-align: center; }
+    .release-box .section-label { font-size: 0.85rem; color: #888; margin-bottom: 4px; }
+    .release-box .route { font-size: 1.2rem; font-weight: bold; margin-bottom: 4px; }
+    .release-box .date { color: #888; font-size: 0.9rem; margin-bottom: 20px; }
+    .btn-download {
+      display: inline-block; background: #1a1a2e; color: #fff; padding: 12px 36px;
+      border-radius: 4px; text-decoration: none; font-size: 1rem; font-weight: bold;
+    }
+    .btn-download:hover { background: #2d2d50; }
+    .btn-download.disabled { background: #ccc; color: #888; cursor: not-allowed; pointer-events: none; }
+
+    table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; overflow: hidden; }
+    th, td { padding: 12px 16px; border-bottom: 1px solid #eee; text-align: left; }
+    th { background: #f0f0f0; font-weight: bold; width: 160px; }
+
+    .install-steps { list-style: none; counter-reset: step; }
+    .install-steps li { counter-increment: step; background: #fff; padding: 14px 16px 14px 56px; margin-bottom: 8px; border-radius: 4px; position: relative; }
+    .install-steps li::before {
+      content: counter(step); position: absolute; left: 16px; top: 50%; transform: translateY(-50%);
+      background: #1a1a2e; color: #fff; width: 28px; height: 28px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9rem;
+    }
+    code { background: #eee; padding: 2px 6px; border-radius: 3px; font-family: monospace; font-size: 0.9em; }
+
+    footer { background: #1a1a2e; color: #aaa; text-align: center; padding: 32px 20px; font-size: 0.9rem; }
+    footer a { color: #ccc; }
+
+    @media (max-width: 720px) {
+      .layout { display: block; }
+      .sidebar { width: 100%; height: auto; position: static; padding: 16px 0; }
+      .sb-brand { text-align: center; }
+      .sb-nav { flex-direction: row; }
+      .sb-item { flex: 1; border-left: none; border-bottom: 3px solid transparent; text-align: center; padding: 10px; }
+      .sb-item.active { border-left: none; border-bottom-color: #e8850a; }
+      .sb-links { flex-direction: row; justify-content: center; gap: 20px; border-top: none; margin-top: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="layout">
+
+  <aside class="sidebar">
+    <div class="sb-brand">
+      <div class="sb-brand-title">BVEデータ配布ページ</div>
+      <div class="sb-brand-sub">たでぃまる</div>
+    </div>
+    <nav class="sb-nav">
+      <a href="index.html" class="sb-item">
+        <span class="sb-item-main">東京メトロ日比谷線</span>
+        <span class="sb-item-sub">路線データ</span>
+      </a>
+      <a href="./vehicle.html" class="sb-item active">
+        <span class="sb-item-main">東京メトロ13000系</span>
+        <span class="sb-item-sub">車両データ</span>
+      </a>
+    </nav>
+    <div class="sb-links">
+      <a href="https://store.steampowered.com/app/4282480/?utm_source=bve" target="_blank">運行管理SIM（Steam）</a>
+      <a href="https://x.com/tadi_maru" target="_blank">X @tadi_maru</a>
+    </div>
+  </aside>
+
+  <div class="main">
+
+    <header>
+      <h1>東京メトロ13000系</h1>
+      <p>車両データ（BVE Trainsim 5） ／ 制作: たでぃまる</p>
+    </header>
+
+    <div class="banner">
+      <p>同じ作者が、鉄道の<strong>運行管理シミュレーター</strong>もひとりで開発しています。</p>
+      <a class="btn-steam" href="https://store.steampowered.com/app/4282480/?utm_source=bve" target="_blank">
+        Steam でウィッシュリストに追加する →
+      </a>
+    </div>
+
+    <div class="container">
+
+      <div class="cross-link">
+        🚆 この車両は「東京メトロ日比谷線」の指定車両です。路線データとあわせてお使いください →
+        <a href="index.html">路線データのページへ</a>
+      </div>
+
+      <section id="download">
+        <h2>ダウンロード</h2>
+        <div class="release-box">
+          <div class="section-label">車両データ v0.1.0</div>
+          <div class="route">東京メトロ13000系</div>
+          <div class="date" id="vehicle-release-date">2026年6月10日 公開予定</div>
+          <a class="btn-download disabled" id="vehicle-download-btn" href="#">6月10日 公開予定</a>
+          <div style="margin-top:14px; font-size:0.9rem; color:#666;">
+            日比谷線の指定車両。自作のATC（メトロ総合プラグイン）対応車両です。<br>
+            路線データとあわせれば、すぐに運転できます。
+          </div>
+        </div>
+      </section>
+
+      <section id="spec">
+        <h2>車両について</h2>
+        <table>
+          <tr><th>形式</th><td>東京メトロ13000系（日比谷線・東武スカイツリーライン直通車）</td></tr>
+          <tr><th>対応ソフト</th><td>BVE Trainsim 5（32bit版 / ※BVE6・64bitには非対応）</td></tr>
+          <tr><th>マスコン</th><td>ワンハンドル（力行4段／常用ブレーキ7段＋非常）</td></tr>
+          <tr><th>保安装置</th><td>メトロ総合プラグイン対応（ATC・営団位置）<br><small style="color:#888;">※ ATO・TASCには未対応です。</small></td></tr>
+          <tr><th>運転台</th><td>写真ベースのパネル（速度計・ATC現示・各表示灯）<br><small style="color:#888;">※ ブレーキ圧力計など一部の計器や、右側モニターは動作しません。</small></td></tr>
+          <tr><th>サウンド</th><td>走行音・モーター音・ブレーキ・ドア・警笛 などを収録</td></tr>
+          <tr><th>制作者</th><td>たでぃまる</td></tr>
+        </table>
+      </section>
+
+      <section id="install">
+        <h2>インストール方法</h2>
+        <ol class="install-steps">
+          <li><a href="https://bvets.net/" target="_blank">BVE Trainsim 5</a> と <a href="index.html">路線データ「東京メトロ日比谷線」</a> を用意してください。</li>
+          <li>上のボタンから<strong>車両データ</strong>のZIPをダウンロードし、解凍します。</li>
+          <li>中身の <code>Tadimaru</code> フォルダを BVE の <code>Scenarios</code> フォルダにコピーします（路線データと同じ <code>Tadimaru</code> に統合されます）。</li>
+          <li>各シナリオファイルの <code>Vehicle =</code> 行を以下に設定します（路線データ v0.3.1 では設定済みです）：<br>
+            <code>Vehicle = Tadimaru\東京メトロ13000系\Vehicle.txt</code></li>
+          <li>運転開始時のATC起動手順は、<a href="index.html#howto">路線ページの「運転方法」</a> をご覧ください。</li>
+        </ol>
+      </section>
+
+      <!-- ▼▼▼ 利用ポリシーは叩き台です。オーナーが内容を確定する予定 ▼▼▼ -->
+      <section id="policy">
+        <h2>利用ポリシー（車両データ）</h2>
+        <table>
+          <tr>
+            <th>そのまま転載・再配布</th>
+            <td>❌ NG — 本車両データを別サイトや配布所等にアップロードすることは禁止します（改変の有無を問わず）。</td>
+          </tr>
+          <tr>
+            <th>個人での改変・調整</th>
+            <td>
+              ✅ OK — お手元での調整（性能・音・パネル等の変更）は自由です。車両本体を含む改変版の再配布は不可とします。<br>
+              <span style="color:#444; font-size:0.95em;">
+                ただし、<strong>車両本体を含まない「追加パッチ」形式</strong>の配布はOKです。本サイトで配布する車両データに上乗せして、より精密に再現・改善するための差分データ等であれば歓迎します。<br>
+                <small style="color:#888;">（利用者が車両本体を本サイトからダウンロードすることが前提です。車両本体そのものを同梱・再配布しないようにお願いします。）</small>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <th>他路線での使用</th>
+            <td>
+              ✅ OK — メトロ総合プラグイン対応の他路線で運転していただいて構いません。<br>
+              <span style="color:#444; font-size:0.95em;">
+                <strong>路線作者の皆様へ：</strong>制作される路線の指定車両として本車両をご案内・ご設定いただく際は、特段のご連絡は不要です。ご自由にご指定ください。
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <th>素材の転用について</th>
+            <td>
+              ✅ OK — 本車両に収録した素材（テクスチャ・3Dモデル・音声等）を活用して、<strong>別形式の車両を制作・配布</strong>していただくことは歓迎します。<br>
+              <span style="color:#444; font-size:0.95em;">
+                ※ ただし、本車両（東京メトロ13000系）の<strong>別バリエーション車両</strong>の制作・配布はご遠慮ください。<br>
+                ※ できればで構いませんが、概要欄や配布ページ等に
+                <a href="https://tadimaru.github.io/bve-hibiya/" target="_blank">配布ページのリンク</a>
+                や <a href="https://x.com/tadi_maru" target="_blank">X（@tadi_maru）</a> を記載いただけると嬉しいです（任意）。
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <th>動画配信・実況</th>
+            <td>
+              ✅ OK — YouTube 等での配信・実況は自由に行っていただけます。<br>
+              <span style="color:#666; font-size:0.95em;">
+                ※ できればで構いませんが、概要欄等に
+                <a href="https://tadimaru.github.io/bve-hibiya/" target="_blank">配布ページのリンク</a>
+                や <a href="https://x.com/tadi_maru" target="_blank">X（@tadi_maru）</a> を記載いただけると嬉しいです（任意）。
+              </span>
+            </td>
+          </tr>
+        </table>
+        <p style="margin-top:14px; color:#666; font-size:0.9rem;">本データの使用によって生じたいかなる損害・トラブルについても、制作者は責任を負いかねます。自己責任にてご利用ください。</p>
+      </section>
+      <!-- ▲▲▲ 利用ポリシー（叩き台ここまで） ▲▲▲ -->
+
+      <section id="thanks">
+        <h2>資料提供</h2>
+        <p>本車両の制作にあたり、<a href="https://x.com/Mizurio_Enpitsu" target="_blank"><strong>水色鉛筆 様（X: @Mizurio_Enpitsu）</strong></a> より資料のご提供をいただきました。心より感謝申し上げます。</p>
+      </section>
+
+      <section id="plugin">
+        <h2>使用プラグイン</h2>
+        <p>本車両のATC実装には <a href="http://www.nozomi.vc/71_ats/index.htm" target="_blank"><strong>メトロ総合プラグイン</strong></a>（制作: 高橋うさお氏）を使用しています。配布データには動作に必要なプラグイン本体を同梱しています。</p>
+        <p style="margin-top:10px;">素晴らしいプラグインを公開してくださった高橋うさお氏に感謝申し上げます。</p>
+      </section>
+
+      <section id="author">
+        <h2>作者について</h2>
+        <p>たでぃまる / 合同会社たでぃまる<br>
+        BVE路線・車両データの制作と、鉄道運行管理ゲームの開発をひとりでやっています。</p>
+        <p style="margin-top:12px;">
+          <a href="https://x.com/tadi_maru" target="_blank">X（旧Twitter）@tadimaru</a>
+        </p>
+      </section>
+
+    </div>
+
+    <footer>
+      <p style="margin-bottom:16px;">
+        <a href="https://store.steampowered.com/app/4282480/?utm_source=bve" target="_blank">
+          <img src="sim-banner.png" alt="鉄道運行管理シミュレーター 2026年4月15日発売予定" style="max-width:460px; width:100%; border-radius:4px;">
+        </a>
+      </p>
+      <p>&copy; 2026 たでぃまる / 合同会社たでぃまる</p>
+      <p style="margin-top:8px;">
+        <a href="https://store.steampowered.com/app/4282480/?utm_source=bve" target="_blank">鉄道運行管理シミュレーター（Steam）</a>
+        &nbsp;|&nbsp;
+        <a href="https://x.com/tadi_maru" target="_blank">X @tadi_maru</a>
+      </p>
+    </footer>
+
+  </div>
+</div>
+
+<script>
+  (function () {
+    var vehicleReleaseDate = new Date('2026-06-10T00:00:00+09:00');
+    var now = new Date();
+    if (now >= vehicleReleaseDate) {
+      var vbtn = document.getElementById('vehicle-download-btn');
+      if (vbtn) {
+        vbtn.classList.remove('disabled');
+        vbtn.href = 'https://github.com/tadimaru/bve-hibiya/releases/download/vehicle-13000-v0.1.0/bve-hibiya-13000-v0.1.0.zip';
+        vbtn.textContent = 'ダウンロード（ZIP）';
+        var vdate = document.getElementById('vehicle-release-date');
+        if (vdate) { vdate.textContent = '2026年6月10日 公開'; }
+      }
+    }
+  })();
+</script>
+</body>
+</html>

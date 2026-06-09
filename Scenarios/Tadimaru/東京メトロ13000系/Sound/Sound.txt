@@ -1,0 +1,38 @@
+BveTs Vehicle Sound 3.01:utf-8
+
+[Run]
+0 = Run0.wav      
+
+[Joint]
+0 = Joint0.wav
+
+[Motor]
+0 = Motor0.wav
+1 = Motor1.wav
+2 = Motor2.wav
+3 = Motor3.wav
+4 = Motor4.wav
+
+[Brake]
+BcRelease     = Brake_Air.wav
+BcReleaseHigh = Brake_AirHigh.wav
+BcReleaseFull = Brake_AirZero.wav
+
+[Horn]
+Primary = Horn_Primary.wav
+
+[Door]
+OpenLeft   = Door_Open.wav
+OpenRight  = Door_Open.wav
+CloseLeft  = Door_Close.wav
+CloseRight = Door_Close.wav
+
+[Buzzer]
+Correct = Buzzer_Correct.wav
+
+[Ats]
+0  = Ats\ATC_Bell.wav
+2  = Ats\ATC_Ding.wav
+31 = Ats\Departure_Buzzer.wav
+33 = Ats\Boarding_Music.wav
+34 = Ats\Boarding_Chime.wav
